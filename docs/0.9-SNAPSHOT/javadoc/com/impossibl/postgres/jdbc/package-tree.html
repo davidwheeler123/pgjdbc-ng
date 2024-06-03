@@ -6,15 +6,16 @@
 <title>com.impossibl.postgres.jdbc Class Hierarchy (PGJDBC-NG 0.9-SNAPSHOT)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="../../../../jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -100,10 +101,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </ul>
 </div>
 <div class="contentContainer">
-<section role="region">
+<section>
 <h2 title="Class Hierarchy">Class Hierarchy</h2>
 <ul>
-<li class="circle">java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink"><span class="typeNameLink">Object</span></a>
+<li class="circle">java.lang.Object
 <ul>
 <li class="circle">com.impossibl.postgres.system.<a href="../system/AbstractContext.html" title="class in com.impossibl.postgres.system"><span class="typeNameLink">AbstractContext</span></a> (implements com.impossibl.postgres.system.<a href="../system/Context.html" title="interface in com.impossibl.postgres.system">Context</a>)
 <ul>
@@ -114,12 +115,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 </ul>
 </li>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="AbstractDataSource.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">AbstractDataSource</span></a> (implements javax.sql.<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/CommonDataSource.html?is-external=true" title="class or interface in javax.sql" class="externalLink">CommonDataSource</a>)
+<li class="circle">com.impossibl.postgres.jdbc.<a href="AbstractDataSource.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">AbstractDataSource</span></a> (implements javax.sql.CommonDataSource)
 <ul>
 <li class="circle">com.impossibl.postgres.jdbc.AbstractGeneratedDataSource
 <ul>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGConnectionPoolDataSource.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGConnectionPoolDataSource</span></a> (implements javax.sql.<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/ConnectionPoolDataSource.html?is-external=true" title="class or interface in javax.sql" class="externalLink">ConnectionPoolDataSource</a>, javax.naming.<a href="https://docs.oracle.com/javase/8/docs/api/javax/naming/Referenceable.html?is-external=true" title="class or interface in javax.naming" class="externalLink">Referenceable</a>)</li>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGDataSource.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGDataSource</span></a> (implements javax.sql.<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/DataSource.html?is-external=true" title="class or interface in javax.sql" class="externalLink">DataSource</a>, javax.naming.<a href="https://docs.oracle.com/javase/8/docs/api/javax/naming/Referenceable.html?is-external=true" title="class or interface in javax.naming" class="externalLink">Referenceable</a>)</li>
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGConnectionPoolDataSource.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGConnectionPoolDataSource</span></a> (implements javax.sql.ConnectionPoolDataSource, javax.naming.Referenceable)</li>
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGDataSource.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGDataSource</span></a> (implements javax.sql.DataSource, javax.naming.Referenceable)</li>
 </ul>
 </li>
 </ul>
@@ -132,55 +133,55 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="circle">com.impossibl.postgres.jdbc.<a href="ErrorUtils.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">ErrorUtils</span></a></li>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="Exceptions.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">Exceptions</span></a></li>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="Identifiers.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">Identifiers</span></a></li>
-<li class="circle">java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io" class="externalLink"><span class="typeNameLink">InputStream</span></a> (implements java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a>)
+<li class="circle">java.io.InputStream (implements java.io.Closeable)
 <ul>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="BlobInputStream.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">BlobInputStream</span></a></li>
 </ul>
 </li>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="JDBCSettings.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">JDBCSettings</span></a></li>
-<li class="circle">java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io" class="externalLink"><span class="typeNameLink">OutputStream</span></a> (implements java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a>, java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Flushable.html?is-external=true" title="class or interface in java.io" class="externalLink">Flushable</a>)
+<li class="circle">java.io.OutputStream (implements java.io.Closeable, java.io.Flushable)
 <ul>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="BlobOutputStream.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">BlobOutputStream</span></a></li>
 </ul>
 </li>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGArray.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGArray</span></a> (implements java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Array.html?is-external=true" title="class or interface in java.sql" class="externalLink">Array</a>)
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGArray.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGArray</span></a> (implements java.sql.Array)
 <ul>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="PGBuffersArray.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGBuffersArray</span></a></li>
 </ul>
 </li>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGBlob.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGBlob</span></a> (implements java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Blob.html?is-external=true" title="class or interface in java.sql" class="externalLink">Blob</a>)</li>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGBufferBlob.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGBufferBlob</span></a> (implements java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Blob.html?is-external=true" title="class or interface in java.sql" class="externalLink">Blob</a>)</li>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGClob.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGClob</span></a> (implements java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Clob.html?is-external=true" title="class or interface in java.sql" class="externalLink">Clob</a>)</li>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGConnectionPoolDataSourceObjectFactory.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGConnectionPoolDataSourceObjectFactory</span></a> (implements javax.naming.spi.<a href="https://docs.oracle.com/javase/8/docs/api/javax/naming/spi/ObjectFactory.html?is-external=true" title="class or interface in javax.naming.spi" class="externalLink">ObjectFactory</a>)</li>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGDataSourceObjectFactory.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGDataSourceObjectFactory</span></a> (implements javax.naming.spi.<a href="https://docs.oracle.com/javase/8/docs/api/javax/naming/spi/ObjectFactory.html?is-external=true" title="class or interface in javax.naming.spi" class="externalLink">ObjectFactory</a>)</li>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGDriver.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGDriver</span></a> (implements java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Driver.html?is-external=true" title="class or interface in java.sql" class="externalLink">Driver</a>, java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/DriverAction.html?is-external=true" title="class or interface in java.sql" class="externalLink">DriverAction</a>)</li>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGParameterMetaData.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGParameterMetaData</span></a> (implements java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a>)</li>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGPooledConnection.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGPooledConnection</span></a> (implements javax.sql.<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a>)</li>
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGBlob.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGBlob</span></a> (implements java.sql.Blob)</li>
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGBufferBlob.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGBufferBlob</span></a> (implements java.sql.Blob)</li>
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGClob.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGClob</span></a> (implements java.sql.Clob)</li>
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGConnectionPoolDataSourceObjectFactory.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGConnectionPoolDataSourceObjectFactory</span></a> (implements javax.naming.spi.ObjectFactory)</li>
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGDataSourceObjectFactory.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGDataSourceObjectFactory</span></a> (implements javax.naming.spi.ObjectFactory)</li>
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGDriver.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGDriver</span></a> (implements java.sql.Driver, java.sql.DriverAction)</li>
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGParameterMetaData.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGParameterMetaData</span></a> (implements java.sql.ParameterMetaData)</li>
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGPooledConnection.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGPooledConnection</span></a> (implements javax.sql.PooledConnection)</li>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="PGPooledConnectionDelegator.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGPooledConnectionDelegator</span></a> (implements com.impossibl.postgres.api.jdbc.<a href="../api/jdbc/PGConnection.html" title="interface in com.impossibl.postgres.api.jdbc">PGConnection</a>)</li>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGRowId.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGRowId</span></a> (implements java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/RowId.html?is-external=true" title="class or interface in java.sql" class="externalLink">RowId</a>)</li>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGSQLInput.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGSQLInput</span></a>&lt;Buffer&gt; (implements java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLInput.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLInput</a>)
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGRowId.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGRowId</span></a> (implements java.sql.RowId)</li>
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGSQLInput.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGSQLInput</span></a>&lt;Buffer&gt; (implements java.sql.SQLInput)
 <ul>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="PGSQLInput.Binary.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGSQLInput.Binary</span></a></li>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="PGSQLInput.Text.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGSQLInput.Text</span></a></li>
 </ul>
 </li>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGSQLOutput.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGSQLOutput</span></a> (implements java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLOutput.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLOutput</a>)</li>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGSQLXML.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGSQLXML</span></a> (implements java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLXML.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLXML</a>)</li>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGStatement.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGStatement</span></a> (implements java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a>)
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGSQLOutput.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGSQLOutput</span></a> (implements java.sql.SQLOutput)</li>
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGSQLXML.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGSQLXML</span></a> (implements java.sql.SQLXML)</li>
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGStatement.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGStatement</span></a> (implements java.sql.Statement)
 <ul>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGCallableStatement.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGCallableStatement</span></a> (implements java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/CallableStatement.html?is-external=true" title="class or interface in java.sql" class="externalLink">CallableStatement</a>)</li>
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGCallableStatement.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGCallableStatement</span></a> (implements java.sql.CallableStatement)</li>
 </ul>
 </li>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGStatementDelegator.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGStatementDelegator</span></a> (implements java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a>)
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGStatementDelegator.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGStatementDelegator</span></a> (implements java.sql.Statement)
 <ul>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGPreparedStatementDelegator.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGPreparedStatementDelegator</span></a> (implements java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/PreparedStatement.html?is-external=true" title="class or interface in java.sql" class="externalLink">PreparedStatement</a>)
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGPreparedStatementDelegator.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGPreparedStatementDelegator</span></a> (implements java.sql.PreparedStatement)
 <ul>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGCallableStatementDelegator.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGCallableStatementDelegator</span></a> (implements java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/CallableStatement.html?is-external=true" title="class or interface in java.sql" class="externalLink">CallableStatement</a>)</li>
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGCallableStatementDelegator.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGCallableStatementDelegator</span></a> (implements java.sql.CallableStatement)</li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="circle">com.impossibl.postgres.jdbc.<a href="PGStruct.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGStruct</span></a> (implements java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Struct.html?is-external=true" title="class or interface in java.sql" class="externalLink">Struct</a>)
+<li class="circle">com.impossibl.postgres.jdbc.<a href="PGStruct.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGStruct</span></a> (implements java.sql.Struct)
 <ul>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="PGBuffersStruct.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGBuffersStruct</span></a>&lt;Buffer&gt;
 <ul>
@@ -192,7 +193,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </ul>
 </li>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="PreparedQuery.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PreparedQuery</span></a> (implements com.impossibl.postgres.jdbc.<a href="Query.html" title="interface in com.impossibl.postgres.jdbc">Query</a>)</li>
-<li class="circle">java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io" class="externalLink"><span class="typeNameLink">Reader</span></a> (implements java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a>, java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Readable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Readable</a>)
+<li class="circle">java.io.Reader (implements java.io.Closeable, java.lang.Readable)
 <ul>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="ClobReader.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">ClobReader</span></a></li>
 </ul>
@@ -235,16 +236,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="ThreadedHousekeeper.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">ThreadedHousekeeper</span></a> (implements com.impossibl.postgres.jdbc.<a href="Housekeeper.html" title="interface in com.impossibl.postgres.jdbc">Housekeeper</a>)</li>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="ThreadedHousekeeper.Ref.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">ThreadedHousekeeper.Ref</span></a> (implements com.impossibl.postgres.jdbc.<a href="Housekeeper.Ref.html" title="interface in com.impossibl.postgres.jdbc">Housekeeper.Ref</a>)</li>
-<li class="circle">java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><span class="typeNameLink">Throwable</span></a> (implements java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a>)
+<li class="circle">java.lang.Throwable (implements java.io.Serializable)
 <ul>
-<li class="circle">java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink"><span class="typeNameLink">Exception</span></a>
+<li class="circle">java.lang.Exception
 <ul>
-<li class="circle">java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink"><span class="typeNameLink">SQLException</span></a> (implements java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;T&gt;)
+<li class="circle">java.sql.SQLException (implements java.lang.Iterable&lt;T&gt;)
 <ul>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="PGSQLSimpleException.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGSQLSimpleException</span></a> (implements com.impossibl.postgres.api.jdbc.<a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com.impossibl.postgres.api.jdbc">PGSQLExceptionInfo</a>)</li>
-<li class="circle">java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLNonTransientException.html?is-external=true" title="class or interface in java.sql" class="externalLink"><span class="typeNameLink">SQLNonTransientException</span></a>
+<li class="circle">java.sql.SQLNonTransientException
 <ul>
-<li class="circle">java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLIntegrityConstraintViolationException.html?is-external=true" title="class or interface in java.sql" class="externalLink"><span class="typeNameLink">SQLIntegrityConstraintViolationException</span></a>
+<li class="circle">java.sql.SQLIntegrityConstraintViolationException
 <ul>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="PGSQLIntegrityConstraintViolationException.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">PGSQLIntegrityConstraintViolationException</span></a> (implements com.impossibl.postgres.api.jdbc.<a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com.impossibl.postgres.api.jdbc">PGSQLExceptionInfo</a>)</li>
 </ul>
@@ -257,7 +258,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 </ul>
 </li>
-<li class="circle">java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io" class="externalLink"><span class="typeNameLink">Writer</span></a> (implements java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Appendable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Appendable</a>, java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a>, java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Flushable.html?is-external=true" title="class or interface in java.io" class="externalLink">Flushable</a>)
+<li class="circle">java.io.Writer (implements java.lang.Appendable, java.io.Closeable, java.io.Flushable)
 <ul>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="ClobWriter.html" title="class in com.impossibl.postgres.jdbc"><span class="typeNameLink">ClobWriter</span></a></li>
 </ul>
@@ -266,13 +267,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 </ul>
 </section>
-<section role="region">
+<section>
 <h2 title="Interface Hierarchy">Interface Hierarchy</h2>
 <ul>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="Housekeeper.html" title="interface in com.impossibl.postgres.jdbc"><span class="typeNameLink">Housekeeper</span></a></li>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="Housekeeper.Ref.html" title="interface in com.impossibl.postgres.jdbc"><span class="typeNameLink">Housekeeper.Ref</span></a></li>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="Query.html" title="interface in com.impossibl.postgres.jdbc"><span class="typeNameLink">Query</span></a></li>
-<li class="circle">java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><span class="typeNameLink">Runnable</span></a>
+<li class="circle">java.lang.Runnable
 <ul>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="Housekeeper.CleanupRunnable.html" title="interface in com.impossibl.postgres.jdbc"><span class="typeNameLink">Housekeeper.CleanupRunnable</span></a></li>
 </ul>
@@ -280,12 +281,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="circle">com.impossibl.postgres.jdbc.<a href="SQLTextTree.Processor.html" title="interface in com.impossibl.postgres.jdbc"><span class="typeNameLink">SQLTextTree.Processor</span></a></li>
 </ul>
 </section>
-<section role="region">
+<section>
 <h2 title="Enum Hierarchy">Enum Hierarchy</h2>
 <ul>
-<li class="circle">java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink"><span class="typeNameLink">Object</span></a>
+<li class="circle">java.lang.Object
 <ul>
-<li class="circle">java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang" class="externalLink"><span class="typeNameLink">Enum</span></a>&lt;E&gt; (implements java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;, java.io.<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a>)
+<li class="circle">java.lang.Enum&lt;E&gt; (implements java.lang.Comparable&lt;T&gt;, java.io.Serializable)
 <ul>
 <li class="circle">com.impossibl.postgres.jdbc.<a href="Query.Status.html" title="enum in com.impossibl.postgres.jdbc"><span class="typeNameLink">Query.Status</span></a></li>
 </ul>

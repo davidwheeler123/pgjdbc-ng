@@ -6,15 +6,16 @@
 <title>Uses of Interface com.impossibl.postgres.protocol.sasl.scram.stringprep.StringPreparation (PGJDBC-NG 0.9-SNAPSHOT)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../../../../../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../../../../../jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../../../jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../../../jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="../../../../../../../../script.js"></script>
 <script type="text/javascript" src="../../../../../../../../jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="../../../../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../../../../jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="../../../../../../../../jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../../../../../jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../../../../../../../../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -123,7 +124,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <ul class="blockList">
 <li class="blockList">
-<section role="region"><a id="com.impossibl.postgres.protocol.sasl.scram">
+<section><a id="com.impossibl.postgres.protocol.sasl.scram">
 <!--   -->
 </a>
 <h3>Uses of <a href="../StringPreparation.html" title="interface in com.impossibl.postgres.protocol.sasl.scram.stringprep">StringPreparation</a> in <a href="../../package-summary.html">com.impossibl.postgres.protocol.sasl.scram</a></h3>
@@ -139,7 +140,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>static byte[]</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ScramFunctions.</span><code><span class="memberNameLink"><a href="../../ScramFunctions.html#clientKey(com.impossibl.postgres.protocol.sasl.scram.ScramMechanism,com.impossibl.postgres.protocol.sasl.scram.stringprep.StringPreparation,java.lang.String,byte%5B%5D,int)">clientKey</a></span>&#8203;(<a href="../../ScramMechanism.html" title="interface in com.impossibl.postgres.protocol.sasl.scram">ScramMechanism</a>&nbsp;scramMechanism,
          <a href="../StringPreparation.html" title="interface in com.impossibl.postgres.protocol.sasl.scram.stringprep">StringPreparation</a>&nbsp;stringPreparation,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;password,
+         java.lang.String&nbsp;password,
          byte[]&nbsp;salt,
          int&nbsp;iteration)</code></th>
 <td class="colLast">
@@ -150,7 +151,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>static byte[]</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ScramFunctions.</span><code><span class="memberNameLink"><a href="../../ScramFunctions.html#saltedPassword(com.impossibl.postgres.protocol.sasl.scram.ScramMechanism,com.impossibl.postgres.protocol.sasl.scram.stringprep.StringPreparation,java.lang.String,byte%5B%5D,int)">saltedPassword</a></span>&#8203;(<a href="../../ScramMechanism.html" title="interface in com.impossibl.postgres.protocol.sasl.scram">ScramMechanism</a>&nbsp;scramMechanism,
               <a href="../StringPreparation.html" title="interface in com.impossibl.postgres.protocol.sasl.scram.stringprep">StringPreparation</a>&nbsp;stringPreparation,
-              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;password,
+              java.lang.String&nbsp;password,
               byte[]&nbsp;salt,
               int&nbsp;iteration)</code></th>
 <td class="colLast">
@@ -161,7 +162,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ScramMechanism.</span><code><span class="memberNameLink"><a href="../../ScramMechanism.html#saltedPassword(com.impossibl.postgres.protocol.sasl.scram.stringprep.StringPreparation,java.lang.String,byte%5B%5D,int)">saltedPassword</a></span>&#8203;(<a href="../StringPreparation.html" title="interface in com.impossibl.postgres.protocol.sasl.scram.stringprep">StringPreparation</a>&nbsp;stringPreparation,
-              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;password,
+              java.lang.String&nbsp;password,
               byte[]&nbsp;salt,
               int&nbsp;iteration)</code></th>
 <td class="colLast">
@@ -171,7 +172,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="rowColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ScramMechanisms.</span><code><span class="memberNameLink"><a href="../../ScramMechanisms.html#saltedPassword(com.impossibl.postgres.protocol.sasl.scram.stringprep.StringPreparation,java.lang.String,byte%5B%5D,int)">saltedPassword</a></span>&#8203;(<a href="../StringPreparation.html" title="interface in com.impossibl.postgres.protocol.sasl.scram.stringprep">StringPreparation</a>&nbsp;stringPreparation,
-              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;password,
+              java.lang.String&nbsp;password,
               byte[]&nbsp;salt,
               int&nbsp;iterations)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -180,7 +181,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>static byte[]</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ScramFunctions.</span><code><span class="memberNameLink"><a href="../../ScramFunctions.html#serverKey(com.impossibl.postgres.protocol.sasl.scram.ScramMechanism,com.impossibl.postgres.protocol.sasl.scram.stringprep.StringPreparation,java.lang.String,byte%5B%5D,int)">serverKey</a></span>&#8203;(<a href="../../ScramMechanism.html" title="interface in com.impossibl.postgres.protocol.sasl.scram">ScramMechanism</a>&nbsp;scramMechanism,
          <a href="../StringPreparation.html" title="interface in com.impossibl.postgres.protocol.sasl.scram.stringprep">StringPreparation</a>&nbsp;stringPreparation,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;password,
+         java.lang.String&nbsp;password,
          byte[]&nbsp;salt,
          int&nbsp;iteration)</code></th>
 <td class="colLast">
@@ -192,7 +193,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
-<section role="region"><a id="com.impossibl.postgres.protocol.sasl.scram.client">
+<section><a id="com.impossibl.postgres.protocol.sasl.scram.client">
 <!--   -->
 </a>
 <h3>Uses of <a href="../StringPreparation.html" title="interface in com.impossibl.postgres.protocol.sasl.scram.stringprep">StringPreparation</a> in <a href="../../client/package-summary.html">com.impossibl.postgres.protocol.sasl.scram.client</a></h3>
@@ -216,7 +217,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
-<section role="region"><a id="com.impossibl.postgres.protocol.sasl.scram.stringprep">
+<section><a id="com.impossibl.postgres.protocol.sasl.scram.stringprep">
 <!--   -->
 </a>
 <h3>Uses of <a href="../StringPreparation.html" title="interface in com.impossibl.postgres.protocol.sasl.scram.stringprep">StringPreparation</a> in <a href="../package-summary.html">com.impossibl.postgres.protocol.sasl.scram.stringprep</a></h3>

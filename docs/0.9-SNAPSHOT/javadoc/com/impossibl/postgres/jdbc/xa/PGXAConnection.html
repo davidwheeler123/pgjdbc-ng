@@ -6,15 +6,16 @@
 <title>PGXAConnection (PGJDBC-NG 0.9-SNAPSHOT)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../../jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="../../../../../script.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -120,7 +121,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
+<li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
 <li><a href="../PGPooledConnection.html" title="class in com.impossibl.postgres.jdbc">com.impossibl.postgres.jdbc.PGPooledConnection</a></li>
@@ -137,13 +138,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">XAConnection</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAResource</a></code></dd>
+<dd><code>javax.sql.PooledConnection</code>, <code>javax.sql.XAConnection</code>, <code>javax.transaction.xa.XAResource</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">PGXAConnection</span>
 extends <a href="../PGPooledConnection.html" title="class in com.impossibl.postgres.jdbc">PGPooledConnection</a>
-implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">XAConnection</a>, <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAResource</a></pre>
-<div class="block">The PostgreSQL implementation of <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink"><code>XAConnection</code></a> and <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink"><code>XAResource</code></a>.
+implements javax.sql.XAConnection, javax.transaction.xa.XAResource</pre>
+<div class="block">The PostgreSQL implementation of <code>XAConnection</code> and <code>XAResource</code>.
 
  This implementation doesn't support transaction interleaving
  (see JTA specification, section 3.4.4) and suspend/resume.
@@ -157,7 +158,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 <ul class="blockList">
 <li class="blockList">
 <!-- =========== FIELD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="field.summary">
 <!--   -->
@@ -167,14 +168,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 <li class="blockList"><a id="fields.inherited.from.class.javax.transaction.xa.XAResource">
 <!--   -->
 </a>
-<h3>Fields inherited from interface&nbsp;javax.transaction.xa.<a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAResource</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#TMENDRSCAN" title="class or interface in javax.transaction.xa" class="externalLink">TMENDRSCAN</a>, <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#TMFAIL" title="class or interface in javax.transaction.xa" class="externalLink">TMFAIL</a>, <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#TMJOIN" title="class or interface in javax.transaction.xa" class="externalLink">TMJOIN</a>, <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#TMNOFLAGS" title="class or interface in javax.transaction.xa" class="externalLink">TMNOFLAGS</a>, <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#TMONEPHASE" title="class or interface in javax.transaction.xa" class="externalLink">TMONEPHASE</a>, <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#TMRESUME" title="class or interface in javax.transaction.xa" class="externalLink">TMRESUME</a>, <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#TMSTARTRSCAN" title="class or interface in javax.transaction.xa" class="externalLink">TMSTARTRSCAN</a>, <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#TMSUCCESS" title="class or interface in javax.transaction.xa" class="externalLink">TMSUCCESS</a>, <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#TMSUSPEND" title="class or interface in javax.transaction.xa" class="externalLink">TMSUSPEND</a>, <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#XA_OK" title="class or interface in javax.transaction.xa" class="externalLink">XA_OK</a>, <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#XA_RDONLY" title="class or interface in javax.transaction.xa" class="externalLink">XA_RDONLY</a></code></li>
+<h3>Fields inherited from interface&nbsp;javax.transaction.xa.XAResource</h3>
+<code>TMENDRSCAN, TMFAIL, TMJOIN, TMNOFLAGS, TMONEPHASE, TMRESUME, TMSTARTRSCAN, TMSUCCESS, TMSUSPEND, XA_OK, XA_RDONLY</code></li>
 </ul>
 </li>
 </ul>
 </section>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="constructor.summary">
 <!--   -->
@@ -195,7 +196,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 </ul>
 </section>
 <!-- ========== METHOD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.summary">
 <!--   -->
@@ -210,13 +211,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#commit(javax.transaction.xa.Xid,boolean)">commit</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/Xid.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">Xid</a>&nbsp;xid,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#commit(javax.transaction.xa.Xid,boolean)">commit</a></span>&#8203;(javax.transaction.xa.Xid&nbsp;xid,
       boolean&nbsp;onePhase)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#end(javax.transaction.xa.Xid,int)">end</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/Xid.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">Xid</a>&nbsp;xid,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#end(javax.transaction.xa.Xid,int)">end</a></span>&#8203;(javax.transaction.xa.Xid&nbsp;xid,
    int&nbsp;flags)</code></th>
 <td class="colLast">
 <div class="block">Preconditions:
@@ -225,13 +226,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#forget(javax.transaction.xa.Xid)">forget</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/Xid.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">Xid</a>&nbsp;xid)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#forget(javax.transaction.xa.Xid)">forget</a></span>&#8203;(javax.transaction.xa.Xid&nbsp;xid)</code></th>
 <td class="colLast">
 <div class="block">Does nothing, since we don't do heuristics,</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink">Connection</a></code></td>
+<td class="colFirst"><code>java.sql.Connection</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getConnection()">getConnection</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -243,25 +244,25 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAResource</a></code></td>
+<td class="colFirst"><code>javax.transaction.xa.XAResource</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getXAResource()">getXAResource</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSameRM(javax.transaction.xa.XAResource)">isSameRM</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAResource</a>&nbsp;xares)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSameRM(javax.transaction.xa.XAResource)">isSameRM</a></span>&#8203;(javax.transaction.xa.XAResource&nbsp;xares)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#prepare(javax.transaction.xa.Xid)">prepare</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/Xid.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">Xid</a>&nbsp;xid)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#prepare(javax.transaction.xa.Xid)">prepare</a></span>&#8203;(javax.transaction.xa.Xid&nbsp;xid)</code></th>
 <td class="colLast">
 <div class="block">Preconditions:
  1.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/Xid.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">Xid</a>[]</code></td>
+<td class="colFirst"><code>javax.transaction.xa.Xid[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#recover(int)">recover</a></span>&#8203;(int&nbsp;flag)</code></th>
 <td class="colLast">
 <div class="block">Preconditions:
@@ -270,7 +271,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rollback(javax.transaction.xa.Xid)">rollback</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/Xid.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">Xid</a>&nbsp;xid)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rollback(javax.transaction.xa.Xid)">rollback</a></span>&#8203;(javax.transaction.xa.Xid&nbsp;xid)</code></th>
 <td class="colLast">
 <div class="block">Preconditions:
  1.</div>
@@ -285,7 +286,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#start(javax.transaction.xa.Xid,int)">start</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/Xid.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">Xid</a>&nbsp;xid,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#start(javax.transaction.xa.Xid,int)">start</a></span>&#8203;(javax.transaction.xa.Xid&nbsp;xid,
      int&nbsp;flags)</code></th>
 <td class="colLast">
 <div class="block">Preconditions:
@@ -304,15 +305,15 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.javax.sql.PooledConnection">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;javax.sql.<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true#addConnectionEventListener(javax.sql.ConnectionEventListener)" title="class or interface in javax.sql" class="externalLink">addConnectionEventListener</a>, <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true#addStatementEventListener(javax.sql.StatementEventListener)" title="class or interface in javax.sql" class="externalLink">addStatementEventListener</a>, <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true#close()" title="class or interface in javax.sql" class="externalLink">close</a>, <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true#removeConnectionEventListener(javax.sql.ConnectionEventListener)" title="class or interface in javax.sql" class="externalLink">removeConnectionEventListener</a>, <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true#removeStatementEventListener(javax.sql.StatementEventListener)" title="class or interface in javax.sql" class="externalLink">removeStatementEventListener</a></code></li>
+<h3>Methods inherited from interface&nbsp;javax.sql.PooledConnection</h3>
+<code>addConnectionEventListener, addStatementEventListener, close, removeConnectionEventListener, removeStatementEventListener</code></li>
 </ul>
 </li>
 </ul>
@@ -324,7 +325,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 <ul class="blockList">
 <li class="blockList">
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="constructor.detail">
 <!--   -->
@@ -337,10 +338,10 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 <li class="blockList">
 <h4>PGXAConnection</h4>
 <pre>public&nbsp;PGXAConnection&#8203;(<a href="../PGDirectConnection.html" title="class in com.impossibl.postgres.jdbc">PGDirectConnection</a>&nbsp;conn)
-               throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+               throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -348,7 +349,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 </ul>
 </section>
 <!-- ============ METHOD DETAIL ========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.detail">
 <!--   -->
@@ -360,15 +361,15 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 <ul class="blockList">
 <li class="blockList">
 <h4>getConnection</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink">Connection</a>&nbsp;getConnection()
-                         throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">public&nbsp;java.sql.Connection&nbsp;getConnection()
+                                  throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true#getConnection()" title="class or interface in javax.sql" class="externalLink">getConnection</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a></code></dd>
+<dd><code>getConnection</code>&nbsp;in interface&nbsp;<code>javax.sql.PooledConnection</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../PGPooledConnection.html#getConnection()">getConnection</a></code>&nbsp;in class&nbsp;<code><a href="../PGPooledConnection.html" title="class in com.impossibl.postgres.jdbc">PGPooledConnection</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -378,10 +379,10 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 <ul class="blockList">
 <li class="blockList">
 <h4>getXAResource</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAResource</a>&nbsp;getXAResource()</pre>
+<pre class="methodSignature">public&nbsp;javax.transaction.xa.XAResource&nbsp;getXAResource()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnection.html?is-external=true#getXAResource()" title="class or interface in javax.sql" class="externalLink">getXAResource</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">XAConnection</a></code></dd>
+<dd><code>getXAResource</code>&nbsp;in interface&nbsp;<code>javax.sql.XAConnection</code></dd>
 </dl>
 </li>
 </ul>
@@ -391,9 +392,9 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 <ul class="blockList">
 <li class="blockList">
 <h4>start</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;start&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/Xid.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">Xid</a>&nbsp;xid,
+<pre class="methodSignature">public&nbsp;void&nbsp;start&#8203;(javax.transaction.xa.Xid&nbsp;xid,
                   int&nbsp;flags)
-           throws <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAException.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAException</a></pre>
+           throws javax.transaction.xa.XAException</pre>
 <div class="block">Preconditions:
  1. flags must be one of TMNOFLAGS, TMRESUME or TMJOIN
  2. xid != null
@@ -411,9 +412,9 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
  1. Connection is associated with the transaction</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#start(javax.transaction.xa.Xid,int)" title="class or interface in javax.transaction.xa" class="externalLink">start</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAResource</a></code></dd>
+<dd><code>start</code>&nbsp;in interface&nbsp;<code>javax.transaction.xa.XAResource</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAException.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAException</a></code></dd>
+<dd><code>javax.transaction.xa.XAException</code></dd>
 </dl>
 </li>
 </ul>
@@ -423,9 +424,9 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 <ul class="blockList">
 <li class="blockList">
 <h4>end</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;end&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/Xid.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">Xid</a>&nbsp;xid,
+<pre class="methodSignature">public&nbsp;void&nbsp;end&#8203;(javax.transaction.xa.Xid&nbsp;xid,
                 int&nbsp;flags)
-         throws <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAException.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAException</a></pre>
+         throws javax.transaction.xa.XAException</pre>
 <div class="block">Preconditions:
  1. Flags is one of TMSUCCESS, TMFAIL, TMSUSPEND
  2. xid != null
@@ -438,9 +439,9 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
  1. connection is disassociated from the transaction.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#end(javax.transaction.xa.Xid,int)" title="class or interface in javax.transaction.xa" class="externalLink">end</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAResource</a></code></dd>
+<dd><code>end</code>&nbsp;in interface&nbsp;<code>javax.transaction.xa.XAResource</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAException.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAException</a></code></dd>
+<dd><code>javax.transaction.xa.XAException</code></dd>
 </dl>
 </li>
 </ul>
@@ -450,8 +451,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 <ul class="blockList">
 <li class="blockList">
 <h4>prepare</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;prepare&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/Xid.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">Xid</a>&nbsp;xid)
-            throws <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAException.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAException</a></pre>
+<pre class="methodSignature">public&nbsp;int&nbsp;prepare&#8203;(javax.transaction.xa.Xid&nbsp;xid)
+            throws javax.transaction.xa.XAException</pre>
 <div class="block">Preconditions:
  1. xid != null
  2. xid is in ended state
@@ -463,9 +464,9 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
  1. Transaction is prepared</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#prepare(javax.transaction.xa.Xid)" title="class or interface in javax.transaction.xa" class="externalLink">prepare</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAResource</a></code></dd>
+<dd><code>prepare</code>&nbsp;in interface&nbsp;<code>javax.transaction.xa.XAResource</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAException.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAException</a></code></dd>
+<dd><code>javax.transaction.xa.XAException</code></dd>
 </dl>
 </li>
 </ul>
@@ -475,8 +476,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 <ul class="blockList">
 <li class="blockList">
 <h4>recover</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/Xid.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">Xid</a>[]&nbsp;recover&#8203;(int&nbsp;flag)
-              throws <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAException.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAException</a></pre>
+<pre class="methodSignature">public&nbsp;javax.transaction.xa.Xid[]&nbsp;recover&#8203;(int&nbsp;flag)
+                                   throws javax.transaction.xa.XAException</pre>
 <div class="block">Preconditions:
  1. flag must be one of TMSTARTRSCAN, TMENDRSCAN, TMNOFLAGS or TMSTARTTRSCAN | TMENDRSCAN
  2. if flag isn't TMSTARTRSCAN or TMSTARTRSCAN | TMENDRSCAN, a recovery scan must be in progress
@@ -485,9 +486,9 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
  1. list of prepared xids is returned</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#recover(int)" title="class or interface in javax.transaction.xa" class="externalLink">recover</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAResource</a></code></dd>
+<dd><code>recover</code>&nbsp;in interface&nbsp;<code>javax.transaction.xa.XAResource</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAException.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAException</a></code></dd>
+<dd><code>javax.transaction.xa.XAException</code></dd>
 </dl>
 </li>
 </ul>
@@ -497,8 +498,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 <ul class="blockList">
 <li class="blockList">
 <h4>rollback</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;rollback&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/Xid.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">Xid</a>&nbsp;xid)
-              throws <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAException.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAException</a></pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;rollback&#8203;(javax.transaction.xa.Xid&nbsp;xid)
+              throws javax.transaction.xa.XAException</pre>
 <div class="block">Preconditions:
  1. xid is known to the RM or it's in prepared state
 
@@ -509,9 +510,9 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
  1. Transaction is rolled back and disassociated from connection</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#rollback(javax.transaction.xa.Xid)" title="class or interface in javax.transaction.xa" class="externalLink">rollback</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAResource</a></code></dd>
+<dd><code>rollback</code>&nbsp;in interface&nbsp;<code>javax.transaction.xa.XAResource</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAException.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAException</a></code></dd>
+<dd><code>javax.transaction.xa.XAException</code></dd>
 </dl>
 </li>
 </ul>
@@ -521,14 +522,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 <ul class="blockList">
 <li class="blockList">
 <h4>commit</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;commit&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/Xid.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">Xid</a>&nbsp;xid,
+<pre class="methodSignature">public&nbsp;void&nbsp;commit&#8203;(javax.transaction.xa.Xid&nbsp;xid,
                    boolean&nbsp;onePhase)
-            throws <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAException.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAException</a></pre>
+            throws javax.transaction.xa.XAException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#commit(javax.transaction.xa.Xid,boolean)" title="class or interface in javax.transaction.xa" class="externalLink">commit</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAResource</a></code></dd>
+<dd><code>commit</code>&nbsp;in interface&nbsp;<code>javax.transaction.xa.XAResource</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAException.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAException</a></code></dd>
+<dd><code>javax.transaction.xa.XAException</code></dd>
 </dl>
 </li>
 </ul>
@@ -538,13 +539,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 <ul class="blockList">
 <li class="blockList">
 <h4>isSameRM</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isSameRM&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAResource</a>&nbsp;xares)
-                 throws <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAException.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAException</a></pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isSameRM&#8203;(javax.transaction.xa.XAResource&nbsp;xares)
+                 throws javax.transaction.xa.XAException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#isSameRM(javax.transaction.xa.XAResource)" title="class or interface in javax.transaction.xa" class="externalLink">isSameRM</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAResource</a></code></dd>
+<dd><code>isSameRM</code>&nbsp;in interface&nbsp;<code>javax.transaction.xa.XAResource</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAException.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAException</a></code></dd>
+<dd><code>javax.transaction.xa.XAException</code></dd>
 </dl>
 </li>
 </ul>
@@ -554,14 +555,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 <ul class="blockList">
 <li class="blockList">
 <h4>forget</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;forget&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/Xid.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">Xid</a>&nbsp;xid)
-            throws <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAException.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAException</a></pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;forget&#8203;(javax.transaction.xa.Xid&nbsp;xid)
+            throws javax.transaction.xa.XAException</pre>
 <div class="block">Does nothing, since we don't do heuristics,</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#forget(javax.transaction.xa.Xid)" title="class or interface in javax.transaction.xa" class="externalLink">forget</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAResource</a></code></dd>
+<dd><code>forget</code>&nbsp;in interface&nbsp;<code>javax.transaction.xa.XAResource</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAException.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAException</a></code></dd>
+<dd><code>javax.transaction.xa.XAException</code></dd>
 </dl>
 </li>
 </ul>
@@ -575,7 +576,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 <div class="block">We don't do transaction timeouts. Just returns 0.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#getTransactionTimeout()" title="class or interface in javax.transaction.xa" class="externalLink">getTransactionTimeout</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAResource</a></code></dd>
+<dd><code>getTransactionTimeout</code>&nbsp;in interface&nbsp;<code>javax.transaction.xa.XAResource</code></dd>
 </dl>
 </li>
 </ul>
@@ -589,7 +590,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnec
 <div class="block">We don't do transaction timeouts. Returns false.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true#setTransactionTimeout(int)" title="class or interface in javax.transaction.xa" class="externalLink">setTransactionTimeout</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAResource</a></code></dd>
+<dd><code>setTransactionTimeout</code>&nbsp;in interface&nbsp;<code>javax.transaction.xa.XAResource</code></dd>
 </dl>
 </li>
 </ul>

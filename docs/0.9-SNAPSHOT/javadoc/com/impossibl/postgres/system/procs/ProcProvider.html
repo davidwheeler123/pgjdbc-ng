@@ -6,15 +6,16 @@
 <title>ProcProvider (PGJDBC-NG 0.9-SNAPSHOT)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../../jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="../../../../../script.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -135,7 +136,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <!-- ========== METHOD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.summary">
 <!--   -->
@@ -150,21 +151,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>&lt;Buffer&gt;&nbsp;<a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;Buffer&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findDecoder(java.lang.String,com.impossibl.postgres.system.ServerInfo,java.lang.Class)">findDecoder</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findDecoder(java.lang.String,com.impossibl.postgres.system.ServerInfo,java.lang.Class)">findDecoder</a></span>&#8203;(java.lang.String&nbsp;name,
            <a href="../ServerInfo.html" title="class in com.impossibl.postgres.system">ServerInfo</a>&nbsp;serverInfo,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends Buffer&gt;&nbsp;bufferType)</code></th>
+           java.lang.Class&lt;? extends Buffer&gt;&nbsp;bufferType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>&lt;Buffer&gt;&nbsp;<a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;Buffer&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findEncoder(java.lang.String,com.impossibl.postgres.system.ServerInfo,java.lang.Class)">findEncoder</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findEncoder(java.lang.String,com.impossibl.postgres.system.ServerInfo,java.lang.Class)">findEncoder</a></span>&#8203;(java.lang.String&nbsp;name,
            <a href="../ServerInfo.html" title="class in com.impossibl.postgres.system">ServerInfo</a>&nbsp;serverInfo,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends Buffer&gt;&nbsp;bufferType)</code></th>
+           java.lang.Class&lt;? extends Buffer&gt;&nbsp;bufferType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../types/Modifiers.Parser.html" title="interface in com.impossibl.postgres.types">Modifiers.Parser</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findModifierParser(java.lang.String,com.impossibl.postgres.system.ServerInfo)">findModifierParser</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findModifierParser(java.lang.String,com.impossibl.postgres.system.ServerInfo)">findModifierParser</a></span>&#8203;(java.lang.String&nbsp;name,
                   <a href="../ServerInfo.html" title="class in com.impossibl.postgres.system">ServerInfo</a>&nbsp;serverInfo)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -179,7 +180,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <!-- ============ METHOD DETAIL ========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.detail">
 <!--   -->
@@ -191,9 +192,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>findEncoder</h4>
-<pre class="methodSignature">&lt;Buffer&gt;&nbsp;<a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;Buffer&gt;&nbsp;findEncoder&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+<pre class="methodSignature">&lt;Buffer&gt;&nbsp;<a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;Buffer&gt;&nbsp;findEncoder&#8203;(java.lang.String&nbsp;name,
                                                 <a href="../ServerInfo.html" title="class in com.impossibl.postgres.system">ServerInfo</a>&nbsp;serverInfo,
-                                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends Buffer&gt;&nbsp;bufferType)</pre>
+                                                java.lang.Class&lt;? extends Buffer&gt;&nbsp;bufferType)</pre>
 </li>
 </ul>
 <a id="findDecoder(java.lang.String,com.impossibl.postgres.system.ServerInfo,java.lang.Class)">
@@ -202,9 +203,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>findDecoder</h4>
-<pre class="methodSignature">&lt;Buffer&gt;&nbsp;<a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;Buffer&gt;&nbsp;findDecoder&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+<pre class="methodSignature">&lt;Buffer&gt;&nbsp;<a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;Buffer&gt;&nbsp;findDecoder&#8203;(java.lang.String&nbsp;name,
                                                 <a href="../ServerInfo.html" title="class in com.impossibl.postgres.system">ServerInfo</a>&nbsp;serverInfo,
-                                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends Buffer&gt;&nbsp;bufferType)</pre>
+                                                java.lang.Class&lt;? extends Buffer&gt;&nbsp;bufferType)</pre>
 </li>
 </ul>
 <a id="findModifierParser(java.lang.String,com.impossibl.postgres.system.ServerInfo)">
@@ -213,7 +214,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>findModifierParser</h4>
-<pre class="methodSignature"><a href="../../types/Modifiers.Parser.html" title="interface in com.impossibl.postgres.types">Modifiers.Parser</a>&nbsp;findModifierParser&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+<pre class="methodSignature"><a href="../../types/Modifiers.Parser.html" title="interface in com.impossibl.postgres.types">Modifiers.Parser</a>&nbsp;findModifierParser&#8203;(java.lang.String&nbsp;name,
                                     <a href="../ServerInfo.html" title="class in com.impossibl.postgres.system">ServerInfo</a>&nbsp;serverInfo)</pre>
 </li>
 </ul>

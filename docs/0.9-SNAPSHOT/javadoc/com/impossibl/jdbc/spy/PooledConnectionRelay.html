@@ -6,15 +6,16 @@
 <title>PooledConnectionRelay (PGJDBC-NG 0.9-SNAPSHOT)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="../../../../jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -120,7 +121,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
+<li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
 <li>com.impossibl.jdbc.spy.PooledConnectionRelay</li>
@@ -132,12 +133,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Relay</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a>&gt;</code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a></code></dd>
+<dd><code><a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Relay</a>&lt;javax.sql.PooledConnection&gt;</code>, <code>javax.sql.PooledConnection</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">PooledConnectionRelay</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Relay</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a>&gt;, <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a></pre>
+extends java.lang.Object
+implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Relay</a>&lt;javax.sql.PooledConnection&gt;, javax.sql.PooledConnection</pre>
 </li>
 </ul>
 </div>
@@ -145,7 +146,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <ul class="blockList">
 <li class="blockList">
 <!-- =========== FIELD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="field.summary">
 <!--   -->
@@ -164,7 +165,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a></code></td>
+<td class="colFirst"><code>javax.sql.PooledConnection</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#target">target</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -173,7 +174,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 </ul>
 </section>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="constructor.summary">
 <!--   -->
@@ -186,7 +187,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(javax.sql.PooledConnection,com.impossibl.jdbc.spy.PooledConnectionListener)">PooledConnectionRelay</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a>&nbsp;target,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(javax.sql.PooledConnection,com.impossibl.jdbc.spy.PooledConnectionListener)">PooledConnectionRelay</a></span>&#8203;(javax.sql.PooledConnection&nbsp;target,
                      com.impossibl.jdbc.spy.PooledConnectionListener&nbsp;listener)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -195,7 +196,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 </ul>
 </section>
 <!-- ========== METHOD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.summary">
 <!--   -->
@@ -210,12 +211,12 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addConnectionEventListener(javax.sql.ConnectionEventListener)">addConnectionEventListener</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/ConnectionEventListener.html?is-external=true" title="class or interface in javax.sql" class="externalLink">ConnectionEventListener</a>&nbsp;listener)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addConnectionEventListener(javax.sql.ConnectionEventListener)">addConnectionEventListener</a></span>&#8203;(javax.sql.ConnectionEventListener&nbsp;listener)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addStatementEventListener(javax.sql.StatementEventListener)">addStatementEventListener</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/StatementEventListener.html?is-external=true" title="class or interface in javax.sql" class="externalLink">StatementEventListener</a>&nbsp;listener)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addStatementEventListener(javax.sql.StatementEventListener)">addStatementEventListener</a></span>&#8203;(javax.sql.StatementEventListener&nbsp;listener)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -224,23 +225,23 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink">Connection</a></code></td>
+<td class="colFirst"><code>java.sql.Connection</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getConnection()">getConnection</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a></code></td>
+<td class="colFirst"><code>javax.sql.PooledConnection</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTarget()">getTarget</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeConnectionEventListener(javax.sql.ConnectionEventListener)">removeConnectionEventListener</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/ConnectionEventListener.html?is-external=true" title="class or interface in javax.sql" class="externalLink">ConnectionEventListener</a>&nbsp;listener)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeConnectionEventListener(javax.sql.ConnectionEventListener)">removeConnectionEventListener</a></span>&#8203;(javax.sql.ConnectionEventListener&nbsp;listener)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeStatementEventListener(javax.sql.StatementEventListener)">removeStatementEventListener</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/StatementEventListener.html?is-external=true" title="class or interface in javax.sql" class="externalLink">StatementEventListener</a>&nbsp;listener)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeStatementEventListener(javax.sql.StatementEventListener)">removeStatementEventListener</a></span>&#8203;(javax.sql.StatementEventListener&nbsp;listener)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -248,8 +249,8 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -261,7 +262,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <ul class="blockList">
 <li class="blockList">
 <!-- ============ FIELD DETAIL =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="field.detail">
 <!--   -->
@@ -273,7 +274,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <ul class="blockList">
 <li class="blockList">
 <h4>target</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a> target</pre>
+<pre>public&nbsp;javax.sql.PooledConnection target</pre>
 </li>
 </ul>
 <a id="listener">
@@ -289,7 +290,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 </ul>
 </section>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="constructor.detail">
 <!--   -->
@@ -301,7 +302,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PooledConnectionRelay</h4>
-<pre>public&nbsp;PooledConnectionRelay&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a>&nbsp;target,
+<pre>public&nbsp;PooledConnectionRelay&#8203;(javax.sql.PooledConnection&nbsp;target,
                              com.impossibl.jdbc.spy.PooledConnectionListener&nbsp;listener)</pre>
 </li>
 </ul>
@@ -309,7 +310,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 </ul>
 </section>
 <!-- ============ METHOD DETAIL ========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.detail">
 <!--   -->
@@ -321,10 +322,10 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <ul class="blockList">
 <li class="blockList">
 <h4>getTarget</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a>&nbsp;getTarget()</pre>
+<pre class="methodSignature">public&nbsp;javax.sql.PooledConnection&nbsp;getTarget()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Relay.html#getTarget()">getTarget</a></code>&nbsp;in interface&nbsp;<code><a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Relay</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a>&gt;</code></dd>
+<dd><code><a href="Relay.html#getTarget()">getTarget</a></code>&nbsp;in interface&nbsp;<code><a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Relay</a>&lt;javax.sql.PooledConnection&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -334,26 +335,13 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <ul class="blockList">
 <li class="blockList">
 <h4>getConnection</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink">Connection</a>&nbsp;getConnection()
-                         throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">public&nbsp;java.sql.Connection&nbsp;getConnection()
+                                  throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true#getConnection()" title="class or interface in javax.sql" class="externalLink">getConnection</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a></code></dd>
+<dd><code>getConnection</code>&nbsp;in interface&nbsp;<code>javax.sql.PooledConnection</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
-</dl>
-</li>
-</ul>
-<a id="removeConnectionEventListener(javax.sql.ConnectionEventListener)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>removeConnectionEventListener</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;removeConnectionEventListener&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/ConnectionEventListener.html?is-external=true" title="class or interface in javax.sql" class="externalLink">ConnectionEventListener</a>&nbsp;listener)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true#removeConnectionEventListener(javax.sql.ConnectionEventListener)" title="class or interface in javax.sql" class="externalLink">removeConnectionEventListener</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -363,23 +351,10 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <ul class="blockList">
 <li class="blockList">
 <h4>addStatementEventListener</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;addStatementEventListener&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/StatementEventListener.html?is-external=true" title="class or interface in javax.sql" class="externalLink">StatementEventListener</a>&nbsp;listener)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;addStatementEventListener&#8203;(javax.sql.StatementEventListener&nbsp;listener)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true#addStatementEventListener(javax.sql.StatementEventListener)" title="class or interface in javax.sql" class="externalLink">addStatementEventListener</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a></code></dd>
-</dl>
-</li>
-</ul>
-<a id="removeStatementEventListener(javax.sql.StatementEventListener)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>removeStatementEventListener</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;removeStatementEventListener&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/StatementEventListener.html?is-external=true" title="class or interface in javax.sql" class="externalLink">StatementEventListener</a>&nbsp;listener)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true#removeStatementEventListener(javax.sql.StatementEventListener)" title="class or interface in javax.sql" class="externalLink">removeStatementEventListener</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a></code></dd>
+<dd><code>addStatementEventListener</code>&nbsp;in interface&nbsp;<code>javax.sql.PooledConnection</code></dd>
 </dl>
 </li>
 </ul>
@@ -390,25 +365,51 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <li class="blockList">
 <h4>close</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;close()
-           throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+           throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true#close()" title="class or interface in javax.sql" class="externalLink">close</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a></code></dd>
+<dd><code>close</code>&nbsp;in interface&nbsp;<code>javax.sql.PooledConnection</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
 <a id="addConnectionEventListener(javax.sql.ConnectionEventListener)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>addConnectionEventListener</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;addConnectionEventListener&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/ConnectionEventListener.html?is-external=true" title="class or interface in javax.sql" class="externalLink">ConnectionEventListener</a>&nbsp;listener)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;addConnectionEventListener&#8203;(javax.sql.ConnectionEventListener&nbsp;listener)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true#addConnectionEventListener(javax.sql.ConnectionEventListener)" title="class or interface in javax.sql" class="externalLink">addConnectionEventListener</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/PooledConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink">PooledConnection</a></code></dd>
+<dd><code>addConnectionEventListener</code>&nbsp;in interface&nbsp;<code>javax.sql.PooledConnection</code></dd>
+</dl>
+</li>
+</ul>
+<a id="removeStatementEventListener(javax.sql.StatementEventListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeStatementEventListener</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;removeStatementEventListener&#8203;(javax.sql.StatementEventListener&nbsp;listener)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>removeStatementEventListener</code>&nbsp;in interface&nbsp;<code>javax.sql.PooledConnection</code></dd>
+</dl>
+</li>
+</ul>
+<a id="removeConnectionEventListener(javax.sql.ConnectionEventListener)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>removeConnectionEventListener</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;removeConnectionEventListener&#8203;(javax.sql.ConnectionEventListener&nbsp;listener)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>removeConnectionEventListener</code>&nbsp;in interface&nbsp;<code>javax.sql.PooledConnection</code></dd>
 </dl>
 </li>
 </ul>

@@ -6,15 +6,16 @@
 <title>PGStatementDelegator (PGJDBC-NG 0.9-SNAPSHOT)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="../../../../jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -120,7 +121,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
+<li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
 <li>com.impossibl.postgres.jdbc.PGStatementDelegator</li>
@@ -132,7 +133,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang" class="externalLink">AutoCloseable</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Wrapper.html?is-external=true" title="class or interface in java.sql" class="externalLink">Wrapper</a></code></dd>
+<dd><code>java.lang.AutoCloseable</code>, <code>java.sql.Statement</code>, <code>java.sql.Wrapper</code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -140,8 +141,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">PGStatementDelegator</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></pre>
+extends java.lang.Object
+implements java.sql.Statement</pre>
 <div class="block">Statement delegator</div>
 </li>
 </ul>
@@ -150,7 +151,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <!-- =========== FIELD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="field.summary">
 <!--   -->
@@ -160,14 +161,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList"><a id="fields.inherited.from.class.java.sql.Statement">
 <!--   -->
 </a>
-<h3>Fields inherited from interface&nbsp;java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#CLOSE_ALL_RESULTS" title="class or interface in java.sql" class="externalLink">CLOSE_ALL_RESULTS</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#CLOSE_CURRENT_RESULT" title="class or interface in java.sql" class="externalLink">CLOSE_CURRENT_RESULT</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#EXECUTE_FAILED" title="class or interface in java.sql" class="externalLink">EXECUTE_FAILED</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#KEEP_CURRENT_RESULT" title="class or interface in java.sql" class="externalLink">KEEP_CURRENT_RESULT</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#NO_GENERATED_KEYS" title="class or interface in java.sql" class="externalLink">NO_GENERATED_KEYS</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#RETURN_GENERATED_KEYS" title="class or interface in java.sql" class="externalLink">RETURN_GENERATED_KEYS</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#SUCCESS_NO_INFO" title="class or interface in java.sql" class="externalLink">SUCCESS_NO_INFO</a></code></li>
+<h3>Fields inherited from interface&nbsp;java.sql.Statement</h3>
+<code>CLOSE_ALL_RESULTS, CLOSE_CURRENT_RESULT, EXECUTE_FAILED, KEEP_CURRENT_RESULT, NO_GENERATED_KEYS, RETURN_GENERATED_KEYS, SUCCESS_NO_INFO</code></li>
 </ul>
 </li>
 </ul>
 </section>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="constructor.summary">
 <!--   -->
@@ -181,7 +182,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.impossibl.postgres.jdbc.PGPooledConnectionDelegator,java.sql.Statement)">PGStatementDelegator</a></span>&#8203;(<a href="PGPooledConnectionDelegator.html" title="class in com.impossibl.postgres.jdbc">PGPooledConnectionDelegator</a>&nbsp;owner,
-                    <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a>&nbsp;delegator)</code></th>
+                    java.sql.Statement&nbsp;delegator)</code></th>
 <td class="colLast">
 <div class="block">Constructor</div>
 </td>
@@ -191,7 +192,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 </ul>
 </section>
 <!-- ========== METHOD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.summary">
 <!--   -->
@@ -206,7 +207,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addBatch(java.lang.String)">addBatch</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addBatch(java.lang.String)">addBatch</a></span>&#8203;(java.lang.String&nbsp;sql)</code></th>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -230,26 +231,26 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;o)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(java.lang.Object&nbsp;o)</code></th>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#execute(java.lang.String)">execute</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#execute(java.lang.String)">execute</a></span>&#8203;(java.lang.String&nbsp;sql)</code></th>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#execute(java.lang.String,int)">execute</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#execute(java.lang.String,int)">execute</a></span>&#8203;(java.lang.String&nbsp;sql,
        int&nbsp;autoGeneratedKeys)</code></th>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#execute(java.lang.String,int%5B%5D)">execute</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#execute(java.lang.String,int%5B%5D)">execute</a></span>&#8203;(java.lang.String&nbsp;sql,
        int[]&nbsp;columnIndexes)</code></th>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#execute(java.lang.String,java.lang.String%5B%5D)">execute</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]&nbsp;columnNames)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#execute(java.lang.String,java.lang.String%5B%5D)">execute</a></span>&#8203;(java.lang.String&nbsp;sql,
+       java.lang.String[]&nbsp;columnNames)</code></th>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>int[]</code></td>
@@ -261,48 +262,48 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeLargeUpdate(java.lang.String)">executeLargeUpdate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeLargeUpdate(java.lang.String)">executeLargeUpdate</a></span>&#8203;(java.lang.String&nbsp;sql)</code></th>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeLargeUpdate(java.lang.String,int)">executeLargeUpdate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeLargeUpdate(java.lang.String,int)">executeLargeUpdate</a></span>&#8203;(java.lang.String&nbsp;sql,
                   int&nbsp;autoGeneratedKeys)</code></th>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeLargeUpdate(java.lang.String,int%5B%5D)">executeLargeUpdate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeLargeUpdate(java.lang.String,int%5B%5D)">executeLargeUpdate</a></span>&#8203;(java.lang.String&nbsp;sql,
                   int[]&nbsp;columnIndexes)</code></th>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeLargeUpdate(java.lang.String,java.lang.String%5B%5D)">executeLargeUpdate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]&nbsp;columnNames)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeLargeUpdate(java.lang.String,java.lang.String%5B%5D)">executeLargeUpdate</a></span>&#8203;(java.lang.String&nbsp;sql,
+                  java.lang.String[]&nbsp;columnNames)</code></th>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html?is-external=true" title="class or interface in java.sql" class="externalLink">ResultSet</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeQuery(java.lang.String)">executeQuery</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql)</code></th>
+<td class="colFirst"><code>java.sql.ResultSet</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeQuery(java.lang.String)">executeQuery</a></span>&#8203;(java.lang.String&nbsp;sql)</code></th>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeUpdate(java.lang.String)">executeUpdate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeUpdate(java.lang.String)">executeUpdate</a></span>&#8203;(java.lang.String&nbsp;sql)</code></th>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeUpdate(java.lang.String,int)">executeUpdate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeUpdate(java.lang.String,int)">executeUpdate</a></span>&#8203;(java.lang.String&nbsp;sql,
              int&nbsp;autoGeneratedKeys)</code></th>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeUpdate(java.lang.String,int%5B%5D)">executeUpdate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeUpdate(java.lang.String,int%5B%5D)">executeUpdate</a></span>&#8203;(java.lang.String&nbsp;sql,
              int[]&nbsp;columnIndexes)</code></th>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeUpdate(java.lang.String,java.lang.String%5B%5D)">executeUpdate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql,
-             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]&nbsp;columnNames)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeUpdate(java.lang.String,java.lang.String%5B%5D)">executeUpdate</a></span>&#8203;(java.lang.String&nbsp;sql,
+             java.lang.String[]&nbsp;columnNames)</code></th>
 </tr>
 <tr id="i22" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink">Connection</a></code></td>
+<td class="colFirst"><code>java.sql.Connection</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getConnection()">getConnection</a></span>()</code></th>
 </tr>
 <tr id="i23" class="rowColor">
@@ -314,7 +315,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFetchSize()">getFetchSize</a></span>()</code></th>
 </tr>
 <tr id="i25" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html?is-external=true" title="class or interface in java.sql" class="externalLink">ResultSet</a></code></td>
+<td class="colFirst"><code>java.sql.ResultSet</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGeneratedKeys()">getGeneratedKeys</a></span>()</code></th>
 </tr>
 <tr id="i26" class="altColor">
@@ -346,7 +347,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getQueryTimeout()">getQueryTimeout</a></span>()</code></th>
 </tr>
 <tr id="i33" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html?is-external=true" title="class or interface in java.sql" class="externalLink">ResultSet</a></code></td>
+<td class="colFirst"><code>java.sql.ResultSet</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getResultSet()">getResultSet</a></span>()</code></th>
 </tr>
 <tr id="i34" class="altColor">
@@ -366,7 +367,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUpdateCount()">getUpdateCount</a></span>()</code></th>
 </tr>
 <tr id="i38" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLWarning.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLWarning</a></code></td>
+<td class="colFirst"><code>java.sql.SQLWarning</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWarnings()">getWarnings</a></span>()</code></th>
 </tr>
 <tr id="i39" class="rowColor">
@@ -387,11 +388,11 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 </tr>
 <tr id="i43" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isWrapperFor(java.lang.Class)">isWrapperFor</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;iface)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isWrapperFor(java.lang.Class)">isWrapperFor</a></span>&#8203;(java.lang.Class&lt;?&gt;&nbsp;iface)</code></th>
 </tr>
 <tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCursorName(java.lang.String)">setCursorName</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCursorName(java.lang.String)">setCursorName</a></span>&#8203;(java.lang.String&nbsp;name)</code></th>
 </tr>
 <tr id="i45" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -427,22 +428,22 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 </tr>
 <tr id="i53" class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unwrap(java.lang.Class)">unwrap</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;iface)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unwrap(java.lang.Class)">unwrap</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;iface)</code></th>
 </tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.sql.Statement">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#enquoteIdentifier(java.lang.String,boolean)" title="class or interface in java.sql" class="externalLink">enquoteIdentifier</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#enquoteLiteral(java.lang.String)" title="class or interface in java.sql" class="externalLink">enquoteLiteral</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#enquoteNCharLiteral(java.lang.String)" title="class or interface in java.sql" class="externalLink">enquoteNCharLiteral</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#isSimpleIdentifier(java.lang.String)" title="class or interface in java.sql" class="externalLink">isSimpleIdentifier</a></code></li>
+<h3>Methods inherited from interface&nbsp;java.sql.Statement</h3>
+<code>enquoteIdentifier, enquoteLiteral, enquoteNCharLiteral, isSimpleIdentifier</code></li>
 </ul>
 </li>
 </ul>
@@ -454,7 +455,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="constructor.detail">
 <!--   -->
@@ -467,7 +468,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>PGStatementDelegator</h4>
 <pre>public&nbsp;PGStatementDelegator&#8203;(<a href="PGPooledConnectionDelegator.html" title="class in com.impossibl.postgres.jdbc">PGPooledConnectionDelegator</a>&nbsp;owner,
-                            <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a>&nbsp;delegator)</pre>
+                            java.sql.Statement&nbsp;delegator)</pre>
 <div class="block">Constructor</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -480,7 +481,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 </ul>
 </section>
 <!-- ============ METHOD DETAIL ========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.detail">
 <!--   -->
@@ -492,13 +493,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>addBatch</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;addBatch&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql)
-              throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;addBatch&#8203;(java.lang.String&nbsp;sql)
+              throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#addBatch(java.lang.String)" title="class or interface in java.sql" class="externalLink">addBatch</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>addBatch</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -509,12 +510,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>cancel</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;cancel()
-            throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+            throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#cancel()" title="class or interface in java.sql" class="externalLink">cancel</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>cancel</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -525,12 +526,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>clearBatch</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;clearBatch()
-                throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#clearBatch()" title="class or interface in java.sql" class="externalLink">clearBatch</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>clearBatch</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -541,12 +542,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>clearWarnings</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;clearWarnings()
-                   throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                   throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#clearWarnings()" title="class or interface in java.sql" class="externalLink">clearWarnings</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>clearWarnings</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -557,14 +558,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>close</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;close()
-           throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+           throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true#close()" title="class or interface in java.lang" class="externalLink">close</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang" class="externalLink">AutoCloseable</a></code></dd>
+<dd><code>close</code>&nbsp;in interface&nbsp;<code>java.lang.AutoCloseable</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#close()" title="class or interface in java.sql" class="externalLink">close</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>close</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -575,12 +576,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>closeOnCompletion</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;closeOnCompletion()
-                       throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                       throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#closeOnCompletion()" title="class or interface in java.sql" class="externalLink">closeOnCompletion</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>closeOnCompletion</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -590,13 +591,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>execute</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;execute&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql)
-                throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;execute&#8203;(java.lang.String&nbsp;sql)
+                throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#execute(java.lang.String)" title="class or interface in java.sql" class="externalLink">execute</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>execute</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -606,14 +607,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>execute</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;execute&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql,
+<pre class="methodSignature">public&nbsp;boolean&nbsp;execute&#8203;(java.lang.String&nbsp;sql,
                        int&nbsp;autoGeneratedKeys)
-                throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#execute(java.lang.String,int)" title="class or interface in java.sql" class="externalLink">execute</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>execute</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -623,14 +624,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>execute</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;execute&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql,
+<pre class="methodSignature">public&nbsp;boolean&nbsp;execute&#8203;(java.lang.String&nbsp;sql,
                        int[]&nbsp;columnIndexes)
-                throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#execute(java.lang.String,int%5B%5D)" title="class or interface in java.sql" class="externalLink">execute</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>execute</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -640,14 +641,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>execute</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;execute&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql,
-                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]&nbsp;columnNames)
-                throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;execute&#8203;(java.lang.String&nbsp;sql,
+                       java.lang.String[]&nbsp;columnNames)
+                throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#execute(java.lang.String,java.lang.String%5B%5D)" title="class or interface in java.sql" class="externalLink">execute</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>execute</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -658,12 +659,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>executeBatch</h4>
 <pre class="methodSignature">public&nbsp;int[]&nbsp;executeBatch()
-                   throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                   throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#executeBatch()" title="class or interface in java.sql" class="externalLink">executeBatch</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>executeBatch</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -673,13 +674,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>executeQuery</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html?is-external=true" title="class or interface in java.sql" class="externalLink">ResultSet</a>&nbsp;executeQuery&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql)
-                       throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">public&nbsp;java.sql.ResultSet&nbsp;executeQuery&#8203;(java.lang.String&nbsp;sql)
+                                throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#executeQuery(java.lang.String)" title="class or interface in java.sql" class="externalLink">executeQuery</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>executeQuery</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -689,13 +690,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>executeUpdate</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;executeUpdate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql)
-                  throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">public&nbsp;int&nbsp;executeUpdate&#8203;(java.lang.String&nbsp;sql)
+                  throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#executeUpdate(java.lang.String)" title="class or interface in java.sql" class="externalLink">executeUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>executeUpdate</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -705,14 +706,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>executeUpdate</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;executeUpdate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql,
+<pre class="methodSignature">public&nbsp;int&nbsp;executeUpdate&#8203;(java.lang.String&nbsp;sql,
                          int&nbsp;autoGeneratedKeys)
-                  throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                  throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#executeUpdate(java.lang.String,int)" title="class or interface in java.sql" class="externalLink">executeUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>executeUpdate</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -722,14 +723,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>executeUpdate</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;executeUpdate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql,
+<pre class="methodSignature">public&nbsp;int&nbsp;executeUpdate&#8203;(java.lang.String&nbsp;sql,
                          int[]&nbsp;columnIndexes)
-                  throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                  throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#executeUpdate(java.lang.String,int%5B%5D)" title="class or interface in java.sql" class="externalLink">executeUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>executeUpdate</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -739,14 +740,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>executeUpdate</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;executeUpdate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql,
-                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]&nbsp;columnNames)
-                  throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">public&nbsp;int&nbsp;executeUpdate&#8203;(java.lang.String&nbsp;sql,
+                         java.lang.String[]&nbsp;columnNames)
+                  throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#executeUpdate(java.lang.String,java.lang.String%5B%5D)" title="class or interface in java.sql" class="externalLink">executeUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>executeUpdate</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -756,13 +757,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>getConnection</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink">Connection</a>&nbsp;getConnection()
-                         throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">public&nbsp;java.sql.Connection&nbsp;getConnection()
+                                  throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#getConnection()" title="class or interface in java.sql" class="externalLink">getConnection</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>getConnection</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -773,12 +774,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>getFetchDirection</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getFetchDirection()
-                      throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                      throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#getFetchDirection()" title="class or interface in java.sql" class="externalLink">getFetchDirection</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>getFetchDirection</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -789,12 +790,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>getFetchSize</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getFetchSize()
-                 throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                 throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#getFetchSize()" title="class or interface in java.sql" class="externalLink">getFetchSize</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>getFetchSize</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -804,13 +805,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>getGeneratedKeys</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html?is-external=true" title="class or interface in java.sql" class="externalLink">ResultSet</a>&nbsp;getGeneratedKeys()
-                           throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">public&nbsp;java.sql.ResultSet&nbsp;getGeneratedKeys()
+                                    throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#getGeneratedKeys()" title="class or interface in java.sql" class="externalLink">getGeneratedKeys</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>getGeneratedKeys</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -821,12 +822,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>getMaxFieldSize</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getMaxFieldSize()
-                    throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                    throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#getMaxFieldSize()" title="class or interface in java.sql" class="externalLink">getMaxFieldSize</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>getMaxFieldSize</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -837,12 +838,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>getMaxRows</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getMaxRows()
-               throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+               throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#getMaxRows()" title="class or interface in java.sql" class="externalLink">getMaxRows</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>getMaxRows</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -853,12 +854,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>getMoreResults</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;getMoreResults()
-                       throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                       throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#getMoreResults()" title="class or interface in java.sql" class="externalLink">getMoreResults</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>getMoreResults</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -869,12 +870,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>getMoreResults</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;getMoreResults&#8203;(int&nbsp;current)
-                       throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                       throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#getMoreResults(int)" title="class or interface in java.sql" class="externalLink">getMoreResults</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>getMoreResults</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -885,12 +886,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>getQueryTimeout</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getQueryTimeout()
-                    throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                    throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#getQueryTimeout()" title="class or interface in java.sql" class="externalLink">getQueryTimeout</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>getQueryTimeout</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -900,13 +901,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>getResultSet</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html?is-external=true" title="class or interface in java.sql" class="externalLink">ResultSet</a>&nbsp;getResultSet()
-                       throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">public&nbsp;java.sql.ResultSet&nbsp;getResultSet()
+                                throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#getResultSet()" title="class or interface in java.sql" class="externalLink">getResultSet</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>getResultSet</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -917,12 +918,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>getResultSetConcurrency</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getResultSetConcurrency()
-                            throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                            throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#getResultSetConcurrency()" title="class or interface in java.sql" class="externalLink">getResultSetConcurrency</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>getResultSetConcurrency</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -933,12 +934,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>getResultSetHoldability</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getResultSetHoldability()
-                            throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                            throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#getResultSetHoldability()" title="class or interface in java.sql" class="externalLink">getResultSetHoldability</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>getResultSetHoldability</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -949,12 +950,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>getResultSetType</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getResultSetType()
-                     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                     throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#getResultSetType()" title="class or interface in java.sql" class="externalLink">getResultSetType</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>getResultSetType</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -965,12 +966,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>getUpdateCount</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getUpdateCount()
-                   throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                   throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#getUpdateCount()" title="class or interface in java.sql" class="externalLink">getUpdateCount</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>getUpdateCount</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -980,13 +981,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>getWarnings</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLWarning.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLWarning</a>&nbsp;getWarnings()
-                       throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">public&nbsp;java.sql.SQLWarning&nbsp;getWarnings()
+                                throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#getWarnings()" title="class or interface in java.sql" class="externalLink">getWarnings</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>getWarnings</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -997,12 +998,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>isClosed</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;isClosed()
-                 throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                 throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#isClosed()" title="class or interface in java.sql" class="externalLink">isClosed</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>isClosed</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1013,12 +1014,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>isCloseOnCompletion</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;isCloseOnCompletion()
-                            throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                            throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#isCloseOnCompletion()" title="class or interface in java.sql" class="externalLink">isCloseOnCompletion</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>isCloseOnCompletion</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1029,12 +1030,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>isPoolable</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;isPoolable()
-                   throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                   throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#isPoolable()" title="class or interface in java.sql" class="externalLink">isPoolable</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>isPoolable</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1044,13 +1045,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>setCursorName</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setCursorName&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)
-                   throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setCursorName&#8203;(java.lang.String&nbsp;name)
+                   throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#setCursorName(java.lang.String)" title="class or interface in java.sql" class="externalLink">setCursorName</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>setCursorName</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1061,12 +1062,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>setEscapeProcessing</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setEscapeProcessing&#8203;(boolean&nbsp;enable)
-                         throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                         throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#setEscapeProcessing(boolean)" title="class or interface in java.sql" class="externalLink">setEscapeProcessing</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>setEscapeProcessing</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1077,12 +1078,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>setFetchDirection</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setFetchDirection&#8203;(int&nbsp;direction)
-                       throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                       throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#setFetchDirection(int)" title="class or interface in java.sql" class="externalLink">setFetchDirection</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>setFetchDirection</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1093,12 +1094,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>setFetchSize</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setFetchSize&#8203;(int&nbsp;rows)
-                  throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                  throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#setFetchSize(int)" title="class or interface in java.sql" class="externalLink">setFetchSize</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>setFetchSize</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1109,12 +1110,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>setMaxFieldSize</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setMaxFieldSize&#8203;(int&nbsp;max)
-                     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                     throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#setMaxFieldSize(int)" title="class or interface in java.sql" class="externalLink">setMaxFieldSize</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>setMaxFieldSize</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1125,12 +1126,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>setMaxRows</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setMaxRows&#8203;(int&nbsp;max)
-                throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#setMaxRows(int)" title="class or interface in java.sql" class="externalLink">setMaxRows</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>setMaxRows</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1141,12 +1142,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>setPoolable</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setPoolable&#8203;(boolean&nbsp;poolable)
-                 throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                 throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#setPoolable(boolean)" title="class or interface in java.sql" class="externalLink">setPoolable</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>setPoolable</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1157,12 +1158,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>setQueryTimeout</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setQueryTimeout&#8203;(int&nbsp;seconds)
-                     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                     throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#setQueryTimeout(int)" title="class or interface in java.sql" class="externalLink">setQueryTimeout</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>setQueryTimeout</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1172,13 +1173,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>isWrapperFor</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isWrapperFor&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;iface)
-                     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isWrapperFor&#8203;(java.lang.Class&lt;?&gt;&nbsp;iface)
+                     throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Wrapper.html?is-external=true#isWrapperFor(java.lang.Class)" title="class or interface in java.sql" class="externalLink">isWrapperFor</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Wrapper.html?is-external=true" title="class or interface in java.sql" class="externalLink">Wrapper</a></code></dd>
+<dd><code>isWrapperFor</code>&nbsp;in interface&nbsp;<code>java.sql.Wrapper</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1188,13 +1189,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>unwrap</h4>
-<pre class="methodSignature">public&nbsp;&lt;T&gt;&nbsp;T&nbsp;unwrap&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;iface)
-             throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">public&nbsp;&lt;T&gt;&nbsp;T&nbsp;unwrap&#8203;(java.lang.Class&lt;T&gt;&nbsp;iface)
+             throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Wrapper.html?is-external=true#unwrap(java.lang.Class)" title="class or interface in java.sql" class="externalLink">unwrap</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Wrapper.html?is-external=true" title="class or interface in java.sql" class="externalLink">Wrapper</a></code></dd>
+<dd><code>unwrap</code>&nbsp;in interface&nbsp;<code>java.sql.Wrapper</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1205,12 +1206,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>getLargeUpdateCount</h4>
 <pre class="methodSignature">public&nbsp;long&nbsp;getLargeUpdateCount()
-                         throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                         throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#getLargeUpdateCount()" title="class or interface in java.sql" class="externalLink">getLargeUpdateCount</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>getLargeUpdateCount</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1221,12 +1222,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>setLargeMaxRows</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setLargeMaxRows&#8203;(long&nbsp;max)
-                     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                     throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#setLargeMaxRows(long)" title="class or interface in java.sql" class="externalLink">setLargeMaxRows</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>setLargeMaxRows</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1237,12 +1238,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>getLargeMaxRows</h4>
 <pre class="methodSignature">public&nbsp;long&nbsp;getLargeMaxRows()
-                     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                     throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#getLargeMaxRows()" title="class or interface in java.sql" class="externalLink">getLargeMaxRows</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>getLargeMaxRows</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1253,12 +1254,12 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <li class="blockList">
 <h4>executeLargeBatch</h4>
 <pre class="methodSignature">public&nbsp;long[]&nbsp;executeLargeBatch()
-                         throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                         throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#executeLargeBatch()" title="class or interface in java.sql" class="externalLink">executeLargeBatch</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>executeLargeBatch</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1268,13 +1269,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>executeLargeUpdate</h4>
-<pre class="methodSignature">public&nbsp;long&nbsp;executeLargeUpdate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql)
-                        throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">public&nbsp;long&nbsp;executeLargeUpdate&#8203;(java.lang.String&nbsp;sql)
+                        throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#executeLargeUpdate(java.lang.String)" title="class or interface in java.sql" class="externalLink">executeLargeUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>executeLargeUpdate</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1284,14 +1285,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>executeLargeUpdate</h4>
-<pre class="methodSignature">public&nbsp;long&nbsp;executeLargeUpdate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql,
+<pre class="methodSignature">public&nbsp;long&nbsp;executeLargeUpdate&#8203;(java.lang.String&nbsp;sql,
                                int&nbsp;autoGeneratedKeys)
-                        throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                        throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#executeLargeUpdate(java.lang.String,int)" title="class or interface in java.sql" class="externalLink">executeLargeUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>executeLargeUpdate</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1301,14 +1302,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>executeLargeUpdate</h4>
-<pre class="methodSignature">public&nbsp;long&nbsp;executeLargeUpdate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql,
+<pre class="methodSignature">public&nbsp;long&nbsp;executeLargeUpdate&#8203;(java.lang.String&nbsp;sql,
                                int[]&nbsp;columnIndexes)
-                        throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                        throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#executeLargeUpdate(java.lang.String,int%5B%5D)" title="class or interface in java.sql" class="externalLink">executeLargeUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>executeLargeUpdate</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1318,14 +1319,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockList">
 <li class="blockList">
 <h4>executeLargeUpdate</h4>
-<pre class="methodSignature">public&nbsp;long&nbsp;executeLargeUpdate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;sql,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]&nbsp;columnNames)
-                        throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<pre class="methodSignature">public&nbsp;long&nbsp;executeLargeUpdate&#8203;(java.lang.String&nbsp;sql,
+                               java.lang.String[]&nbsp;columnNames)
+                        throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true#executeLargeUpdate(java.lang.String,java.lang.String%5B%5D)" title="class or interface in java.sql" class="externalLink">executeLargeUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html?is-external=true" title="class or interface in java.sql" class="externalLink">Statement</a></code></dd>
+<dd><code>executeLargeUpdate</code>&nbsp;in interface&nbsp;<code>java.sql.Statement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -1338,7 +1339,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <pre class="methodSignature">public&nbsp;int&nbsp;hashCode()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
+<dd><code>hashCode</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
 </dl>
 </li>
 </ul>
@@ -1348,10 +1349,10 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Statement
 <ul class="blockListLast">
 <li class="blockList">
 <h4>equals</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;equals&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;o)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;equals&#8203;(java.lang.Object&nbsp;o)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
+<dd><code>equals</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
 </dl>
 </li>
 </ul>

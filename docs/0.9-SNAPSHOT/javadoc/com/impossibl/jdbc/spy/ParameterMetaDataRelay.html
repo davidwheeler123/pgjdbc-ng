@@ -6,15 +6,16 @@
 <title>ParameterMetaDataRelay (PGJDBC-NG 0.9-SNAPSHOT)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="../../../../jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -120,7 +121,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
+<li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
 <li>com.impossibl.jdbc.spy.ParameterMetaDataRelay</li>
@@ -132,12 +133,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Relay</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a>&gt;</code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Wrapper.html?is-external=true" title="class or interface in java.sql" class="externalLink">Wrapper</a></code></dd>
+<dd><code><a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Relay</a>&lt;java.sql.ParameterMetaData&gt;</code>, <code>java.sql.ParameterMetaData</code>, <code>java.sql.Wrapper</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">ParameterMetaDataRelay</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Relay</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a>&gt;, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a></pre>
+extends java.lang.Object
+implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Relay</a>&lt;java.sql.ParameterMetaData&gt;, java.sql.ParameterMetaData</pre>
 </li>
 </ul>
 </div>
@@ -145,7 +146,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <ul class="blockList">
 <li class="blockList">
 <!-- =========== FIELD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="field.summary">
 <!--   -->
@@ -164,7 +165,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a></code></td>
+<td class="colFirst"><code>java.sql.ParameterMetaData</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#target">target</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -173,14 +174,14 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <li class="blockList"><a id="fields.inherited.from.class.java.sql.ParameterMetaData">
 <!--   -->
 </a>
-<h3>Fields inherited from interface&nbsp;java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true#parameterModeIn" title="class or interface in java.sql" class="externalLink">parameterModeIn</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true#parameterModeInOut" title="class or interface in java.sql" class="externalLink">parameterModeInOut</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true#parameterModeOut" title="class or interface in java.sql" class="externalLink">parameterModeOut</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true#parameterModeUnknown" title="class or interface in java.sql" class="externalLink">parameterModeUnknown</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true#parameterNoNulls" title="class or interface in java.sql" class="externalLink">parameterNoNulls</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true#parameterNullable" title="class or interface in java.sql" class="externalLink">parameterNullable</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true#parameterNullableUnknown" title="class or interface in java.sql" class="externalLink">parameterNullableUnknown</a></code></li>
+<h3>Fields inherited from interface&nbsp;java.sql.ParameterMetaData</h3>
+<code>parameterModeIn, parameterModeInOut, parameterModeOut, parameterModeUnknown, parameterNoNulls, parameterNullable, parameterNullableUnknown</code></li>
 </ul>
 </li>
 </ul>
 </section>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="constructor.summary">
 <!--   -->
@@ -193,7 +194,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.sql.ParameterMetaData,com.impossibl.jdbc.spy.ParameterMetaDataListener)">ParameterMetaDataRelay</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a>&nbsp;target,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.sql.ParameterMetaData,com.impossibl.jdbc.spy.ParameterMetaDataListener)">ParameterMetaDataRelay</a></span>&#8203;(java.sql.ParameterMetaData&nbsp;target,
                       com.impossibl.jdbc.spy.ParameterMetaDataListener&nbsp;listener)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -202,7 +203,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 </ul>
 </section>
 <!-- ========== METHOD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.summary">
 <!--   -->
@@ -216,7 +217,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameterClassName(int)">getParameterClassName</a></span>&#8203;(int&nbsp;param)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -236,7 +237,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameterTypeName(int)">getParameterTypeName</a></span>&#8203;(int&nbsp;param)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -251,7 +252,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a></code></td>
+<td class="colFirst"><code>java.sql.ParameterMetaData</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTarget()">getTarget</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -267,12 +268,12 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isWrapperFor(java.lang.Class)">isWrapperFor</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;iface)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isWrapperFor(java.lang.Class)">isWrapperFor</a></span>&#8203;(java.lang.Class&lt;?&gt;&nbsp;iface)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unwrap(java.lang.Class)">unwrap</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;iface)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unwrap(java.lang.Class)">unwrap</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;iface)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -280,8 +281,8 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -293,7 +294,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <ul class="blockList">
 <li class="blockList">
 <!-- ============ FIELD DETAIL =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="field.detail">
 <!--   -->
@@ -305,7 +306,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <ul class="blockList">
 <li class="blockList">
 <h4>target</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a> target</pre>
+<pre>public&nbsp;java.sql.ParameterMetaData target</pre>
 </li>
 </ul>
 <a id="listener">
@@ -321,7 +322,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 </ul>
 </section>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="constructor.detail">
 <!--   -->
@@ -333,7 +334,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ParameterMetaDataRelay</h4>
-<pre>public&nbsp;ParameterMetaDataRelay&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a>&nbsp;target,
+<pre>public&nbsp;ParameterMetaDataRelay&#8203;(java.sql.ParameterMetaData&nbsp;target,
                               com.impossibl.jdbc.spy.ParameterMetaDataListener&nbsp;listener)</pre>
 </li>
 </ul>
@@ -341,7 +342,7 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 </ul>
 </section>
 <!-- ============ METHOD DETAIL ========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.detail">
 <!--   -->
@@ -353,90 +354,10 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <ul class="blockList">
 <li class="blockList">
 <h4>getTarget</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a>&nbsp;getTarget()</pre>
+<pre class="methodSignature">public&nbsp;java.sql.ParameterMetaData&nbsp;getTarget()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Relay.html#getTarget()">getTarget</a></code>&nbsp;in interface&nbsp;<code><a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Relay</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a id="getParameterClassName(int)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getParameterClassName</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getParameterClassName&#8203;(int&nbsp;param)
-                             throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true#getParameterClassName(int)" title="class or interface in java.sql" class="externalLink">getParameterClassName</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a></code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
-</dl>
-</li>
-</ul>
-<a id="getScale(int)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getScale</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;getScale&#8203;(int&nbsp;param)
-             throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true#getScale(int)" title="class or interface in java.sql" class="externalLink">getScale</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a></code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
-</dl>
-</li>
-</ul>
-<a id="getParameterCount()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getParameterCount</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;getParameterCount()
-                      throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true#getParameterCount()" title="class or interface in java.sql" class="externalLink">getParameterCount</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a></code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
-</dl>
-</li>
-</ul>
-<a id="getParameterTypeName(int)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getParameterTypeName</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getParameterTypeName&#8203;(int&nbsp;param)
-                            throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true#getParameterTypeName(int)" title="class or interface in java.sql" class="externalLink">getParameterTypeName</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a></code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
-</dl>
-</li>
-</ul>
-<a id="getParameterMode(int)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getParameterMode</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;getParameterMode&#8203;(int&nbsp;param)
-                     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true#getParameterMode(int)" title="class or interface in java.sql" class="externalLink">getParameterMode</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a></code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code><a href="Relay.html#getTarget()">getTarget</a></code>&nbsp;in interface&nbsp;<code><a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Relay</a>&lt;java.sql.ParameterMetaData&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -447,12 +368,28 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <li class="blockList">
 <h4>isNullable</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;isNullable&#8203;(int&nbsp;param)
-               throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+               throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true#isNullable(int)" title="class or interface in java.sql" class="externalLink">isNullable</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a></code></dd>
+<dd><code>isNullable</code>&nbsp;in interface&nbsp;<code>java.sql.ParameterMetaData</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
+</dl>
+</li>
+</ul>
+<a id="getParameterMode(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getParameterMode</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getParameterMode&#8203;(int&nbsp;param)
+                     throws java.sql.SQLException</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>getParameterMode</code>&nbsp;in interface&nbsp;<code>java.sql.ParameterMetaData</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -463,12 +400,92 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <li class="blockList">
 <h4>isSigned</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;isSigned&#8203;(int&nbsp;param)
-                 throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                 throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true#isSigned(int)" title="class or interface in java.sql" class="externalLink">isSigned</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a></code></dd>
+<dd><code>isSigned</code>&nbsp;in interface&nbsp;<code>java.sql.ParameterMetaData</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
+</dl>
+</li>
+</ul>
+<a id="getParameterClassName(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getParameterClassName</h4>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getParameterClassName&#8203;(int&nbsp;param)
+                                       throws java.sql.SQLException</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>getParameterClassName</code>&nbsp;in interface&nbsp;<code>java.sql.ParameterMetaData</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.sql.SQLException</code></dd>
+</dl>
+</li>
+</ul>
+<a id="unwrap(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unwrap</h4>
+<pre class="methodSignature">public&nbsp;&lt;T&gt;&nbsp;T&nbsp;unwrap&#8203;(java.lang.Class&lt;T&gt;&nbsp;iface)
+             throws java.sql.SQLException</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>unwrap</code>&nbsp;in interface&nbsp;<code>java.sql.Wrapper</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.sql.SQLException</code></dd>
+</dl>
+</li>
+</ul>
+<a id="getParameterCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getParameterCount</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getParameterCount()
+                      throws java.sql.SQLException</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>getParameterCount</code>&nbsp;in interface&nbsp;<code>java.sql.ParameterMetaData</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.sql.SQLException</code></dd>
+</dl>
+</li>
+</ul>
+<a id="getScale(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getScale</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getScale&#8203;(int&nbsp;param)
+             throws java.sql.SQLException</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>getScale</code>&nbsp;in interface&nbsp;<code>java.sql.ParameterMetaData</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.sql.SQLException</code></dd>
+</dl>
+</li>
+</ul>
+<a id="isWrapperFor(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isWrapperFor</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isWrapperFor&#8203;(java.lang.Class&lt;?&gt;&nbsp;iface)
+                     throws java.sql.SQLException</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>isWrapperFor</code>&nbsp;in interface&nbsp;<code>java.sql.Wrapper</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
@@ -479,60 +496,44 @@ implements <a href="Relay.html" title="interface in com.impossibl.jdbc.spy">Rela
 <li class="blockList">
 <h4>getParameterType</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getParameterType&#8203;(int&nbsp;param)
-                     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                     throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true#getParameterType(int)" title="class or interface in java.sql" class="externalLink">getParameterType</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a></code></dd>
+<dd><code>getParameterType</code>&nbsp;in interface&nbsp;<code>java.sql.ParameterMetaData</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
-<a id="isWrapperFor(java.lang.Class)">
+<a id="getParameterTypeName(int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>isWrapperFor</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isWrapperFor&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;iface)
-                     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+<h4>getParameterTypeName</h4>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getParameterTypeName&#8203;(int&nbsp;param)
+                                      throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Wrapper.html?is-external=true#isWrapperFor(java.lang.Class)" title="class or interface in java.sql" class="externalLink">isWrapperFor</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Wrapper.html?is-external=true" title="class or interface in java.sql" class="externalLink">Wrapper</a></code></dd>
+<dd><code>getParameterTypeName</code>&nbsp;in interface&nbsp;<code>java.sql.ParameterMetaData</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>
 <a id="getPrecision(int)">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>getPrecision</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getPrecision&#8203;(int&nbsp;param)
-                 throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
+                 throws java.sql.SQLException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true#getPrecision(int)" title="class or interface in java.sql" class="externalLink">getPrecision</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ParameterMetaData.html?is-external=true" title="class or interface in java.sql" class="externalLink">ParameterMetaData</a></code></dd>
+<dd><code>getPrecision</code>&nbsp;in interface&nbsp;<code>java.sql.ParameterMetaData</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
-</dl>
-</li>
-</ul>
-<a id="unwrap(java.lang.Class)">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>unwrap</h4>
-<pre class="methodSignature">public&nbsp;&lt;T&gt;&nbsp;T&nbsp;unwrap&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;iface)
-             throws <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Wrapper.html?is-external=true#unwrap(java.lang.Class)" title="class or interface in java.sql" class="externalLink">unwrap</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Wrapper.html?is-external=true" title="class or interface in java.sql" class="externalLink">Wrapper</a></code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></code></dd>
+<dd><code>java.sql.SQLException</code></dd>
 </dl>
 </li>
 </ul>

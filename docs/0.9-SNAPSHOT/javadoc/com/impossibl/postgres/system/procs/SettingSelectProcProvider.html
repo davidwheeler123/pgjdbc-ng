@@ -6,15 +6,16 @@
 <title>SettingSelectProcProvider (PGJDBC-NG 0.9-SNAPSHOT)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../../jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="../../../../../script.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -120,7 +121,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
+<li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
 <li><a href="BaseProcProvider.html" title="class in com.impossibl.postgres.system.procs">com.impossibl.postgres.system.procs.BaseProcProvider</a></li>
@@ -153,7 +154,7 @@ extends <a href="BaseProcProvider.html" title="class in com.impossibl.postgres.s
 <ul class="blockList">
 <li class="blockList">
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="constructor.summary">
 <!--   -->
@@ -166,16 +167,16 @@ extends <a href="BaseProcProvider.html" title="class in com.impossibl.postgres.s
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.util.function.Function,com.impossibl.postgres.types.Type.Codec.Encoder,com.impossibl.postgres.types.Type.Codec.Decoder,com.impossibl.postgres.types.Type.Codec.Encoder,com.impossibl.postgres.types.Type.Codec.Decoder,com.impossibl.postgres.types.Type.Codec.Encoder,com.impossibl.postgres.types.Type.Codec.Decoder,com.impossibl.postgres.types.Type.Codec.Encoder,com.impossibl.postgres.types.Type.Codec.Decoder,java.lang.String...)">SettingSelectProcProvider</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../ServerInfo.html" title="class in com.impossibl.postgres.system">ServerInfo</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;check,
-                         <a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang" class="externalLink">StringBuilder</a>&gt;&nbsp;enabledTxtEncoder,
-                         <a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink">CharSequence</a>&gt;&nbsp;enabledTxtDecoder,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.util.function.Function,com.impossibl.postgres.types.Type.Codec.Encoder,com.impossibl.postgres.types.Type.Codec.Decoder,com.impossibl.postgres.types.Type.Codec.Encoder,com.impossibl.postgres.types.Type.Codec.Decoder,com.impossibl.postgres.types.Type.Codec.Encoder,com.impossibl.postgres.types.Type.Codec.Decoder,com.impossibl.postgres.types.Type.Codec.Encoder,com.impossibl.postgres.types.Type.Codec.Decoder,java.lang.String...)">SettingSelectProcProvider</a></span>&#8203;(java.util.function.Function&lt;<a href="../ServerInfo.html" title="class in com.impossibl.postgres.system">ServerInfo</a>,&#8203;java.lang.Boolean&gt;&nbsp;check,
+                         <a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;java.lang.StringBuilder&gt;&nbsp;enabledTxtEncoder,
+                         <a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;java.lang.CharSequence&gt;&nbsp;enabledTxtDecoder,
                          <a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;io.netty.buffer.ByteBuf&gt;&nbsp;enabledBinEncoder,
                          <a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;io.netty.buffer.ByteBuf&gt;&nbsp;enabledBinDecoder,
-                         <a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang" class="externalLink">StringBuilder</a>&gt;&nbsp;disabledTxtEncoder,
-                         <a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink">CharSequence</a>&gt;&nbsp;disabledTxtDecoder,
+                         <a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;java.lang.StringBuilder&gt;&nbsp;disabledTxtEncoder,
+                         <a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;java.lang.CharSequence&gt;&nbsp;disabledTxtDecoder,
                          <a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;io.netty.buffer.ByteBuf&gt;&nbsp;disabledBinEncoder,
                          <a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;io.netty.buffer.ByteBuf&gt;&nbsp;disabledBinDecoder,
-                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>...&nbsp;baseNames)</code></th>
+                         java.lang.String...&nbsp;baseNames)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -183,7 +184,7 @@ extends <a href="BaseProcProvider.html" title="class in com.impossibl.postgres.s
 </ul>
 </section>
 <!-- ========== METHOD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.summary">
 <!--   -->
@@ -198,21 +199,21 @@ extends <a href="BaseProcProvider.html" title="class in com.impossibl.postgres.s
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>&lt;Buffer&gt;&nbsp;<a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;Buffer&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findDecoder(java.lang.String,com.impossibl.postgres.system.ServerInfo,java.lang.Class)">findDecoder</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findDecoder(java.lang.String,com.impossibl.postgres.system.ServerInfo,java.lang.Class)">findDecoder</a></span>&#8203;(java.lang.String&nbsp;name,
            <a href="../ServerInfo.html" title="class in com.impossibl.postgres.system">ServerInfo</a>&nbsp;serverInfo,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends Buffer&gt;&nbsp;bufferType)</code></th>
+           java.lang.Class&lt;? extends Buffer&gt;&nbsp;bufferType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>&lt;Buffer&gt;&nbsp;<a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;Buffer&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findEncoder(java.lang.String,com.impossibl.postgres.system.ServerInfo,java.lang.Class)">findEncoder</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findEncoder(java.lang.String,com.impossibl.postgres.system.ServerInfo,java.lang.Class)">findEncoder</a></span>&#8203;(java.lang.String&nbsp;name,
            <a href="../ServerInfo.html" title="class in com.impossibl.postgres.system">ServerInfo</a>&nbsp;serverInfo,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends Buffer&gt;&nbsp;bufferType)</code></th>
+           java.lang.Class&lt;? extends Buffer&gt;&nbsp;bufferType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../types/Modifiers.Parser.html" title="interface in com.impossibl.postgres.types">Modifiers.Parser</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findModifierParser(java.lang.String,com.impossibl.postgres.system.ServerInfo)">findModifierParser</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findModifierParser(java.lang.String,com.impossibl.postgres.system.ServerInfo)">findModifierParser</a></span>&#8203;(java.lang.String&nbsp;name,
                   <a href="../ServerInfo.html" title="class in com.impossibl.postgres.system">ServerInfo</a>&nbsp;serverInfo)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -228,8 +229,8 @@ extends <a href="BaseProcProvider.html" title="class in com.impossibl.postgres.s
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -241,7 +242,7 @@ extends <a href="BaseProcProvider.html" title="class in com.impossibl.postgres.s
 <ul class="blockList">
 <li class="blockList">
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="constructor.detail">
 <!--   -->
@@ -253,23 +254,23 @@ extends <a href="BaseProcProvider.html" title="class in com.impossibl.postgres.s
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SettingSelectProcProvider</h4>
-<pre>public&nbsp;SettingSelectProcProvider&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../ServerInfo.html" title="class in com.impossibl.postgres.system">ServerInfo</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;check,
-                                 <a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang" class="externalLink">StringBuilder</a>&gt;&nbsp;enabledTxtEncoder,
-                                 <a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink">CharSequence</a>&gt;&nbsp;enabledTxtDecoder,
+<pre>public&nbsp;SettingSelectProcProvider&#8203;(java.util.function.Function&lt;<a href="../ServerInfo.html" title="class in com.impossibl.postgres.system">ServerInfo</a>,&#8203;java.lang.Boolean&gt;&nbsp;check,
+                                 <a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;java.lang.StringBuilder&gt;&nbsp;enabledTxtEncoder,
+                                 <a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;java.lang.CharSequence&gt;&nbsp;enabledTxtDecoder,
                                  <a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;io.netty.buffer.ByteBuf&gt;&nbsp;enabledBinEncoder,
                                  <a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;io.netty.buffer.ByteBuf&gt;&nbsp;enabledBinDecoder,
-                                 <a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang" class="externalLink">StringBuilder</a>&gt;&nbsp;disabledTxtEncoder,
-                                 <a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink">CharSequence</a>&gt;&nbsp;disabledTxtDecoder,
+                                 <a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;java.lang.StringBuilder&gt;&nbsp;disabledTxtEncoder,
+                                 <a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;java.lang.CharSequence&gt;&nbsp;disabledTxtDecoder,
                                  <a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;io.netty.buffer.ByteBuf&gt;&nbsp;disabledBinEncoder,
                                  <a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;io.netty.buffer.ByteBuf&gt;&nbsp;disabledBinDecoder,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>...&nbsp;baseNames)</pre>
+                                 java.lang.String...&nbsp;baseNames)</pre>
 </li>
 </ul>
 </li>
 </ul>
 </section>
 <!-- ============ METHOD DETAIL ========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.detail">
 <!--   -->
@@ -281,9 +282,9 @@ extends <a href="BaseProcProvider.html" title="class in com.impossibl.postgres.s
 <ul class="blockList">
 <li class="blockList">
 <h4>findEncoder</h4>
-<pre class="methodSignature">public&nbsp;&lt;Buffer&gt;&nbsp;<a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;Buffer&gt;&nbsp;findEncoder&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+<pre class="methodSignature">public&nbsp;&lt;Buffer&gt;&nbsp;<a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;Buffer&gt;&nbsp;findEncoder&#8203;(java.lang.String&nbsp;name,
                                                        <a href="../ServerInfo.html" title="class in com.impossibl.postgres.system">ServerInfo</a>&nbsp;serverInfo,
-                                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends Buffer&gt;&nbsp;bufferType)</pre>
+                                                       java.lang.Class&lt;? extends Buffer&gt;&nbsp;bufferType)</pre>
 </li>
 </ul>
 <a id="findDecoder(java.lang.String,com.impossibl.postgres.system.ServerInfo,java.lang.Class)">
@@ -292,9 +293,9 @@ extends <a href="BaseProcProvider.html" title="class in com.impossibl.postgres.s
 <ul class="blockList">
 <li class="blockList">
 <h4>findDecoder</h4>
-<pre class="methodSignature">public&nbsp;&lt;Buffer&gt;&nbsp;<a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;Buffer&gt;&nbsp;findDecoder&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+<pre class="methodSignature">public&nbsp;&lt;Buffer&gt;&nbsp;<a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;Buffer&gt;&nbsp;findDecoder&#8203;(java.lang.String&nbsp;name,
                                                        <a href="../ServerInfo.html" title="class in com.impossibl.postgres.system">ServerInfo</a>&nbsp;serverInfo,
-                                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends Buffer&gt;&nbsp;bufferType)</pre>
+                                                       java.lang.Class&lt;? extends Buffer&gt;&nbsp;bufferType)</pre>
 </li>
 </ul>
 <a id="findModifierParser(java.lang.String,com.impossibl.postgres.system.ServerInfo)">
@@ -303,7 +304,7 @@ extends <a href="BaseProcProvider.html" title="class in com.impossibl.postgres.s
 <ul class="blockListLast">
 <li class="blockList">
 <h4>findModifierParser</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../types/Modifiers.Parser.html" title="interface in com.impossibl.postgres.types">Modifiers.Parser</a>&nbsp;findModifierParser&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+<pre class="methodSignature">public&nbsp;<a href="../../types/Modifiers.Parser.html" title="interface in com.impossibl.postgres.types">Modifiers.Parser</a>&nbsp;findModifierParser&#8203;(java.lang.String&nbsp;name,
                                            <a href="../ServerInfo.html" title="class in com.impossibl.postgres.system">ServerInfo</a>&nbsp;serverInfo)</pre>
 </li>
 </ul>

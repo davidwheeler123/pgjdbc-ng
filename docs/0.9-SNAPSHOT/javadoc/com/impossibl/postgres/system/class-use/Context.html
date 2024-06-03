@@ -6,15 +6,16 @@
 <title>Uses of Interface com.impossibl.postgres.system.Context (PGJDBC-NG 0.9-SNAPSHOT)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../../jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="../../../../../script.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -143,7 +144,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <ul class="blockList">
 <li class="blockList">
-<section role="region"><a id="com.impossibl.postgres.jdbc">
+<section><a id="com.impossibl.postgres.jdbc">
 <!--   -->
 </a>
 <h3>Uses of <a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a> in <a href="../../jdbc/package-summary.html">com.impossibl.postgres.jdbc</a></h3>
@@ -196,7 +197,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>static <a href="../../jdbc/PGBuffersArray.html" title="class in com.impossibl.postgres.jdbc">PGBuffersArray</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PGBuffersArray.</span><code><span class="memberNameLink"><a href="../../jdbc/PGBuffersArray.html#encode(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.ArrayType,java.lang.Object)">encode</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
       <a href="../../types/ArrayType.html" title="class in com.impossibl.postgres.types">ArrayType</a>&nbsp;type,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;array)</code></th>
+      java.lang.Object&nbsp;array)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -204,78 +205,78 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">PGBuffersArray.</span><code><span class="memberNameLink"><a href="../../jdbc/PGBuffersArray.html#encode(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,com.impossibl.postgres.protocol.FieldFormat,java.lang.Object,java.util.List)">encode</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
       <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;componentType,
       <a href="../../protocol/FieldFormat.html" title="enum in com.impossibl.postgres.protocol">FieldFormat</a>&nbsp;format,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;io.netty.buffer.ByteBuf&gt;&nbsp;elementBuffers)</code></th>
+      java.lang.Object&nbsp;value,
+      java.util.List&lt;io.netty.buffer.ByteBuf&gt;&nbsp;elementBuffers)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../../jdbc/PGBuffersStruct.Binary.html" title="class in com.impossibl.postgres.jdbc">PGBuffersStruct.Binary</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PGBuffersStruct.Binary.</span><code><span class="memberNameLink"><a href="../../jdbc/PGBuffersStruct.Binary.html#encode(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.CompositeType,java.lang.Object%5B%5D)">encode</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
       <a href="../../types/CompositeType.html" title="class in com.impossibl.postgres.types">CompositeType</a>&nbsp;type,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>[]&nbsp;values)</code></th>
+      java.lang.Object[]&nbsp;values)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<td class="colFirst"><code>protected abstract java.lang.Object</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PGArray.</span><code><span class="memberNameLink"><a href="../../jdbc/PGArray.html#getArray(com.impossibl.postgres.system.Context,java.lang.Class,long,int)">getArray</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetComponentType,
+        java.lang.Class&lt;?&gt;&nbsp;targetComponentType,
         long&nbsp;index,
         int&nbsp;count)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<td class="colFirst"><code>protected java.lang.Object</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PGBuffersArray.</span><code><span class="memberNameLink"><a href="../../jdbc/PGBuffersArray.html#getArray(com.impossibl.postgres.system.Context,java.lang.Class,long,int)">getArray</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetComponentType,
+        java.lang.Class&lt;?&gt;&nbsp;targetComponentType,
         long&nbsp;index,
         int&nbsp;count)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<td class="colFirst"><code>protected java.lang.Object</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PGBuffersStruct.Binary.</span><code><span class="memberNameLink"><a href="../../jdbc/PGBuffersStruct.Binary.html#getAttribute(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,io.netty.buffer.ByteBuf)">getAttribute</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
             <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
             io.netty.buffer.ByteBuf&nbsp;buffer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<td class="colFirst"><code>protected abstract java.lang.Object</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PGBuffersStruct.</span><code><span class="memberNameLink"><a href="../../jdbc/PGBuffersStruct.html#getAttribute(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,Buffer)">getAttribute</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
             <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
             <a href="../../jdbc/PGBuffersStruct.html" title="type parameter in PGBuffersStruct">Buffer</a>&nbsp;buffer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<td class="colFirst"><code>protected java.lang.Object</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PGBuffersStruct.Text.</span><code><span class="memberNameLink"><a href="../../jdbc/PGBuffersStruct.Text.html#getAttribute(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,java.lang.CharSequence)">getAttribute</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
             <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink">CharSequence</a>&nbsp;buffer)</code></th>
+            java.lang.CharSequence&nbsp;buffer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>[]</code></td>
+<td class="colFirst"><code>java.lang.Object[]</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PGBuffersStruct.</span><code><span class="memberNameLink"><a href="../../jdbc/PGBuffersStruct.html#getAttributes(com.impossibl.postgres.system.Context)">getAttributes</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>[]</code></td>
+<td class="colFirst"><code>abstract java.lang.Object[]</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PGStruct.</span><code><span class="memberNameLink"><a href="../../jdbc/PGStruct.html#getAttributes(com.impossibl.postgres.system.Context)">getAttributes</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>[]</code></td>
+<td class="colFirst"><code>java.lang.Object[]</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PGValuesStruct.</span><code><span class="memberNameLink"><a href="../../jdbc/PGValuesStruct.html#getAttributes(com.impossibl.postgres.system.Context)">getAttributes</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html?is-external=true" title="class or interface in java.sql" class="externalLink">ResultSet</a></code></td>
+<td class="colFirst"><code>protected abstract java.sql.ResultSet</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PGArray.</span><code><span class="memberNameLink"><a href="../../jdbc/PGArray.html#getResultSet(com.impossibl.postgres.system.Context,long,int)">getResultSet</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
             long&nbsp;index,
             int&nbsp;count)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html?is-external=true" title="class or interface in java.sql" class="externalLink">ResultSet</a></code></td>
+<td class="colFirst"><code>protected java.sql.ResultSet</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PGBuffersArray.</span><code><span class="memberNameLink"><a href="../../jdbc/PGBuffersArray.html#getResultSet(com.impossibl.postgres.system.Context,long,int)">getResultSet</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
             long&nbsp;index,
             int&nbsp;count)</code></th>
@@ -292,7 +293,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../jdbc/PGBuffersStruct.Binary.html#%3Cinit%3E(com.impossibl.postgres.system.Context,java.lang.String,com.impossibl.postgres.types.Type%5B%5D,io.netty.buffer.ByteBuf%5B%5D)">Binary</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;typeName,
+      java.lang.String&nbsp;typeName,
       <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>[]&nbsp;attributeTypes,
       io.netty.buffer.ByteBuf[]&nbsp;attributeBuffers)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -317,22 +318,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../jdbc/PGValuesStruct.html#%3Cinit%3E(com.impossibl.postgres.system.Context,java.lang.String,com.impossibl.postgres.types.Type%5B%5D,java.lang.Object%5B%5D)">PGValuesStruct</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
-              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;typeName,
+              java.lang.String&nbsp;typeName,
               <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>[]&nbsp;attributeTypes,
-              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>[]&nbsp;attributeValues)</code></th>
+              java.lang.Object[]&nbsp;attributeValues)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../jdbc/PGBuffersStruct.Text.html#%3Cinit%3E(com.impossibl.postgres.system.Context,java.lang.String,com.impossibl.postgres.types.Type%5B%5D,java.lang.CharSequence%5B%5D)">Text</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
-    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;typeName,
+    java.lang.String&nbsp;typeName,
     <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>[]&nbsp;attributeTypes,
-    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink">CharSequence</a>[]&nbsp;attributeBuffers)</code></th>
+    java.lang.CharSequence[]&nbsp;attributeBuffers)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../jdbc/PGSQLInput.Text.html#%3Cinit%3E(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type%5B%5D,java.lang.CharSequence%5B%5D)">Text</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
     <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>[]&nbsp;attributeTypes,
-    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink">CharSequence</a>[]&nbsp;attributeBuffers)</code></th>
+    java.lang.CharSequence[]&nbsp;attributeBuffers)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -340,7 +341,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
-<section role="region"><a id="com.impossibl.postgres.protocol">
+<section><a id="com.impossibl.postgres.protocol">
 <!--   -->
 </a>
 <h3>Uses of <a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a> in <a href="../../protocol/package-summary.html">com.impossibl.postgres.protocol</a></h3>
@@ -358,21 +359,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FieldBuffersRowData.</span><code><span class="memberNameLink"><a href="../../protocol/FieldBuffersRowData.html#getField(int,com.impossibl.postgres.protocol.ResultField,com.impossibl.postgres.system.Context,java.lang.Class,java.lang.Object)">getField</a></span>&#8203;(int&nbsp;fieldIdx,
         <a href="../../protocol/ResultField.html" title="class in com.impossibl.postgres.protocol">ResultField</a>&nbsp;field,
         <a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;targetContext)</code></th>
+        java.lang.Class&lt;?&gt;&nbsp;targetClass,
+        java.lang.Object&nbsp;targetContext)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">RowData.</span><code><span class="memberNameLink"><a href="../../protocol/RowData.html#getField(int,com.impossibl.postgres.protocol.ResultField,com.impossibl.postgres.system.Context,java.lang.Class,java.lang.Object)">getField</a></span>&#8203;(int&nbsp;fieldIdx,
         <a href="../../protocol/ResultField.html" title="class in com.impossibl.postgres.protocol">ResultField</a>&nbsp;field,
         <a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;targetContext)</code></th>
+        java.lang.Class&lt;?&gt;&nbsp;targetClass,
+        java.lang.Object&nbsp;targetContext)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -380,8 +381,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">FieldBuffersRowData.</span><code><span class="memberNameLink"><a href="../../protocol/FieldBuffersRowData.html#updateField(int,com.impossibl.postgres.protocol.ResultField,com.impossibl.postgres.system.Context,java.lang.Object,java.lang.Object)">updateField</a></span>&#8203;(int&nbsp;columnIndex,
            <a href="../../protocol/ResultField.html" title="class in com.impossibl.postgres.protocol">ResultField</a>&nbsp;field,
            <a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;source,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;sourceContext)</code></th>
+           java.lang.Object&nbsp;source,
+           java.lang.Object&nbsp;sourceContext)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -389,8 +390,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">UpdatableRowData.</span><code><span class="memberNameLink"><a href="../../protocol/UpdatableRowData.html#updateField(int,com.impossibl.postgres.protocol.ResultField,com.impossibl.postgres.system.Context,java.lang.Object,java.lang.Object)">updateField</a></span>&#8203;(int&nbsp;columnIndex,
            <a href="../../protocol/ResultField.html" title="class in com.impossibl.postgres.protocol">ResultField</a>&nbsp;field,
            <a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;source,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;sourceContext)</code></th>
+           java.lang.Object&nbsp;source,
+           java.lang.Object&nbsp;sourceContext)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -398,7 +399,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
-<section role="region"><a id="com.impossibl.postgres.protocol.v30">
+<section><a id="com.impossibl.postgres.protocol.v30">
 <!--   -->
 </a>
 <h3>Uses of <a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a> in <a href="../../protocol/v30/package-summary.html">com.impossibl.postgres.protocol.v30</a></h3>
@@ -414,16 +415,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>static <a href="../../protocol/v30/BufferRowData.html" title="class in com.impossibl.postgres.protocol.v30">BufferRowData</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">BufferRowData.</span><code><span class="memberNameLink"><a href="../../protocol/v30/BufferRowData.html#encode(com.impossibl.postgres.system.Context,com.impossibl.postgres.protocol.ResultField%5B%5D,java.lang.Object%5B%5D)">encode</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
       <a href="../../protocol/ResultField.html" title="class in com.impossibl.postgres.protocol">ResultField</a>[]&nbsp;fields,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>[]&nbsp;values)</code></th>
+      java.lang.Object[]&nbsp;values)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">BufferRowData.</span><code><span class="memberNameLink"><a href="../../protocol/v30/BufferRowData.html#getField(int,com.impossibl.postgres.protocol.ResultField,com.impossibl.postgres.system.Context,java.lang.Class,java.lang.Object)">getField</a></span>&#8203;(int&nbsp;fieldIdx,
         <a href="../../protocol/ResultField.html" title="class in com.impossibl.postgres.protocol">ResultField</a>&nbsp;field,
         <a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;targetContext)</code></th>
+        java.lang.Class&lt;?&gt;&nbsp;targetClass,
+        java.lang.Object&nbsp;targetContext)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -431,7 +432,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
-<section role="region"><a id="com.impossibl.postgres.system">
+<section><a id="com.impossibl.postgres.system">
 <!--   -->
 </a>
 <h3>Uses of <a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a> in <a href="../package-summary.html">com.impossibl.postgres.system</a></h3>
@@ -496,7 +497,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">TypeMapContext.</span><code><span class="memberNameLink"><a href="../TypeMapContext.html#reset(com.impossibl.postgres.system.Context,java.util.Map)">reset</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;base,
-     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&gt;&nbsp;typeMap)</code></th>
+     java.util.Map&lt;java.lang.String,&#8203;java.lang.Class&lt;?&gt;&gt;&nbsp;typeMap)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -510,12 +511,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../SettingsContext.html#%3Cinit%3E(com.impossibl.postgres.system.Context,java.util.Map)">SettingsContext</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
-               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&gt;&nbsp;typeMap)</code></th>
+               java.util.Map&lt;java.lang.String,&#8203;java.lang.Class&lt;?&gt;&gt;&nbsp;typeMap)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../TypeMapContext.html#%3Cinit%3E(com.impossibl.postgres.system.Context,java.util.Map)">TypeMapContext</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
-              <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&gt;&nbsp;typeMap)</code></th>
+              java.util.Map&lt;java.lang.String,&#8203;java.lang.Class&lt;?&gt;&gt;&nbsp;typeMap)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -523,7 +524,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
-<section role="region"><a id="com.impossibl.postgres.system.procs">
+<section><a id="com.impossibl.postgres.system.procs">
 <!--   -->
 </a>
 <h3>Uses of <a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a> in <a href="../procs/package-summary.html">com.impossibl.postgres.system.procs</a></h3>
@@ -536,77 +537,77 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html?is-external=true" title="class or interface in java.sql" class="externalLink">ResultSet</a></code></td>
+<td class="colFirst"><code>protected java.sql.ResultSet</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">RefCursors.BinDecoder.</span><code><span class="memberNameLink"><a href="../procs/RefCursors.BinDecoder.html#decodeNativeValue(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,java.lang.Short,java.lang.Integer,io.netty.buffer.ByteBuf,java.lang.Class,java.lang.Object)">decodeNativeValue</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
                  <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang" class="externalLink">Short</a>&nbsp;typeLength,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&nbsp;typeModifier,
+                 java.lang.Short&nbsp;typeLength,
+                 java.lang.Integer&nbsp;typeModifier,
                  io.netty.buffer.ByteBuf&nbsp;buffer,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;targetContext)</code></th>
+                 java.lang.Class&lt;?&gt;&nbsp;targetClass,
+                 java.lang.Object&nbsp;targetContext)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html?is-external=true" title="class or interface in java.sql" class="externalLink">ResultSet</a></code></td>
+<td class="colFirst"><code>protected java.sql.ResultSet</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">RefCursors.TxtDecoder.</span><code><span class="memberNameLink"><a href="../procs/RefCursors.TxtDecoder.html#decodeNativeValue(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,java.lang.Short,java.lang.Integer,java.lang.CharSequence,java.lang.Class,java.lang.Object)">decodeNativeValue</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
                  <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang" class="externalLink">Short</a>&nbsp;typeLength,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&nbsp;typeModifier,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink">CharSequence</a>&nbsp;buffer,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;targetContext)</code></th>
+                 java.lang.Short&nbsp;typeLength,
+                 java.lang.Integer&nbsp;typeModifier,
+                 java.lang.CharSequence&nbsp;buffer,
+                 java.lang.Class&lt;?&gt;&nbsp;targetClass,
+                 java.lang.Object&nbsp;targetContext)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>protected java.lang.String</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Strings.BinDecoder.</span><code><span class="memberNameLink"><a href="../procs/Strings.BinDecoder.html#decodeNativeValue(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,java.lang.Short,java.lang.Integer,io.netty.buffer.ByteBuf,java.lang.Class,java.lang.Object)">decodeNativeValue</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
                  <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang" class="externalLink">Short</a>&nbsp;typeLength,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&nbsp;typeModifier,
+                 java.lang.Short&nbsp;typeLength,
+                 java.lang.Integer&nbsp;typeModifier,
                  io.netty.buffer.ByteBuf&nbsp;buffer,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;targetContext)</code></th>
+                 java.lang.Class&lt;?&gt;&nbsp;targetClass,
+                 java.lang.Object&nbsp;targetContext)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>protected java.lang.String</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Strings.TxtDecoder.</span><code><span class="memberNameLink"><a href="../procs/Strings.TxtDecoder.html#decodeNativeValue(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,java.lang.Short,java.lang.Integer,java.lang.CharSequence,java.lang.Class,java.lang.Object)">decodeNativeValue</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
                  <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang" class="externalLink">Short</a>&nbsp;typeLength,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&nbsp;typeModifier,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink">CharSequence</a>&nbsp;buffer,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;targetContext)</code></th>
+                 java.lang.Short&nbsp;typeLength,
+                 java.lang.Integer&nbsp;typeModifier,
+                 java.lang.CharSequence&nbsp;buffer,
+                 java.lang.Class&lt;?&gt;&nbsp;targetClass,
+                 java.lang.Object&nbsp;targetContext)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<td class="colFirst"><code>protected java.lang.Object</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Jsons.BinDecoder.</span><code><span class="memberNameLink"><a href="../procs/Jsons.BinDecoder.html#decodeValue(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,java.lang.Short,java.lang.Integer,io.netty.buffer.ByteBuf,java.lang.Class,java.lang.Object)">decodeValue</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
            <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang" class="externalLink">Short</a>&nbsp;typeLength,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&nbsp;typeModifier,
+           java.lang.Short&nbsp;typeLength,
+           java.lang.Integer&nbsp;typeModifier,
            io.netty.buffer.ByteBuf&nbsp;buffer,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;targetContext)</code></th>
+           java.lang.Class&lt;?&gt;&nbsp;targetClass,
+           java.lang.Object&nbsp;targetContext)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<td class="colFirst"><code>protected java.lang.Object</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Names.TxtDecoder.</span><code><span class="memberNameLink"><a href="../procs/Names.TxtDecoder.html#decodeValue(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,java.lang.Short,java.lang.Integer,java.lang.CharSequence,java.lang.Class,java.lang.Object)">decodeValue</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
            <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang" class="externalLink">Short</a>&nbsp;typeLength,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&nbsp;typeModifier,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink">CharSequence</a>&nbsp;buffer,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;targetContext)</code></th>
+           java.lang.Short&nbsp;typeLength,
+           java.lang.Integer&nbsp;typeModifier,
+           java.lang.CharSequence&nbsp;buffer,
+           java.lang.Class&lt;?&gt;&nbsp;targetClass,
+           java.lang.Object&nbsp;targetContext)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Domains.BinEncoder.</span><code><span class="memberNameLink"><a href="../procs/Domains.BinEncoder.html#encodeValue(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,java.lang.Object,java.lang.Object,io.netty.buffer.ByteBuf)">encodeValue</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
            <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;sourceContext,
+           java.lang.Object&nbsp;value,
+           java.lang.Object&nbsp;sourceContext,
            io.netty.buffer.ByteBuf&nbsp;buffer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -614,17 +615,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Domains.TxtEncoder.</span><code><span class="memberNameLink"><a href="../procs/Domains.TxtEncoder.html#encodeValue(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,java.lang.Object,java.lang.Object,java.lang.StringBuilder)">encodeValue</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
            <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;sourceContext,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang" class="externalLink">StringBuilder</a>&nbsp;buffer)</code></th>
+           java.lang.Object&nbsp;value,
+           java.lang.Object&nbsp;sourceContext,
+           java.lang.StringBuilder&nbsp;buffer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Jsons.BinEncoder.</span><code><span class="memberNameLink"><a href="../procs/Jsons.BinEncoder.html#encodeValue(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,java.lang.Object,java.lang.Object,io.netty.buffer.ByteBuf)">encodeValue</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
            <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;sourceContext,
+           java.lang.Object&nbsp;value,
+           java.lang.Object&nbsp;sourceContext,
            io.netty.buffer.ByteBuf&nbsp;buffer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -632,17 +633,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Names.TxtEncoder.</span><code><span class="memberNameLink"><a href="../procs/Names.TxtEncoder.html#encodeValue(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,java.lang.Object,java.lang.Object,java.lang.StringBuilder)">encodeValue</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
            <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;sourceContext,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang" class="externalLink">StringBuilder</a>&nbsp;buffer)</code></th>
+           java.lang.Object&nbsp;value,
+           java.lang.Object&nbsp;sourceContext,
+           java.lang.StringBuilder&nbsp;buffer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Strings.BinEncoder.</span><code><span class="memberNameLink"><a href="../procs/Strings.BinEncoder.html#encodeValue(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,java.lang.Object,java.lang.Object,io.netty.buffer.ByteBuf)">encodeValue</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
            <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;sourceContext,
+           java.lang.Object&nbsp;value,
+           java.lang.Object&nbsp;sourceContext,
            io.netty.buffer.ByteBuf&nbsp;buffer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -650,9 +651,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Strings.TxtEncoder.</span><code><span class="memberNameLink"><a href="../procs/Strings.TxtEncoder.html#encodeValue(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,java.lang.Object,java.lang.Object,java.lang.StringBuilder)">encodeValue</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
            <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;sourceContext,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang" class="externalLink">StringBuilder</a>&nbsp;buffer)</code></th>
+           java.lang.Object&nbsp;value,
+           java.lang.Object&nbsp;sourceContext,
+           java.lang.StringBuilder&nbsp;buffer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -660,7 +661,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
-<section role="region"><a id="com.impossibl.postgres.system.tables">
+<section><a id="com.impossibl.postgres.system.tables">
 <!--   -->
 </a>
 <h3>Uses of <a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a> in <a href="../tables/package-summary.html">com.impossibl.postgres.system.tables</a></h3>
@@ -673,7 +674,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>static &lt;R extends <a href="../tables/Table.Row.html" title="interface in com.impossibl.postgres.system.tables">Table.Row</a>,&#8203;T extends <a href="../tables/Table.html" title="interface in com.impossibl.postgres.system.tables">Table</a>&lt;R&gt;&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;R&gt;</code></td>
+<td class="colFirst"><code>static &lt;R extends <a href="../tables/Table.Row.html" title="interface in com.impossibl.postgres.system.tables">Table.Row</a>,&#8203;T extends <a href="../tables/Table.html" title="interface in com.impossibl.postgres.system.tables">Table</a>&lt;R&gt;&gt;<br>java.util.List&lt;R&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Tables.</span><code><span class="memberNameLink"><a href="../tables/Tables.html#convertRows(com.impossibl.postgres.system.Context,T,com.impossibl.postgres.protocol.ResultBatch)">convertRows</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
            T&nbsp;table,
            <a href="../../protocol/ResultBatch.html" title="class in com.impossibl.postgres.protocol">ResultBatch</a>&nbsp;results)</code></th>
@@ -701,7 +702,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
              int&nbsp;rowIdx,
              int&nbsp;fieldIdx,
              <a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
-             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;T&gt;&nbsp;targetType)</code></th>
+             java.lang.Class&lt;T&gt;&nbsp;targetType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -723,7 +724,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
-<section role="region"><a id="com.impossibl.postgres.types">
+<section><a id="com.impossibl.postgres.types">
 <!--   -->
 </a>
 <h3>Uses of <a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a> in <a href="../../types/package-summary.html">com.impossibl.postgres.types</a></h3>
@@ -736,22 +737,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Type.Codec.Decoder.</span><code><span class="memberNameLink"><a href="../../types/Type.Codec.Decoder.html#decode(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,java.lang.Short,java.lang.Integer,InBuffer,java.lang.Class,java.lang.Object)">decode</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
       <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang" class="externalLink">Short</a>&nbsp;typeLength,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&nbsp;typeModifier,
+      java.lang.Short&nbsp;typeLength,
+      java.lang.Integer&nbsp;typeModifier,
       <a href="../../types/Type.Codec.Decoder.html" title="type parameter in Type.Codec.Decoder">InBuffer</a>&nbsp;buffer,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;targetContext)</code></th>
+      java.lang.Class&lt;?&gt;&nbsp;targetClass,
+      java.lang.Object&nbsp;targetContext)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Type.Codec.Encoder.</span><code><span class="memberNameLink"><a href="../../types/Type.Codec.Encoder.html#encode(com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,java.lang.Object,java.lang.Object,OutBuffer)">encode</a></span>&#8203;(<a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
       <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;sourceContext,
+      java.lang.Object&nbsp;value,
+      java.lang.Object&nbsp;sourceContext,
       <a href="../../types/Type.Codec.Encoder.html" title="type parameter in Type.Codec.Encoder">OutBuffer</a>&nbsp;buffer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -760,7 +761,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
-<section role="region"><a id="com.impossibl.postgres.utils">
+<section><a id="com.impossibl.postgres.utils">
 <!--   -->
 </a>
 <h3>Uses of <a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a> in <a href="../../utils/package-summary.html">com.impossibl.postgres.utils</a></h3>
@@ -773,15 +774,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<td class="colFirst"><code>static java.lang.Object</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ByteBufs.</span><code><span class="memberNameLink"><a href="../../utils/ByteBufs.html#lengthDecodeBinary(com.impossibl.postgres.types.Type.Codec.Decoder,com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,java.lang.Short,java.lang.Integer,io.netty.buffer.ByteBuf,java.lang.Class,java.lang.Object)">lengthDecodeBinary</a></span>&#8203;(<a href="../../types/Type.Codec.Decoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Decoder</a>&lt;io.netty.buffer.ByteBuf&gt;&nbsp;decoder,
                   <a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
                   <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang" class="externalLink">Short</a>&nbsp;typeLength,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&nbsp;typeModifier,
+                  java.lang.Short&nbsp;typeLength,
+                  java.lang.Integer&nbsp;typeModifier,
                   io.netty.buffer.ByteBuf&nbsp;buffer,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;targetContext)</code></th>
+                  java.lang.Class&lt;?&gt;&nbsp;targetClass,
+                  java.lang.Object&nbsp;targetContext)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -789,8 +790,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">ByteBufs.</span><code><span class="memberNameLink"><a href="../../utils/ByteBufs.html#lengthEncodeBinary(com.impossibl.postgres.types.Type.Codec.Encoder,com.impossibl.postgres.system.Context,com.impossibl.postgres.types.Type,java.lang.Object,java.lang.Object,io.netty.buffer.ByteBuf)">lengthEncodeBinary</a></span>&#8203;(<a href="../../types/Type.Codec.Encoder.html" title="interface in com.impossibl.postgres.types">Type.Codec.Encoder</a>&lt;io.netty.buffer.ByteBuf&gt;&nbsp;encoder,
                   <a href="../Context.html" title="interface in com.impossibl.postgres.system">Context</a>&nbsp;context,
                   <a href="../../types/Type.html" title="class in com.impossibl.postgres.types">Type</a>&nbsp;type,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;sourceContext,
+                  java.lang.Object&nbsp;value,
+                  java.lang.Object&nbsp;sourceContext,
                   io.netty.buffer.ByteBuf&nbsp;buffer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>

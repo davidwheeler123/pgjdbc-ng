@@ -6,15 +6,16 @@
 <title>ClientFirstMessage (PGJDBC-NG 0.9-SNAPSHOT)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../../../../jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../../jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../../jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="../../../../../../../script.js"></script>
 <script type="text/javascript" src="../../../../../../../jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="../../../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../../../jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="../../../../../../../jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../../../../jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../../../../../../../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -120,7 +121,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
+<li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
 <li>com.impossibl.postgres.protocol.sasl.scram.message.ClientFirstMessage</li>
@@ -136,7 +137,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">ClientFirstMessage</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
+extends java.lang.Object
 implements <a href="../util/StringWritable.html" title="interface in com.impossibl.postgres.protocol.sasl.scram.util">StringWritable</a></pre>
 <div class="block">Constructs and parses client-first-messages.
  Message contains a <a href="../gssapi/Gs2Header.html" title="class in com.impossibl.postgres.protocol.sasl.scram.gssapi"><code>Gs2Header</code></a>, a username and a nonce. Formal syntax is:
@@ -158,7 +159,7 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <ul class="blockList">
 <li class="blockList">
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="constructor.summary">
 <!--   -->
@@ -172,25 +173,25 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.impossibl.postgres.protocol.sasl.scram.gssapi.Gs2CbindFlag,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">ClientFirstMessage</a></span>&#8203;(<a href="../gssapi/Gs2CbindFlag.html" title="enum in com.impossibl.postgres.protocol.sasl.scram.gssapi">Gs2CbindFlag</a>&nbsp;gs2CbindFlag,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;authzid,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cbindName,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;user,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;nonce)</code></th>
+                  java.lang.String&nbsp;authzid,
+                  java.lang.String&nbsp;cbindName,
+                  java.lang.String&nbsp;user,
+                  java.lang.String&nbsp;nonce)</code></th>
 <td class="colLast">
 <div class="block">Constructs a client-first-message for the given parameters.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.impossibl.postgres.protocol.sasl.scram.gssapi.Gs2Header,java.lang.String,java.lang.String)">ClientFirstMessage</a></span>&#8203;(<a href="../gssapi/Gs2Header.html" title="class in com.impossibl.postgres.protocol.sasl.scram.gssapi">Gs2Header</a>&nbsp;gs2Header,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;user,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;nonce)</code></th>
+                  java.lang.String&nbsp;user,
+                  java.lang.String&nbsp;nonce)</code></th>
 <td class="colLast">
 <div class="block">Constructs a client-first-message for the given user, nonce and gs2Header.</div>
 </td>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String)">ClientFirstMessage</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;user,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;nonce)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String)">ClientFirstMessage</a></span>&#8203;(java.lang.String&nbsp;user,
+                  java.lang.String&nbsp;nonce)</code></th>
 <td class="colLast">
 <div class="block">Constructs a client-first-message for the given parameters, with no channel binding nor authzid.</div>
 </td>
@@ -200,7 +201,7 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 </ul>
 </section>
 <!-- ========== METHOD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.summary">
 <!--   -->
@@ -214,7 +215,7 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAuthzid()">getAuthzid</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -224,7 +225,7 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getChannelBindingName()">getChannelBindingName</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -234,12 +235,12 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNonce()">getNonce</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUser()">getUser</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -250,28 +251,28 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="ClientFirstMessage.html" title="class in com.impossibl.postgres.protocol.sasl.scram.message">ClientFirstMessage</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseFrom(java.lang.String)">parseFrom</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;clientFirstMessage)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parseFrom(java.lang.String)">parseFrom</a></span>&#8203;(java.lang.String&nbsp;clientFirstMessage)</code></th>
 <td class="colLast">
 <div class="block">Construct a <a href="ClientFirstMessage.html" title="class in com.impossibl.postgres.protocol.sasl.scram.message"><code>ClientFirstMessage</code></a> instance from a message (String)</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html?is-external=true" title="class or interface in java.lang" class="externalLink">StringBuffer</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeTo(java.lang.StringBuffer)">writeTo</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html?is-external=true" title="class or interface in java.lang" class="externalLink">StringBuffer</a>&nbsp;sb)</code></th>
+<td class="colFirst"><code>java.lang.StringBuffer</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeTo(java.lang.StringBuffer)">writeTo</a></span>&#8203;(java.lang.StringBuffer&nbsp;sb)</code></th>
 <td class="colLast">
 <div class="block">Write the class information to the given StringBuffer.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html?is-external=true" title="class or interface in java.lang" class="externalLink">StringBuffer</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeToWithoutGs2Header(java.lang.StringBuffer)">writeToWithoutGs2Header</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html?is-external=true" title="class or interface in java.lang" class="externalLink">StringBuffer</a>&nbsp;sb)</code></th>
+<td class="colFirst"><code>java.lang.StringBuffer</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeToWithoutGs2Header(java.lang.StringBuffer)">writeToWithoutGs2Header</a></span>&#8203;(java.lang.StringBuffer&nbsp;sb)</code></th>
 <td class="colLast">
-<div class="block">Limited version of the <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink"><code>Object.toString()</code></a> method, that doesn't write the GS2 header.</div>
+<div class="block">Limited version of the <code>Object.toString()</code> method, that doesn't write the GS2 header.</div>
 </td>
 </tr>
 </table>
@@ -279,8 +280,8 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -292,7 +293,7 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <ul class="blockList">
 <li class="blockList">
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="constructor.detail">
 <!--   -->
@@ -305,9 +306,9 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <li class="blockList">
 <h4>ClientFirstMessage</h4>
 <pre>public&nbsp;ClientFirstMessage&#8203;(<a href="../gssapi/Gs2Header.html" title="class in com.impossibl.postgres.protocol.sasl.scram.gssapi">Gs2Header</a>&nbsp;gs2Header,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;user,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;nonce)
-                   throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
+                          java.lang.String&nbsp;user,
+                          java.lang.String&nbsp;nonce)
+                   throws java.lang.IllegalArgumentException</pre>
 <div class="block">Constructs a client-first-message for the given user, nonce and gs2Header.
  This constructor is intended to be instantiated by a scram client, and not directly.
  The client should be providing the header, and nonce (and probably the user too).</div>
@@ -317,7 +318,7 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <dd><code>user</code> - The SCRAM user</dd>
 <dd><code>nonce</code> - The nonce for this session</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - If any of the arguments is null or empty</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - If any of the arguments is null or empty</dd>
 </dl>
 </li>
 </ul>
@@ -328,10 +329,10 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <li class="blockList">
 <h4>ClientFirstMessage</h4>
 <pre>public&nbsp;ClientFirstMessage&#8203;(<a href="../gssapi/Gs2CbindFlag.html" title="enum in com.impossibl.postgres.protocol.sasl.scram.gssapi">Gs2CbindFlag</a>&nbsp;gs2CbindFlag,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;authzid,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cbindName,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;user,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;nonce)</pre>
+                          java.lang.String&nbsp;authzid,
+                          java.lang.String&nbsp;cbindName,
+                          java.lang.String&nbsp;user,
+                          java.lang.String&nbsp;nonce)</pre>
 <div class="block">Constructs a client-first-message for the given parameters.
  Under normal operation, this constructor is intended to be instantiated by a scram client, and not directly.
  However, this constructor is more user- or test-friendly, as the arguments are easier to provide without
@@ -344,7 +345,7 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <dd><code>user</code> - The SCRAM user</dd>
 <dd><code>nonce</code> - The nonce for this session</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - If the flag, user or nonce are null or empty</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - If the flag, user or nonce are null or empty</dd>
 </dl>
 </li>
 </ul>
@@ -354,8 +355,8 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ClientFirstMessage</h4>
-<pre>public&nbsp;ClientFirstMessage&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;user,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;nonce)</pre>
+<pre>public&nbsp;ClientFirstMessage&#8203;(java.lang.String&nbsp;user,
+                          java.lang.String&nbsp;nonce)</pre>
 <div class="block">Constructs a client-first-message for the given parameters, with no channel binding nor authzid.
  Under normal operation, this constructor is intended to be instantiated by a scram client, and not directly.
  However, this constructor is more user- or test-friendly, as the arguments are easier to provide without
@@ -365,7 +366,7 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <dd><code>user</code> - The SCRAM user</dd>
 <dd><code>nonce</code> - The nonce for this session</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - If the user or nonce are null or empty</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - If the user or nonce are null or empty</dd>
 </dl>
 </li>
 </ul>
@@ -373,7 +374,7 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 </ul>
 </section>
 <!-- ============ METHOD DETAIL ========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.detail">
 <!--   -->
@@ -403,7 +404,7 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <ul class="blockList">
 <li class="blockList">
 <h4>getChannelBindingName</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getChannelBindingName()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getChannelBindingName()</pre>
 </li>
 </ul>
 <a id="getAuthzid()">
@@ -412,7 +413,7 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <ul class="blockList">
 <li class="blockList">
 <h4>getAuthzid</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getAuthzid()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getAuthzid()</pre>
 </li>
 </ul>
 <a id="getGs2Header()">
@@ -430,7 +431,7 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <ul class="blockList">
 <li class="blockList">
 <h4>getUser</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getUser()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getUser()</pre>
 </li>
 </ul>
 <a id="getNonce()">
@@ -439,7 +440,7 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <ul class="blockList">
 <li class="blockList">
 <h4>getNonce</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getNonce()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getNonce()</pre>
 </li>
 </ul>
 <a id="writeToWithoutGs2Header(java.lang.StringBuffer)">
@@ -448,8 +449,8 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <ul class="blockList">
 <li class="blockList">
 <h4>writeToWithoutGs2Header</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html?is-external=true" title="class or interface in java.lang" class="externalLink">StringBuffer</a>&nbsp;writeToWithoutGs2Header&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html?is-external=true" title="class or interface in java.lang" class="externalLink">StringBuffer</a>&nbsp;sb)</pre>
-<div class="block">Limited version of the <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink"><code>Object.toString()</code></a> method, that doesn't write the GS2 header.
+<pre class="methodSignature">public&nbsp;java.lang.StringBuffer&nbsp;writeToWithoutGs2Header&#8203;(java.lang.StringBuffer&nbsp;sb)</pre>
+<div class="block">Limited version of the <code>Object.toString()</code> method, that doesn't write the GS2 header.
  This method is useful to construct the auth message used as part of the SCRAM algorithm.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -465,7 +466,7 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <ul class="blockList">
 <li class="blockList">
 <h4>writeTo</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html?is-external=true" title="class or interface in java.lang" class="externalLink">StringBuffer</a>&nbsp;writeTo&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html?is-external=true" title="class or interface in java.lang" class="externalLink">StringBuffer</a>&nbsp;sb)</pre>
+<pre class="methodSignature">public&nbsp;java.lang.StringBuffer&nbsp;writeTo&#8203;(java.lang.StringBuffer&nbsp;sb)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../util/StringWritable.html#writeTo(java.lang.StringBuffer)">StringWritable</a></code></span></div>
 <div class="block">Write the class information to the given StringBuffer.</div>
 <dl>
@@ -484,9 +485,9 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <ul class="blockList">
 <li class="blockList">
 <h4>parseFrom</h4>
-<pre class="methodSignature">public static&nbsp;<a href="ClientFirstMessage.html" title="class in com.impossibl.postgres.protocol.sasl.scram.message">ClientFirstMessage</a>&nbsp;parseFrom&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;clientFirstMessage)
+<pre class="methodSignature">public static&nbsp;<a href="ClientFirstMessage.html" title="class in com.impossibl.postgres.protocol.sasl.scram.message">ClientFirstMessage</a>&nbsp;parseFrom&#8203;(java.lang.String&nbsp;clientFirstMessage)
                                     throws <a href="../exception/ScramParseException.html" title="class in com.impossibl.postgres.protocol.sasl.scram.exception">ScramParseException</a>,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
+                                           java.lang.IllegalArgumentException</pre>
 <div class="block">Construct a <a href="ClientFirstMessage.html" title="class in com.impossibl.postgres.protocol.sasl.scram.message"><code>ClientFirstMessage</code></a> instance from a message (String)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -495,7 +496,7 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <dd>The instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../exception/ScramParseException.html" title="class in com.impossibl.postgres.protocol.sasl.scram.exception">ScramParseException</a></code> - If the message is not a valid client-first-message</dd>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - If the message is null or empty</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - If the message is null or empty</dd>
 </dl>
 </li>
 </ul>
@@ -505,10 +506,10 @@ implements <a href="../util/StringWritable.html" title="interface in com.impossi
 <ul class="blockListLast">
 <li class="blockList">
 <h4>toString</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;toString()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;toString()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
+<dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
 </dl>
 </li>
 </ul>

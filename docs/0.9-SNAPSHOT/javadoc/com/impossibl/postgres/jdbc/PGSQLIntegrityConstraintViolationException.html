@@ -6,15 +6,16 @@
 <title>PGSQLIntegrityConstraintViolationException (PGJDBC-NG 0.9-SNAPSHOT)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="../../../../jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -120,22 +121,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
+<li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Throwable</a></li>
+<li>java.lang.Throwable</li>
 <li>
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Exception</a></li>
+<li>java.lang.Exception</li>
 <li>
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">java.sql.SQLException</a></li>
+<li>java.sql.SQLException</li>
 <li>
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLNonTransientException.html?is-external=true" title="class or interface in java.sql" class="externalLink">java.sql.SQLNonTransientException</a></li>
+<li>java.sql.SQLNonTransientException</li>
 <li>
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLIntegrityConstraintViolationException.html?is-external=true" title="class or interface in java.sql" class="externalLink">java.sql.SQLIntegrityConstraintViolationException</a></li>
+<li>java.sql.SQLIntegrityConstraintViolationException</li>
 <li>
 <ul class="inheritance">
 <li>com.impossibl.postgres.jdbc.PGSQLIntegrityConstraintViolationException</li>
@@ -157,11 +158,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com.impossibl.postgres.api.jdbc">PGSQLExceptionInfo</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io" class="externalLink">Serializable</a></code>, <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&gt;</code></dd>
+<dd><code><a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com.impossibl.postgres.api.jdbc">PGSQLExceptionInfo</a></code>, <code>java.io.Serializable</code>, <code>java.lang.Iterable&lt;java.lang.Throwable&gt;</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">PGSQLIntegrityConstraintViolationException</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLIntegrityConstraintViolationException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLIntegrityConstraintViolationException</a>
+extends java.sql.SQLIntegrityConstraintViolationException
 implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com.impossibl.postgres.api.jdbc">PGSQLExceptionInfo</a></pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -174,7 +175,7 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="constructor.summary">
 <!--   -->
@@ -191,40 +192,40 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String)">PGSQLIntegrityConstraintViolationException</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;reason)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String)">PGSQLIntegrityConstraintViolationException</a></span>&#8203;(java.lang.String&nbsp;reason)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String)">PGSQLIntegrityConstraintViolationException</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;reason,
-                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;SQLState)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String)">PGSQLIntegrityConstraintViolationException</a></span>&#8203;(java.lang.String&nbsp;reason,
+                                          java.lang.String&nbsp;SQLState)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String,int)">PGSQLIntegrityConstraintViolationException</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;reason,
-                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;SQLState,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String,int)">PGSQLIntegrityConstraintViolationException</a></span>&#8203;(java.lang.String&nbsp;reason,
+                                          java.lang.String&nbsp;SQLState,
                                           int&nbsp;vendorCode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String,int,java.lang.Throwable)">PGSQLIntegrityConstraintViolationException</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;reason,
-                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;SQLState,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String,int,java.lang.Throwable)">PGSQLIntegrityConstraintViolationException</a></span>&#8203;(java.lang.String&nbsp;reason,
+                                          java.lang.String&nbsp;SQLState,
                                           int&nbsp;vendorCode,
-                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause)</code></th>
+                                          java.lang.Throwable&nbsp;cause)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.Throwable)">PGSQLIntegrityConstraintViolationException</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;reason,
-                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;SQLState,
-                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.Throwable)">PGSQLIntegrityConstraintViolationException</a></span>&#8203;(java.lang.String&nbsp;reason,
+                                          java.lang.String&nbsp;SQLState,
+                                          java.lang.Throwable&nbsp;cause)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.Throwable)">PGSQLIntegrityConstraintViolationException</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;reason,
-                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.Throwable)">PGSQLIntegrityConstraintViolationException</a></span>&#8203;(java.lang.String&nbsp;reason,
+                                          java.lang.Throwable&nbsp;cause)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.Throwable)">PGSQLIntegrityConstraintViolationException</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.Throwable)">PGSQLIntegrityConstraintViolationException</a></span>&#8203;(java.lang.Throwable&nbsp;cause)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -232,7 +233,7 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 </ul>
 </section>
 <!-- ========== METHOD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.summary">
 <!--   -->
@@ -246,63 +247,63 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getColumn()">getColumn</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getConstraint()">getConstraint</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDatatype()">getDatatype</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDetail()">getDetail</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSchema()">getSchema</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTable()">getTable</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setColumn(java.lang.String)">setColumn</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;column)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setColumn(java.lang.String)">setColumn</a></span>&#8203;(java.lang.String&nbsp;column)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setConstraint(java.lang.String)">setConstraint</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;constraint)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setConstraint(java.lang.String)">setConstraint</a></span>&#8203;(java.lang.String&nbsp;constraint)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDatatype(java.lang.String)">setDatatype</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;datatype)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDatatype(java.lang.String)">setDatatype</a></span>&#8203;(java.lang.String&nbsp;datatype)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDetail(java.lang.String)">setDetail</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;details)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDetail(java.lang.String)">setDetail</a></span>&#8203;(java.lang.String&nbsp;details)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSchema(java.lang.String)">setSchema</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;schema)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSchema(java.lang.String)">setSchema</a></span>&#8203;(java.lang.String&nbsp;schema)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTable(java.lang.String)">setTable</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;table)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTable(java.lang.String)">setTable</a></span>&#8203;(java.lang.String&nbsp;table)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -310,29 +311,29 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <li class="blockList"><a id="methods.inherited.from.class.java.sql.SQLException">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.sql.<a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true#getErrorCode()" title="class or interface in java.sql" class="externalLink">getErrorCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true#getNextException()" title="class or interface in java.sql" class="externalLink">getNextException</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true#getSQLState()" title="class or interface in java.sql" class="externalLink">getSQLState</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true#iterator()" title="class or interface in java.sql" class="externalLink">iterator</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true#setNextException(java.sql.SQLException)" title="class or interface in java.sql" class="externalLink">setNextException</a></code></li>
+<h3>Methods inherited from class&nbsp;java.sql.SQLException</h3>
+<code>getErrorCode, getNextException, getSQLState, iterator, setNextException</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Throwable">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#addSuppressed(java.lang.Throwable)" title="class or interface in java.lang" class="externalLink">addSuppressed</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#fillInStackTrace()" title="class or interface in java.lang" class="externalLink">fillInStackTrace</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#getCause()" title="class or interface in java.lang" class="externalLink">getCause</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#getLocalizedMessage()" title="class or interface in java.lang" class="externalLink">getLocalizedMessage</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#getMessage()" title="class or interface in java.lang" class="externalLink">getMessage</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#getStackTrace()" title="class or interface in java.lang" class="externalLink">getStackTrace</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#getSuppressed()" title="class or interface in java.lang" class="externalLink">getSuppressed</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#initCause(java.lang.Throwable)" title="class or interface in java.lang" class="externalLink">initCause</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#printStackTrace()" title="class or interface in java.lang" class="externalLink">printStackTrace</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#printStackTrace(java.io.PrintStream)" title="class or interface in java.lang" class="externalLink">printStackTrace</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#printStackTrace(java.io.PrintWriter)" title="class or interface in java.lang" class="externalLink">printStackTrace</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#setStackTrace(java.lang.StackTraceElement%5B%5D)" title="class or interface in java.lang" class="externalLink">setStackTrace</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a></code></li>
+<h3>Methods inherited from class&nbsp;java.lang.Throwable</h3>
+<code>addSuppressed, fillInStackTrace, getCause, getLocalizedMessage, getMessage, getStackTrace, getSuppressed, initCause, printStackTrace, printStackTrace, printStackTrace, setStackTrace, toString</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Iterable">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true#forEach(java.util.function.Consumer)" title="class or interface in java.lang" class="externalLink">forEach</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true#spliterator()" title="class or interface in java.lang" class="externalLink">spliterator</a></code></li>
+<h3>Methods inherited from interface&nbsp;java.lang.Iterable</h3>
+<code>forEach, spliterator</code></li>
 </ul>
 </li>
 </ul>
@@ -344,7 +345,7 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="constructor.detail">
 <!--   -->
@@ -365,10 +366,10 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <h4>PGSQLIntegrityConstraintViolationException</h4>
-<pre>public&nbsp;PGSQLIntegrityConstraintViolationException&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;reason,
-                                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;SQLState,
+<pre>public&nbsp;PGSQLIntegrityConstraintViolationException&#8203;(java.lang.String&nbsp;reason,
+                                                  java.lang.String&nbsp;SQLState,
                                                   int&nbsp;vendorCode,
-                                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause)</pre>
+                                                  java.lang.Throwable&nbsp;cause)</pre>
 </li>
 </ul>
 <a id="&lt;init&gt;(java.lang.String,java.lang.String,int)">
@@ -377,8 +378,8 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <h4>PGSQLIntegrityConstraintViolationException</h4>
-<pre>public&nbsp;PGSQLIntegrityConstraintViolationException&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;reason,
-                                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;SQLState,
+<pre>public&nbsp;PGSQLIntegrityConstraintViolationException&#8203;(java.lang.String&nbsp;reason,
+                                                  java.lang.String&nbsp;SQLState,
                                                   int&nbsp;vendorCode)</pre>
 </li>
 </ul>
@@ -388,9 +389,9 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <h4>PGSQLIntegrityConstraintViolationException</h4>
-<pre>public&nbsp;PGSQLIntegrityConstraintViolationException&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;reason,
-                                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;SQLState,
-                                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause)</pre>
+<pre>public&nbsp;PGSQLIntegrityConstraintViolationException&#8203;(java.lang.String&nbsp;reason,
+                                                  java.lang.String&nbsp;SQLState,
+                                                  java.lang.Throwable&nbsp;cause)</pre>
 </li>
 </ul>
 <a id="&lt;init&gt;(java.lang.String,java.lang.String)">
@@ -399,8 +400,8 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <h4>PGSQLIntegrityConstraintViolationException</h4>
-<pre>public&nbsp;PGSQLIntegrityConstraintViolationException&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;reason,
-                                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;SQLState)</pre>
+<pre>public&nbsp;PGSQLIntegrityConstraintViolationException&#8203;(java.lang.String&nbsp;reason,
+                                                  java.lang.String&nbsp;SQLState)</pre>
 </li>
 </ul>
 <a id="&lt;init&gt;(java.lang.String,java.lang.Throwable)">
@@ -409,8 +410,8 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <h4>PGSQLIntegrityConstraintViolationException</h4>
-<pre>public&nbsp;PGSQLIntegrityConstraintViolationException&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;reason,
-                                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause)</pre>
+<pre>public&nbsp;PGSQLIntegrityConstraintViolationException&#8203;(java.lang.String&nbsp;reason,
+                                                  java.lang.Throwable&nbsp;cause)</pre>
 </li>
 </ul>
 <a id="&lt;init&gt;(java.lang.String)">
@@ -419,7 +420,7 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <h4>PGSQLIntegrityConstraintViolationException</h4>
-<pre>public&nbsp;PGSQLIntegrityConstraintViolationException&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;reason)</pre>
+<pre>public&nbsp;PGSQLIntegrityConstraintViolationException&#8203;(java.lang.String&nbsp;reason)</pre>
 </li>
 </ul>
 <a id="&lt;init&gt;(java.lang.Throwable)">
@@ -428,14 +429,14 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PGSQLIntegrityConstraintViolationException</h4>
-<pre>public&nbsp;PGSQLIntegrityConstraintViolationException&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause)</pre>
+<pre>public&nbsp;PGSQLIntegrityConstraintViolationException&#8203;(java.lang.Throwable&nbsp;cause)</pre>
 </li>
 </ul>
 </li>
 </ul>
 </section>
 <!-- ============ METHOD DETAIL ========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.detail">
 <!--   -->
@@ -447,7 +448,7 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <h4>getSchema</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getSchema()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getSchema()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../api/jdbc/PGSQLExceptionInfo.html#getSchema()">getSchema</a></code>&nbsp;in interface&nbsp;<code><a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com.impossibl.postgres.api.jdbc">PGSQLExceptionInfo</a></code></dd>
@@ -460,7 +461,7 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <h4>setSchema</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setSchema&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;schema)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setSchema&#8203;(java.lang.String&nbsp;schema)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../api/jdbc/PGSQLExceptionInfo.html#setSchema(java.lang.String)">setSchema</a></code>&nbsp;in interface&nbsp;<code><a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com.impossibl.postgres.api.jdbc">PGSQLExceptionInfo</a></code></dd>
@@ -473,7 +474,7 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <h4>getTable</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getTable()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getTable()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../api/jdbc/PGSQLExceptionInfo.html#getTable()">getTable</a></code>&nbsp;in interface&nbsp;<code><a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com.impossibl.postgres.api.jdbc">PGSQLExceptionInfo</a></code></dd>
@@ -486,7 +487,7 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <h4>setTable</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setTable&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;table)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setTable&#8203;(java.lang.String&nbsp;table)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../api/jdbc/PGSQLExceptionInfo.html#setTable(java.lang.String)">setTable</a></code>&nbsp;in interface&nbsp;<code><a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com.impossibl.postgres.api.jdbc">PGSQLExceptionInfo</a></code></dd>
@@ -499,7 +500,7 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <h4>getColumn</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getColumn()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getColumn()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../api/jdbc/PGSQLExceptionInfo.html#getColumn()">getColumn</a></code>&nbsp;in interface&nbsp;<code><a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com.impossibl.postgres.api.jdbc">PGSQLExceptionInfo</a></code></dd>
@@ -512,7 +513,7 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <h4>setColumn</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setColumn&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;column)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setColumn&#8203;(java.lang.String&nbsp;column)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../api/jdbc/PGSQLExceptionInfo.html#setColumn(java.lang.String)">setColumn</a></code>&nbsp;in interface&nbsp;<code><a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com.impossibl.postgres.api.jdbc">PGSQLExceptionInfo</a></code></dd>
@@ -525,7 +526,7 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <h4>getDatatype</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getDatatype()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getDatatype()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../api/jdbc/PGSQLExceptionInfo.html#getDatatype()">getDatatype</a></code>&nbsp;in interface&nbsp;<code><a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com.impossibl.postgres.api.jdbc">PGSQLExceptionInfo</a></code></dd>
@@ -538,7 +539,7 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <h4>setDatatype</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setDatatype&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;datatype)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setDatatype&#8203;(java.lang.String&nbsp;datatype)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../api/jdbc/PGSQLExceptionInfo.html#setDatatype(java.lang.String)">setDatatype</a></code>&nbsp;in interface&nbsp;<code><a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com.impossibl.postgres.api.jdbc">PGSQLExceptionInfo</a></code></dd>
@@ -551,7 +552,7 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <h4>getConstraint</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getConstraint()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getConstraint()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../api/jdbc/PGSQLExceptionInfo.html#getConstraint()">getConstraint</a></code>&nbsp;in interface&nbsp;<code><a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com.impossibl.postgres.api.jdbc">PGSQLExceptionInfo</a></code></dd>
@@ -564,7 +565,7 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <h4>setConstraint</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setConstraint&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;constraint)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setConstraint&#8203;(java.lang.String&nbsp;constraint)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../api/jdbc/PGSQLExceptionInfo.html#setConstraint(java.lang.String)">setConstraint</a></code>&nbsp;in interface&nbsp;<code><a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com.impossibl.postgres.api.jdbc">PGSQLExceptionInfo</a></code></dd>
@@ -577,7 +578,7 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockList">
 <li class="blockList">
 <h4>getDetail</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getDetail()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getDetail()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../api/jdbc/PGSQLExceptionInfo.html#getDetail()">getDetail</a></code>&nbsp;in interface&nbsp;<code><a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com.impossibl.postgres.api.jdbc">PGSQLExceptionInfo</a></code></dd>
@@ -590,7 +591,7 @@ implements <a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setDetail</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setDetail&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;details)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setDetail&#8203;(java.lang.String&nbsp;details)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../api/jdbc/PGSQLExceptionInfo.html#setDetail(java.lang.String)">setDetail</a></code>&nbsp;in interface&nbsp;<code><a href="../api/jdbc/PGSQLExceptionInfo.html" title="interface in com.impossibl.postgres.api.jdbc">PGSQLExceptionInfo</a></code></dd>

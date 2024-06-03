@@ -6,15 +6,16 @@
 <title>Setting (PGJDBC-NG 0.9-SNAPSHOT)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="../../../../jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -120,7 +121,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
+<li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
 <li>com.impossibl.postgres.system.Setting&lt;T&gt;</li>
@@ -136,7 +137,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">Setting&lt;T&gt;</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></pre>
+extends java.lang.Object</pre>
 <div class="block">Completely defined setting that can be transformed to/from text, use alternate
  names, carries a description and optional default value.
 
@@ -222,11 +223,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  Although any type can be used with a setting only the following types can be
  declared via annotations using the annotation processor
  <ul>
-   <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Boolean</code></a></li>
-   <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Integer</code></a></li>
-   <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a></li>
-   <li>Any <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Enum</code></a></li>
-   <li>Any <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a></li>
+   <li><code>Boolean</code></li>
+   <li><code>Integer</code></li>
+   <li><code>String</code></li>
+   <li>Any <code>Enum</code></li>
+   <li>Any <code>Class</code></li>
    <li><a href="Version.html" title="class in com.impossibl.postgres.system"><code>Version</code></a></li>
  </ul></div>
 </li>
@@ -236,7 +237,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <!-- ======== NESTED CLASS SUMMARY ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="nested.class.summary">
 <!--   -->
@@ -292,7 +293,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </ul>
 </section>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="constructor.summary">
 <!--   -->
@@ -306,24 +307,24 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.impossibl.postgres.system.Setting.Group,java.lang.String,java.lang.Class,java.util.function.Supplier,com.impossibl.postgres.system.Setting.Converter,java.util.function.Function,java.lang.String%5B%5D)">Setting</a></span>&#8203;(<a href="Setting.Group.html" title="class in com.impossibl.postgres.system">Setting.Group</a>&nbsp;group,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;description,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;type,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;dynamicDefaultSupplier,
+       java.lang.String&nbsp;description,
+       java.lang.Class&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;type,
+       java.util.function.Supplier&lt;java.lang.String&gt;&nbsp;dynamicDefaultSupplier,
        <a href="Setting.Converter.html" title="interface in com.impossibl.postgres.system">Setting.Converter</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;fromString,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;toString,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]&nbsp;names)</code></th>
+       java.util.function.Function&lt;<a href="Setting.html" title="type parameter in Setting">T</a>,&#8203;java.lang.String&gt;&nbsp;toString,
+       java.lang.String[]&nbsp;names)</code></th>
 <td class="colLast">
 <div class="block">Constructs a new setting instance with a dynamic default value and without support via the annotation processor.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.impossibl.postgres.system.Setting.Group,java.lang.String,java.lang.Class,T,com.impossibl.postgres.system.Setting.Converter,java.util.function.Function,java.lang.String%5B%5D)">Setting</a></span>&#8203;(<a href="Setting.Group.html" title="class in com.impossibl.postgres.system">Setting.Group</a>&nbsp;group,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;description,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;type,
+       java.lang.String&nbsp;description,
+       java.lang.Class&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;type,
        <a href="Setting.html" title="type parameter in Setting">T</a>&nbsp;defaultValue,
        <a href="Setting.Converter.html" title="interface in com.impossibl.postgres.system">Setting.Converter</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;fromString,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;toString,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]&nbsp;names)</code></th>
+       java.util.function.Function&lt;<a href="Setting.html" title="type parameter in Setting">T</a>,&#8203;java.lang.String&gt;&nbsp;toString,
+       java.lang.String[]&nbsp;names)</code></th>
 <td class="colLast">
 <div class="block">Constructs a new setting instance with a static default value and without support via the annotation processor.</div>
 </td>
@@ -333,7 +334,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </ul>
 </section>
 <!-- ========== METHOD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.summary">
 <!--   -->
@@ -355,14 +356,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="Setting.html" title="type parameter in Setting">T</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromString(java.lang.String)">fromString</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;value)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromString(java.lang.String)">fromString</a></span>&#8203;(java.lang.String&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Convert a string to the setting's native type.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="Setting.html" title="type parameter in Setting">T</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(java.util.Properties)">get</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util" class="externalLink">Properties</a>&nbsp;properties)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(java.util.Properties)">get</a></span>&#8203;(java.util.Properties&nbsp;properties)</code></th>
 <td class="colLast">
 <div class="block">Looks up the setting in the provided <code>properties</code>.</div>
 </td>
@@ -375,14 +376,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDefaultText()">getDefaultText</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Retrieve the default value of this setting as text.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDescription()">getDescription</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Retrieve the description of this setting.</div>
@@ -396,14 +397,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getName()">getName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Retrieve the primary name of this setting.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]</code></td>
+<td class="colFirst"><code>java.lang.String[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNames()">getNames</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Get <b>all</b> names for this setting; including
@@ -418,15 +419,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getText(java.util.Properties)">getText</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util" class="externalLink">Properties</a>&nbsp;properties)</code></th>
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getText(java.util.Properties)">getText</a></span>&#8203;(java.util.Properties&nbsp;properties)</code></th>
 <td class="colLast">
 <div class="block">Looks up the setting in the provided <code>properties</code>, returning
  it as a text value.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="Setting.html" title="type parameter in Setting">T</a>&gt;</code></td>
+<td class="colFirst"><code>java.lang.Class&lt;? extends <a href="Setting.html" title="type parameter in Setting">T</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getType()">getType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Retrieve the type of this setting.</div>
@@ -434,26 +435,26 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#init(java.lang.String,java.lang.String,java.lang.Class,java.lang.String,com.impossibl.postgres.system.Setting.Converter,java.util.function.Function,java.lang.String%5B%5D)">init</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;groupId,
-    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;description,
-    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;type,
-    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;defaultValue,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#init(java.lang.String,java.lang.String,java.lang.Class,java.lang.String,com.impossibl.postgres.system.Setting.Converter,java.util.function.Function,java.lang.String%5B%5D)">init</a></span>&#8203;(java.lang.String&nbsp;groupId,
+    java.lang.String&nbsp;description,
+    java.lang.Class&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;type,
+    java.lang.String&nbsp;defaultValue,
     <a href="Setting.Converter.html" title="interface in com.impossibl.postgres.system">Setting.Converter</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;fromString,
-    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;toString,
-    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]&nbsp;names)</code></th>
+    java.util.function.Function&lt;<a href="Setting.html" title="type parameter in Setting">T</a>,&#8203;java.lang.String&gt;&nbsp;toString,
+    java.lang.String[]&nbsp;names)</code></th>
 <td class="colLast">
 <div class="block">Initializes a forward declared setting instance.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#init(java.lang.String,java.lang.String,java.lang.Class,java.util.function.Supplier,com.impossibl.postgres.system.Setting.Converter,java.util.function.Function,java.lang.String%5B%5D)">init</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;groupId,
-    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;description,
-    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;type,
-    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;defaultValue,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#init(java.lang.String,java.lang.String,java.lang.Class,java.util.function.Supplier,com.impossibl.postgres.system.Setting.Converter,java.util.function.Function,java.lang.String%5B%5D)">init</a></span>&#8203;(java.lang.String&nbsp;groupId,
+    java.lang.String&nbsp;description,
+    java.lang.Class&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;type,
+    java.util.function.Supplier&lt;java.lang.String&gt;&nbsp;defaultValue,
     <a href="Setting.Converter.html" title="interface in com.impossibl.postgres.system">Setting.Converter</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;fromString,
-    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;toString,
-    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]&nbsp;names)</code></th>
+    java.util.function.Function&lt;<a href="Setting.html" title="type parameter in Setting">T</a>,&#8203;java.lang.String&gt;&nbsp;toString,
+    java.lang.String[]&nbsp;names)</code></th>
 <td class="colLast">
 <div class="block">Initializes a forward declared setting instance.</div>
 </td>
@@ -467,12 +468,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString(T)">toString</a></span>&#8203;(<a href="Setting.html" title="type parameter in Setting">T</a>&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Convert a native type to a string value.</div>
@@ -483,8 +484,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -496,7 +497,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="constructor.detail">
 <!--   -->
@@ -511,12 +512,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>Setting</h4>
 <pre>public&nbsp;Setting&#8203;(<a href="Setting.Group.html" title="class in com.impossibl.postgres.system">Setting.Group</a>&nbsp;group,
-               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;description,
-               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;type,
+               java.lang.String&nbsp;description,
+               java.lang.Class&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;type,
                <a href="Setting.html" title="type parameter in Setting">T</a>&nbsp;defaultValue,
                <a href="Setting.Converter.html" title="interface in com.impossibl.postgres.system">Setting.Converter</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;fromString,
-               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;toString,
-               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]&nbsp;names)</pre>
+               java.util.function.Function&lt;<a href="Setting.html" title="type parameter in Setting">T</a>,&#8203;java.lang.String&gt;&nbsp;toString,
+               java.lang.String[]&nbsp;names)</pre>
 <div class="block">Constructs a new setting instance with a static default value and without support via the annotation processor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -537,12 +538,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>Setting</h4>
 <pre>public&nbsp;Setting&#8203;(<a href="Setting.Group.html" title="class in com.impossibl.postgres.system">Setting.Group</a>&nbsp;group,
-               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;description,
-               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;type,
-               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;dynamicDefaultSupplier,
+               java.lang.String&nbsp;description,
+               java.lang.Class&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;type,
+               java.util.function.Supplier&lt;java.lang.String&gt;&nbsp;dynamicDefaultSupplier,
                <a href="Setting.Converter.html" title="interface in com.impossibl.postgres.system">Setting.Converter</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;fromString,
-               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;toString,
-               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]&nbsp;names)</pre>
+               java.util.function.Function&lt;<a href="Setting.html" title="type parameter in Setting">T</a>,&#8203;java.lang.String&gt;&nbsp;toString,
+               java.lang.String[]&nbsp;names)</pre>
 <div class="block">Constructs a new setting instance with a dynamic default value and without support via the annotation processor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -560,7 +561,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </ul>
 </section>
 <!-- ============ METHOD DETAIL ========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.detail">
 <!--   -->
@@ -588,13 +589,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>init</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;init&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;groupId,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;description,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;type,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;defaultValue,
+<pre class="methodSignature">public&nbsp;void&nbsp;init&#8203;(java.lang.String&nbsp;groupId,
+                 java.lang.String&nbsp;description,
+                 java.lang.Class&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;type,
+                 java.lang.String&nbsp;defaultValue,
                  <a href="Setting.Converter.html" title="interface in com.impossibl.postgres.system">Setting.Converter</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;fromString,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;toString,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]&nbsp;names)</pre>
+                 java.util.function.Function&lt;<a href="Setting.html" title="type parameter in Setting">T</a>,&#8203;java.lang.String&gt;&nbsp;toString,
+                 java.lang.String[]&nbsp;names)</pre>
 <div class="block">Initializes a forward declared setting instance. This is intended for use only by the annotation processor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -613,13 +614,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>init</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;init&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;groupId,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;description,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;type,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;defaultValue,
+<pre class="methodSignature">public&nbsp;void&nbsp;init&#8203;(java.lang.String&nbsp;groupId,
+                 java.lang.String&nbsp;description,
+                 java.lang.Class&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;type,
+                 java.util.function.Supplier&lt;java.lang.String&gt;&nbsp;defaultValue,
                  <a href="Setting.Converter.html" title="interface in com.impossibl.postgres.system">Setting.Converter</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;fromString,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="Setting.html" title="type parameter in Setting">T</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;toString,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]&nbsp;names)</pre>
+                 java.util.function.Function&lt;<a href="Setting.html" title="type parameter in Setting">T</a>,&#8203;java.lang.String&gt;&nbsp;toString,
+                 java.lang.String[]&nbsp;names)</pre>
 <div class="block">Initializes a forward declared setting instance. This is intended for use only by the annotation processor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -652,7 +653,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getName</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getName()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getName()</pre>
 <div class="block">Retrieve the primary name of this setting.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -666,7 +667,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getNames</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]&nbsp;getNames()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String[]&nbsp;getNames()</pre>
 <div class="block">Get <b>all</b> names for this setting; including
  primary and alternate names.</div>
 <dl>
@@ -681,7 +682,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getType</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;getType()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.Class&lt;? extends <a href="Setting.html" title="type parameter in Setting">T</a>&gt;&nbsp;getType()</pre>
 <div class="block">Retrieve the type of this setting.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -724,7 +725,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getDefaultText</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getDefaultText()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getDefaultText()</pre>
 <div class="block">Retrieve the default value of this setting as text.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -738,7 +739,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getDescription</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getDescription()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getDescription()</pre>
 <div class="block">Retrieve the description of this setting.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -752,7 +753,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>fromString</h4>
-<pre class="methodSignature">public&nbsp;<a href="Setting.html" title="type parameter in Setting">T</a>&nbsp;fromString&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;value)</pre>
+<pre class="methodSignature">public&nbsp;<a href="Setting.html" title="type parameter in Setting">T</a>&nbsp;fromString&#8203;(java.lang.String&nbsp;value)</pre>
 <div class="block">Convert a string to the setting's native type.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -760,7 +761,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Value in the settings native type.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - If the value cannot be parsed.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - If the value cannot be parsed.</dd>
 </dl>
 </li>
 </ul>
@@ -772,7 +773,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;toString&#8203;(<a href="Setting.html" title="type parameter in Setting">T</a>&nbsp;value)</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;toString&#8203;(<a href="Setting.html" title="type parameter in Setting">T</a>&nbsp;value)</pre>
 <div class="block">Convert a native type to a string value.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -809,7 +810,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre class="methodSignature">public&nbsp;<a href="Setting.html" title="type parameter in Setting">T</a>&nbsp;get&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util" class="externalLink">Properties</a>&nbsp;properties)</pre>
+<pre class="methodSignature">public&nbsp;<a href="Setting.html" title="type parameter in Setting">T</a>&nbsp;get&#8203;(java.util.Properties&nbsp;properties)</pre>
 <div class="block">Looks up the setting in the provided <code>properties</code>.
 
  This method tries all names (primary &amp; alternates) in the
@@ -830,7 +831,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getText</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getText&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util" class="externalLink">Properties</a>&nbsp;properties)</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getText&#8203;(java.util.Properties&nbsp;properties)</pre>
 <div class="block">Looks up the setting in the provided <code>properties</code>, returning
  it as a text value.
 
@@ -852,10 +853,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>toString</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;toString()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;toString()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
+<dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
 </dl>
 </li>
 </ul>

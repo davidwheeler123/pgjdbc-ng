@@ -6,15 +6,16 @@
 <title>ScramSessionFactory.Builder (PGJDBC-NG 0.9-SNAPSHOT)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../../../../jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../../jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../../jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="../../../../../../../script.js"></script>
 <script type="text/javascript" src="../../../../../../../jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="../../../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../../../jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="../../../../../../../jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../../../../jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../../../../../../../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -120,7 +121,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
+<li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
 <li>com.impossibl.postgres.protocol.sasl.scram.client.ScramSessionFactory.Builder</li>
@@ -136,7 +137,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public static class <span class="typeNameLabel">ScramSessionFactory.Builder</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></pre>
+extends java.lang.Object</pre>
 </li>
 </ul>
 </div>
@@ -144,7 +145,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <!-- ========== METHOD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.summary">
 <!--   -->
@@ -164,7 +165,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="ScramSessionFactory.Builder.html" title="class in com.impossibl.postgres.protocol.sasl.scram.client">ScramSessionFactory.Builder</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#channelBindMethod(java.lang.String)">channelBindMethod</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;channelBindMethod)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#channelBindMethod(java.lang.String)">channelBindMethod</a></span>&#8203;(java.lang.String&nbsp;channelBindMethod)</code></th>
 <td class="colLast">
 <div class="block">The selected/supported channel-bind method the client plans to use.</div>
 </td>
@@ -186,15 +187,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="ScramSessionFactory.Builder.html" title="class in com.impossibl.postgres.protocol.sasl.scram.client">ScramSessionFactory.Builder</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#secureRandomAlgorithmProvider(java.lang.String,java.lang.String)">secureRandomAlgorithmProvider</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;algorithm,
-                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;provider)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#secureRandomAlgorithmProvider(java.lang.String,java.lang.String)">secureRandomAlgorithmProvider</a></span>&#8203;(java.lang.String&nbsp;algorithm,
+                             java.lang.String&nbsp;provider)</code></th>
 <td class="colLast">
 <div class="block">Optional call.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="ScramSessionFactory.Builder.html" title="class in com.impossibl.postgres.protocol.sasl.scram.client">ScramSessionFactory.Builder</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#serverAdvertisedMechanisms(java.util.Collection)">serverAdvertisedMechanisms</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;serverAdvertisedMechanisms)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#serverAdvertisedMechanisms(java.util.Collection)">serverAdvertisedMechanisms</a></span>&#8203;(java.util.Collection&lt;java.lang.String&gt;&nbsp;serverAdvertisedMechanisms)</code></th>
 <td class="colLast">
 <div class="block">Provide the list of mechanism names advertised by the server.</div>
 </td>
@@ -211,8 +212,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -224,7 +225,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <!-- ============ METHOD DETAIL ========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.detail">
 <!--   -->
@@ -236,7 +237,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>serverAdvertisedMechanisms</h4>
-<pre class="methodSignature">public&nbsp;<a href="ScramSessionFactory.Builder.html" title="class in com.impossibl.postgres.protocol.sasl.scram.client">ScramSessionFactory.Builder</a>&nbsp;serverAdvertisedMechanisms&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;serverAdvertisedMechanisms)</pre>
+<pre class="methodSignature">public&nbsp;<a href="ScramSessionFactory.Builder.html" title="class in com.impossibl.postgres.protocol.sasl.scram.client">ScramSessionFactory.Builder</a>&nbsp;serverAdvertisedMechanisms&#8203;(java.util.Collection&lt;java.lang.String&gt;&nbsp;serverAdvertisedMechanisms)</pre>
 <div class="block">Provide the list of mechanism names advertised by the server. The method will filter out
  mechanisms unsupported by the current implementation.</div>
 <dl>
@@ -267,7 +268,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>channelBindMethod</h4>
-<pre class="methodSignature">public&nbsp;<a href="ScramSessionFactory.Builder.html" title="class in com.impossibl.postgres.protocol.sasl.scram.client">ScramSessionFactory.Builder</a>&nbsp;channelBindMethod&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;channelBindMethod)</pre>
+<pre class="methodSignature">public&nbsp;<a href="ScramSessionFactory.Builder.html" title="class in com.impossibl.postgres.protocol.sasl.scram.client">ScramSessionFactory.Builder</a>&nbsp;channelBindMethod&#8203;(java.lang.String&nbsp;channelBindMethod)</pre>
 <div class="block">The selected/supported channel-bind method the client plans to use. If the client does not support any
  channel binding methods it can pass <code>null</code>.</div>
 <dl>
@@ -312,13 +313,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>secureRandomAlgorithmProvider</h4>
-<pre class="methodSignature">public&nbsp;<a href="ScramSessionFactory.Builder.html" title="class in com.impossibl.postgres.protocol.sasl.scram.client">ScramSessionFactory.Builder</a>&nbsp;secureRandomAlgorithmProvider&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;algorithm,
-                                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;provider)
-                                                          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></pre>
+<pre class="methodSignature">public&nbsp;<a href="ScramSessionFactory.Builder.html" title="class in com.impossibl.postgres.protocol.sasl.scram.client">ScramSessionFactory.Builder</a>&nbsp;secureRandomAlgorithmProvider&#8203;(java.lang.String&nbsp;algorithm,
+                                                                 java.lang.String&nbsp;provider)
+                                                          throws java.lang.IllegalArgumentException</pre>
 <div class="block">Optional call. Selects a non-default SecureRandom instance, based on the given algorithm and
- optionally a specific security provider. This selected <a href="https://docs.oracle.com/javase/8/docs/api/java/security/SecureRandom.html?is-external=true" title="class or interface in java.security" class="externalLink"><code>SecureRandom</code></a> instance will be used to
+ optionally a specific security provider. This selected <code>SecureRandom</code> instance will be used to
  generate secure random values (e.g. nonces). Algorithm and provider names are those supported by the
- <a href="https://docs.oracle.com/javase/8/docs/api/java/security/SecureRandom.html?is-external=true" title="class or interface in java.security" class="externalLink"><code>SecureRandom</code></a> class.</div>
+ <code>SecureRandom</code> class.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>algorithm</code> - The name of the algorithm to use.</dd>
@@ -326,7 +327,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The same class</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - If algorithm is null, or either the algorithm or provider are not supported</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - If algorithm is null, or either the algorithm or provider are not supported</dd>
 </dl>
 </li>
 </ul>

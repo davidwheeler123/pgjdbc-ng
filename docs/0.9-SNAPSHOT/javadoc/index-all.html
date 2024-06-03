@@ -6,15 +6,16 @@
 <title>Index (PGJDBC-NG 0.9-SNAPSHOT)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="script.js"></script>
 <script type="text/javascript" src="jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -1283,14 +1284,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/system/BasicContext.html#connectionClosed()">connectionClosed()</a></span> - Method in class com.impossibl.postgres.system.<a href="com/impossibl/postgres/system/BasicContext.html" title="class in com.impossibl.postgres.system">BasicContext</a></dt>
 <dd>
-<div class="block">Called when <a href="com/impossibl/postgres/system/BasicContext.html#serverConnection"><code>BasicContext.serverConnection</code></a> was closed
+<div class="block">Called when <code>BasicContext.serverConnection</code> was closed
  externally (i.e.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/jdbc/PGDirectConnection.html#connectionNotificationReceived(int,java.lang.String,java.lang.String)">connectionNotificationReceived(int, String, String)</a></span> - Method in class com.impossibl.postgres.jdbc.<a href="com/impossibl/postgres/jdbc/PGDirectConnection.html" title="class in com.impossibl.postgres.jdbc">PGDirectConnection</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/system/BasicContext.html#connectionNotificationReceived(int,java.lang.String,java.lang.String)">connectionNotificationReceived(int, String, String)</a></span> - Method in class com.impossibl.postgres.system.<a href="com/impossibl/postgres/system/BasicContext.html" title="class in com.impossibl.postgres.system">BasicContext</a></dt>
 <dd>
-<div class="block">Called when <a href="com/impossibl/postgres/system/BasicContext.html#serverConnection"><code>BasicContext.serverConnection</code></a> received
+<div class="block">Called when <code>BasicContext.serverConnection</code> received
  an asynchronous notification</div>
 </dd>
 <dt><a href="com/impossibl/jdbc/spy/ConnectionPoolDataSourceRelay.html" title="class in com.impossibl.jdbc.spy"><span class="typeNameLink">ConnectionPoolDataSourceRelay</span></a> - Class in <a href="com/impossibl/jdbc/spy/package-summary.html">com.impossibl.jdbc.spy</a></dt>
@@ -1373,7 +1374,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/utils/guava/CharStreams.html#copy(java.lang.Readable,java.lang.Appendable)">copy(Readable, Appendable)</a></span> - Static method in class com.impossibl.postgres.utils.guava.<a href="com/impossibl/postgres/utils/guava/CharStreams.html" title="class in com.impossibl.postgres.utils.guava">CharStreams</a></dt>
 <dd>
-<div class="block">Copies all characters between the <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Readable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Readable</code></a> and <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Appendable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Appendable</code></a>
+<div class="block">Copies all characters between the <code>Readable</code> and <code>Appendable</code>
  objects.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/utils/guava/ByteStreams.html#copy(java.nio.channels.ReadableByteChannel,java.nio.channels.WritableByteChannel)">copy(ReadableByteChannel, WritableByteChannel)</a></span> - Static method in class com.impossibl.postgres.utils.guava.<a href="com/impossibl/postgres/utils/guava/ByteStreams.html" title="class in com.impossibl.postgres.utils.guava">ByteStreams</a></dt>
@@ -1392,15 +1393,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/api/jdbc/PGConnection.html#copyFrom(java.lang.String,java.io.InputStream)">copyFrom(String, InputStream)</a></span> - Method in interface com.impossibl.postgres.api.jdbc.<a href="com/impossibl/postgres/api/jdbc/PGConnection.html" title="interface in com.impossibl.postgres.api.jdbc">PGConnection</a></dt>
 <dd>
-<div class="block">Allows issuing PostgreSQL's COPY command providing an <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>InputStream</code></a>
- stream to read from, instead of relying on <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/System.html?is-external=true#in" title="class or interface in java.lang" class="externalLink"><code>System.in</code></a>.</div>
+<div class="block">Allows issuing PostgreSQL's COPY command providing an <code>InputStream</code>
+ stream to read from, instead of relying on <code>System.in</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/jdbc/PGDirectConnection.html#copyFrom(java.lang.String,java.io.InputStream)">copyFrom(String, InputStream)</a></span> - Method in class com.impossibl.postgres.jdbc.<a href="com/impossibl/postgres/jdbc/PGDirectConnection.html" title="class in com.impossibl.postgres.jdbc">PGDirectConnection</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/jdbc/PGPooledConnectionDelegator.html#copyFrom(java.lang.String,java.io.InputStream)">copyFrom(String, InputStream)</a></span> - Method in class com.impossibl.postgres.jdbc.<a href="com/impossibl/postgres/jdbc/PGPooledConnectionDelegator.html" title="class in com.impossibl.postgres.jdbc">PGPooledConnectionDelegator</a></dt>
 <dd>
-<div class="block">Allows issuing PostgreSQL's COPY command providing an <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>InputStream</code></a>
- stream to read from, instead of relying on <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/System.html?is-external=true#in" title="class or interface in java.lang" class="externalLink"><code>System.in</code></a>.</div>
+<div class="block">Allows issuing PostgreSQL's COPY command providing an <code>InputStream</code>
+ stream to read from, instead of relying on <code>System.in</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/protocol/RequestExecutor.html#copyFrom(java.lang.String,java.io.InputStream,com.impossibl.postgres.protocol.RequestExecutor.CopyFromHandler)">copyFrom(String, InputStream, RequestExecutor.CopyFromHandler)</a></span> - Method in interface com.impossibl.postgres.protocol.<a href="com/impossibl/postgres/protocol/RequestExecutor.html" title="interface in com.impossibl.postgres.protocol">RequestExecutor</a></dt>
 <dd>&nbsp;</dd>
@@ -1416,15 +1417,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/api/jdbc/PGConnection.html#copyTo(java.lang.String,java.io.OutputStream)">copyTo(String, OutputStream)</a></span> - Method in interface com.impossibl.postgres.api.jdbc.<a href="com/impossibl/postgres/api/jdbc/PGConnection.html" title="interface in com.impossibl.postgres.api.jdbc">PGConnection</a></dt>
 <dd>
-<div class="block">Allows issuing PostgreSQL's COPY command providing an <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>OutputStream</code></a>
- stream to write to, instead of relying on <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/System.html?is-external=true#out" title="class or interface in java.lang" class="externalLink"><code>System.out</code></a>.</div>
+<div class="block">Allows issuing PostgreSQL's COPY command providing an <code>OutputStream</code>
+ stream to write to, instead of relying on <code>System.out</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/jdbc/PGDirectConnection.html#copyTo(java.lang.String,java.io.OutputStream)">copyTo(String, OutputStream)</a></span> - Method in class com.impossibl.postgres.jdbc.<a href="com/impossibl/postgres/jdbc/PGDirectConnection.html" title="class in com.impossibl.postgres.jdbc">PGDirectConnection</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/jdbc/PGPooledConnectionDelegator.html#copyTo(java.lang.String,java.io.OutputStream)">copyTo(String, OutputStream)</a></span> - Method in class com.impossibl.postgres.jdbc.<a href="com/impossibl/postgres/jdbc/PGPooledConnectionDelegator.html" title="class in com.impossibl.postgres.jdbc">PGPooledConnectionDelegator</a></dt>
 <dd>
-<div class="block">Allows issuing PostgreSQL's COPY command providing an <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>OutputStream</code></a>
- stream to write to, instead of relying on <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/System.html?is-external=true#out" title="class or interface in java.lang" class="externalLink"><code>System.out</code></a>.</div>
+<div class="block">Allows issuing PostgreSQL's COPY command providing an <code>OutputStream</code>
+ stream to write to, instead of relying on <code>System.out</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/protocol/RequestExecutor.html#copyTo(java.lang.String,java.io.OutputStream,com.impossibl.postgres.protocol.RequestExecutor.CopyToHandler)">copyTo(String, OutputStream, RequestExecutor.CopyToHandler)</a></span> - Method in interface com.impossibl.postgres.protocol.<a href="com/impossibl/postgres/protocol/RequestExecutor.html" title="interface in com.impossibl.postgres.protocol">RequestExecutor</a></dt>
 <dd>&nbsp;</dd>
@@ -6932,8 +6933,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><a href="com/impossibl/postgres/utils/guava/Joiner.html" title="class in com.impossibl.postgres.utils.guava"><span class="typeNameLink">Joiner</span></a> - Class in <a href="com/impossibl/postgres/utils/guava/package-summary.html">com.impossibl.postgres.utils.guava</a></dt>
 <dd>
-<div class="block">An object which joins pieces of text (specified as an array, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Iterable</code></a>, varargs or even a
- <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a>) with a separator.</div>
+<div class="block">An object which joins pieces of text (specified as an array, <code>Iterable</code>, varargs or even a
+ <code>Map</code>) with a separator.</div>
 </dd>
 <dt><a href="com/impossibl/postgres/utils/guava/Joiner.MapJoiner.html" title="class in com.impossibl.postgres.utils.guava"><span class="typeNameLink">Joiner.MapJoiner</span></a> - Class in <a href="com/impossibl/postgres/utils/guava/package-summary.html">com.impossibl.postgres.utils.guava</a></dt>
 <dd>
@@ -7036,7 +7037,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/utils/guava/ByteStreams.html#limit(java.io.InputStream,long)">limit(InputStream, long)</a></span> - Static method in class com.impossibl.postgres.utils.guava.<a href="com/impossibl/postgres/utils/guava/ByteStreams.html" title="class in com.impossibl.postgres.utils.guava">ByteStreams</a></dt>
 <dd>
-<div class="block">Wraps a <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>InputStream</code></a>, limiting the number of bytes which can be
+<div class="block">Wraps a <code>InputStream</code>, limiting the number of bytes which can be
  read.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/utils/guava/CharStreams.html#limit(java.io.Reader,long)">limit(Reader, long)</a></span> - Static method in class com.impossibl.postgres.utils.guava.<a href="com/impossibl/postgres/utils/guava/CharStreams.html" title="class in com.impossibl.postgres.utils.guava">CharStreams</a></dt>
@@ -7545,7 +7546,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/utils/guava/ByteStreams.html#nullOutputStream()">nullOutputStream()</a></span> - Static method in class com.impossibl.postgres.utils.guava.<a href="com/impossibl/postgres/utils/guava/ByteStreams.html" title="class in com.impossibl.postgres.utils.guava">ByteStreams</a></dt>
 <dd>
-<div class="block">Returns an <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>OutputStream</code></a> that simply discards written bytes.</div>
+<div class="block">Returns an <code>OutputStream</code> that simply discards written bytes.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/jdbc/spy/DatabaseMetaDataRelay.html#nullPlusNonNullIsNull()">nullPlusNonNullIsNull()</a></span> - Method in class com.impossibl.jdbc.spy.<a href="com/impossibl/jdbc/spy/DatabaseMetaDataRelay.html" title="class in com.impossibl.jdbc.spy">DatabaseMetaDataRelay</a></dt>
 <dd>&nbsp;</dd>
@@ -7824,8 +7825,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/utils/Locales.html#parseLocale(java.lang.String)">parseLocale(String)</a></span> - Static method in class com.impossibl.postgres.utils.<a href="com/impossibl/postgres/utils/Locales.html" title="class in com.impossibl.postgres.utils">Locales</a></dt>
 <dd>
-<div class="block">Parse the given <code>String</code> value into a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Locale</code></a>, accepting
- the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html?is-external=true#toString()" title="class or interface in java.util" class="externalLink"><code>Locale.toString()</code></a> format as well as BCP 47 language tags and
+<div class="block">Parse the given <code>String</code> value into a <code>Locale</code>, accepting
+ the <code>Locale.toString()</code> format as well as BCP 47 language tags and
  Win32 verbose locale names.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/utils/GeometryParsers.html#parseLSeg(java.lang.CharSequence)">parseLSeg(CharSequence)</a></span> - Method in enum com.impossibl.postgres.utils.<a href="com/impossibl/postgres/utils/GeometryParsers.html" title="enum in com.impossibl.postgres.utils">GeometryParsers</a></dt>
@@ -8072,7 +8073,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><a href="com/impossibl/postgres/jdbc/xa/PGXAConnection.html" title="class in com.impossibl.postgres.jdbc.xa"><span class="typeNameLink">PGXAConnection</span></a> - Class in <a href="com/impossibl/postgres/jdbc/xa/package-summary.html">com.impossibl.postgres.jdbc.xa</a></dt>
 <dd>
-<div class="block">The PostgreSQL implementation of <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/XAConnection.html?is-external=true" title="class or interface in javax.sql" class="externalLink"><code>XAConnection</code></a> and <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink"><code>XAResource</code></a>.</div>
+<div class="block">The PostgreSQL implementation of <code>XAConnection</code> and <code>XAResource</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/jdbc/xa/PGXAConnection.html#%3Cinit%3E(com.impossibl.postgres.jdbc.PGDirectConnection)">PGXAConnection(PGDirectConnection)</a></span> - Constructor for class com.impossibl.postgres.jdbc.xa.<a href="com/impossibl/postgres/jdbc/xa/PGXAConnection.html" title="class in com.impossibl.postgres.jdbc.xa">PGXAConnection</a></dt>
 <dd>&nbsp;</dd>
@@ -12158,7 +12159,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/utils/guava/CharStreams.html#toString(java.lang.Readable)">toString(Readable)</a></span> - Static method in class com.impossibl.postgres.utils.guava.<a href="com/impossibl/postgres/utils/guava/CharStreams.html" title="class in com.impossibl.postgres.utils.guava">CharStreams</a></dt>
 <dd>
-<div class="block">Reads all characters from a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Readable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Readable</code></a> object into a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a>.</div>
+<div class="block">Reads all characters from a <code>Readable</code> object into a <code>String</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/jdbc/spy/RowIdTracer.html#toString(java.lang.String)">toString(String)</a></span> - Method in class com.impossibl.jdbc.spy.<a href="com/impossibl/jdbc/spy/RowIdTracer.html" title="class in com.impossibl.jdbc.spy">RowIdTracer</a></dt>
 <dd>&nbsp;</dd>
@@ -13414,7 +13415,7 @@ the order they are declared.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/protocol/sasl/scram/message/ClientFirstMessage.html#writeToWithoutGs2Header(java.lang.StringBuffer)">writeToWithoutGs2Header(StringBuffer)</a></span> - Method in class com.impossibl.postgres.protocol.sasl.scram.message.<a href="com/impossibl/postgres/protocol/sasl/scram/message/ClientFirstMessage.html" title="class in com.impossibl.postgres.protocol.sasl.scram.message">ClientFirstMessage</a></dt>
 <dd>
-<div class="block">Limited version of the <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink"><code>Object.toString()</code></a> method, that doesn't write the GS2 header.</div>
+<div class="block">Limited version of the <code>Object.toString()</code> method, that doesn't write the GS2 header.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/impossibl/postgres/protocol/sasl/scram/message/ClientFinalMessage.html#writeToWithoutProof(com.impossibl.postgres.protocol.sasl.scram.gssapi.Gs2Header,byte%5B%5D,java.lang.String)">writeToWithoutProof(Gs2Header, byte[], String)</a></span> - Static method in class com.impossibl.postgres.protocol.sasl.scram.message.<a href="com/impossibl/postgres/protocol/sasl/scram/message/ClientFinalMessage.html" title="class in com.impossibl.postgres.protocol.sasl.scram.message">ClientFinalMessage</a></dt>
 <dd>

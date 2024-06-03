@@ -6,15 +6,16 @@
 <title>Serialized Form (PGJDBC-NG 0.9-SNAPSHOT)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="script.js"></script>
 <script type="text/javascript" src="jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -98,13 +99,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="serializedFormContainer">
 <ul class="blockList">
 <li class="blockList">
-<section role="region">
+<section>
 <h2 title="Package">Package&nbsp;com.impossibl.postgres.api.data</h2>
 <ul class="blockList">
 <li class="blockList"><a id="com.impossibl.postgres.api.data.Interval">
 <!--   -->
 </a>
-<h3>Class <a href="com/impossibl/postgres/api/data/Interval.html" title="class in com.impossibl.postgres.api.data">com.impossibl.postgres.api.data.Interval</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<h3>Class <a href="com/impossibl/postgres/api/data/Interval.html" title="class in com.impossibl.postgres.api.data">com.impossibl.postgres.api.data.Interval</a> extends java.lang.Object implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>8815521625671589L</dd>
@@ -115,7 +116,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockListLast">
 <h4>readResolve</h4>
-<pre class="methodSignature">private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;readResolve()</pre>
+<pre class="methodSignature">private&nbsp;java.lang.Object&nbsp;readResolve()</pre>
 <div class="block">Resolves singletons.</div>
 </li>
 </ul>
@@ -125,12 +126,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>duration</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time" class="externalLink">Duration</a> duration</pre>
+<pre>java.time.Duration duration</pre>
 <div class="block">The duration.</div>
 </li>
 <li class="blockListLast">
 <h4>period</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html?is-external=true" title="class or interface in java.time" class="externalLink">Period</a> period</pre>
+<pre>java.time.Period period</pre>
 <div class="block">The period.</div>
 </li>
 </ul>
@@ -141,13 +142,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
-<section role="region">
+<section>
 <h2 title="Package">Package&nbsp;com.impossibl.postgres.jdbc</h2>
 <ul class="blockList">
 <li class="blockList"><a id="com.impossibl.postgres.jdbc.PGSQLIntegrityConstraintViolationException">
 <!--   -->
 </a>
-<h3>Class <a href="com/impossibl/postgres/jdbc/PGSQLIntegrityConstraintViolationException.html" title="class in com.impossibl.postgres.jdbc">com.impossibl.postgres.jdbc.PGSQLIntegrityConstraintViolationException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLIntegrityConstraintViolationException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLIntegrityConstraintViolationException</a> implements Serializable</h3>
+<h3>Class <a href="com/impossibl/postgres/jdbc/PGSQLIntegrityConstraintViolationException.html" title="class in com.impossibl.postgres.jdbc">com.impossibl.postgres.jdbc.PGSQLIntegrityConstraintViolationException</a> extends java.sql.SQLIntegrityConstraintViolationException implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>1343560391090040431L</dd>
@@ -158,27 +159,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>column</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> column</pre>
+<pre>java.lang.String column</pre>
 </li>
 <li class="blockList">
 <h4>constraint</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> constraint</pre>
+<pre>java.lang.String constraint</pre>
 </li>
 <li class="blockList">
 <h4>datatype</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> datatype</pre>
+<pre>java.lang.String datatype</pre>
 </li>
 <li class="blockList">
 <h4>detail</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> detail</pre>
+<pre>java.lang.String detail</pre>
 </li>
 <li class="blockList">
 <h4>schema</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> schema</pre>
+<pre>java.lang.String schema</pre>
 </li>
 <li class="blockListLast">
 <h4>table</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> table</pre>
+<pre>java.lang.String table</pre>
 </li>
 </ul>
 </li>
@@ -187,7 +188,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList"><a id="com.impossibl.postgres.jdbc.PGSQLSimpleException">
 <!--   -->
 </a>
-<h3>Class <a href="com/impossibl/postgres/jdbc/PGSQLSimpleException.html" title="class in com.impossibl.postgres.jdbc">com.impossibl.postgres.jdbc.PGSQLSimpleException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLException.html?is-external=true" title="class or interface in java.sql" class="externalLink">SQLException</a> implements Serializable</h3>
+<h3>Class <a href="com/impossibl/postgres/jdbc/PGSQLSimpleException.html" title="class in com.impossibl.postgres.jdbc">com.impossibl.postgres.jdbc.PGSQLSimpleException</a> extends java.sql.SQLException implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>-5473527612228551429L</dd>
@@ -198,27 +199,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>column</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> column</pre>
+<pre>java.lang.String column</pre>
 </li>
 <li class="blockList">
 <h4>constraint</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> constraint</pre>
+<pre>java.lang.String constraint</pre>
 </li>
 <li class="blockList">
 <h4>datatype</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> datatype</pre>
+<pre>java.lang.String datatype</pre>
 </li>
 <li class="blockList">
 <h4>detail</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> detail</pre>
+<pre>java.lang.String detail</pre>
 </li>
 <li class="blockList">
 <h4>schema</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> schema</pre>
+<pre>java.lang.String schema</pre>
 </li>
 <li class="blockListLast">
 <h4>table</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> table</pre>
+<pre>java.lang.String table</pre>
 </li>
 </ul>
 </li>
@@ -228,13 +229,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
-<section role="region">
+<section>
 <h2 title="Package">Package&nbsp;com.impossibl.postgres.jdbc.xa</h2>
 <ul class="blockList">
 <li class="blockList"><a id="com.impossibl.postgres.jdbc.xa.PGXAException">
 <!--   -->
 </a>
-<h3>Class <a href="com/impossibl/postgres/jdbc/xa/PGXAException.html" title="class in com.impossibl.postgres.jdbc.xa">com.impossibl.postgres.jdbc.xa.PGXAException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAException.html?is-external=true" title="class or interface in javax.transaction.xa" class="externalLink">XAException</a> implements Serializable</h3>
+<h3>Class <a href="com/impossibl/postgres/jdbc/xa/PGXAException.html" title="class in com.impossibl.postgres.jdbc.xa">com.impossibl.postgres.jdbc.xa.PGXAException</a> extends javax.transaction.xa.XAException implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>424083710983892405L</dd>
@@ -244,13 +245,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
-<section role="region">
+<section>
 <h2 title="Package">Package&nbsp;com.impossibl.postgres.protocol</h2>
 <ul class="blockList">
 <li class="blockList"><a id="com.impossibl.postgres.protocol.Notice">
 <!--   -->
 </a>
-<h3>Class <a href="com/impossibl/postgres/protocol/Notice.html" title="class in com.impossibl.postgres.protocol">com.impossibl.postgres.protocol.Notice</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<h3>Class <a href="com/impossibl/postgres/protocol/Notice.html" title="class in com.impossibl.postgres.protocol">com.impossibl.postgres.protocol.Notice</a> extends java.lang.Object implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>649470514407379521L</dd>
@@ -261,63 +262,63 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>code</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> code</pre>
+<pre>java.lang.String code</pre>
 </li>
 <li class="blockList">
 <h4>column</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> column</pre>
+<pre>java.lang.String column</pre>
 </li>
 <li class="blockList">
 <h4>constraint</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> constraint</pre>
+<pre>java.lang.String constraint</pre>
 </li>
 <li class="blockList">
 <h4>datatype</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> datatype</pre>
+<pre>java.lang.String datatype</pre>
 </li>
 <li class="blockList">
 <h4>detail</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> detail</pre>
+<pre>java.lang.String detail</pre>
 </li>
 <li class="blockList">
 <h4>file</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> file</pre>
+<pre>java.lang.String file</pre>
 </li>
 <li class="blockList">
 <h4>hint</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> hint</pre>
+<pre>java.lang.String hint</pre>
 </li>
 <li class="blockList">
 <h4>line</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> line</pre>
+<pre>java.lang.String line</pre>
 </li>
 <li class="blockList">
 <h4>message</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> message</pre>
+<pre>java.lang.String message</pre>
 </li>
 <li class="blockList">
 <h4>position</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> position</pre>
+<pre>java.lang.String position</pre>
 </li>
 <li class="blockList">
 <h4>routine</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> routine</pre>
+<pre>java.lang.String routine</pre>
 </li>
 <li class="blockList">
 <h4>schema</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> schema</pre>
+<pre>java.lang.String schema</pre>
 </li>
 <li class="blockList">
 <h4>severity</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> severity</pre>
+<pre>java.lang.String severity</pre>
 </li>
 <li class="blockList">
 <h4>table</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> table</pre>
+<pre>java.lang.String table</pre>
 </li>
 <li class="blockListLast">
 <h4>where</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> where</pre>
+<pre>java.lang.String where</pre>
 </li>
 </ul>
 </li>
@@ -327,13 +328,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
-<section role="region">
+<section>
 <h2 title="Package">Package&nbsp;com.impossibl.postgres.protocol.sasl.scram.exception</h2>
 <ul class="blockList">
 <li class="blockList"><a id="com.impossibl.postgres.protocol.sasl.scram.exception.ScramException">
 <!--   -->
 </a>
-<h3>Class <a href="com/impossibl/postgres/protocol/sasl/scram/exception/ScramException.html" title="class in com.impossibl.postgres.protocol.sasl.scram.exception">com.impossibl.postgres.protocol.sasl.scram.exception.ScramException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/javax/security/sasl/SaslException.html?is-external=true" title="class or interface in javax.security.sasl" class="externalLink">SaslException</a> implements Serializable</h3>
+<h3>Class <a href="com/impossibl/postgres/protocol/sasl/scram/exception/ScramException.html" title="class in com.impossibl.postgres.protocol.sasl.scram.exception">com.impossibl.postgres.protocol.sasl.scram.exception.ScramException</a> extends javax.security.sasl.SaslException implements Serializable</h3>
 </li>
 <li class="blockList"><a id="com.impossibl.postgres.protocol.sasl.scram.exception.ScramInvalidServerSignatureException">
 <!--   -->
@@ -365,18 +366,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
-<section role="region">
+<section>
 <h2 title="Package">Package&nbsp;com.impossibl.postgres.system</h2>
 <ul class="blockList">
 <li class="blockList"><a id="com.impossibl.postgres.system.ConversionException">
 <!--   -->
 </a>
-<h3>Class <a href="com/impossibl/postgres/system/ConversionException.html" title="class in com.impossibl.postgres.system">com.impossibl.postgres.system.ConversionException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a> implements Serializable</h3>
+<h3>Class <a href="com/impossibl/postgres/system/ConversionException.html" title="class in com.impossibl.postgres.system">com.impossibl.postgres.system.ConversionException</a> extends java.io.IOException implements Serializable</h3>
 </li>
 <li class="blockList"><a id="com.impossibl.postgres.system.NoticeException">
 <!--   -->
 </a>
-<h3>Class <a href="com/impossibl/postgres/system/NoticeException.html" title="class in com.impossibl.postgres.system">com.impossibl.postgres.system.NoticeException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a> implements Serializable</h3>
+<h3>Class <a href="com/impossibl/postgres/system/NoticeException.html" title="class in com.impossibl.postgres.system">com.impossibl.postgres.system.NoticeException</a> extends java.io.IOException implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>7459731038298685932L</dd>
@@ -396,7 +397,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList"><a id="com.impossibl.postgres.system.UnsupportedServerVersion">
 <!--   -->
 </a>
-<h3>Class <a href="com/impossibl/postgres/system/UnsupportedServerVersion.html" title="class in com.impossibl.postgres.system">com.impossibl.postgres.system.UnsupportedServerVersion</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalStateException</a> implements Serializable</h3>
+<h3>Class <a href="com/impossibl/postgres/system/UnsupportedServerVersion.html" title="class in com.impossibl.postgres.system">com.impossibl.postgres.system.UnsupportedServerVersion</a> extends java.lang.IllegalStateException implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>4053890602809888396L</dd>
@@ -406,13 +407,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
-<section role="region">
+<section>
 <h2 title="Package">Package&nbsp;com.impossibl.postgres.system.procs</h2>
 <ul class="blockList">
 <li class="blockList"><a id="com.impossibl.postgres.system.procs.UnssupportedFormatException">
 <!--   -->
 </a>
-<h3>Class <a href="com/impossibl/postgres/system/procs/UnssupportedFormatException.html" title="class in com.impossibl.postgres.system.procs">com.impossibl.postgres.system.procs.UnssupportedFormatException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a> implements Serializable</h3>
+<h3>Class <a href="com/impossibl/postgres/system/procs/UnssupportedFormatException.html" title="class in com.impossibl.postgres.system.procs">com.impossibl.postgres.system.procs.UnssupportedFormatException</a> extends java.io.IOException implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>-2141246237354641611L</dd>
@@ -422,13 +423,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
-<section role="region">
+<section>
 <h2 title="Package">Package&nbsp;com.impossibl.postgres.utils</h2>
 <ul class="blockList">
 <li class="blockList"><a id="com.impossibl.postgres.utils.BlockingReadTimeoutException">
 <!--   -->
 </a>
-<h3>Class <a href="com/impossibl/postgres/utils/BlockingReadTimeoutException.html" title="class in com.impossibl.postgres.utils">com.impossibl.postgres.utils.BlockingReadTimeoutException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InterruptedIOException.html?is-external=true" title="class or interface in java.io" class="externalLink">InterruptedIOException</a> implements Serializable</h3>
+<h3>Class <a href="com/impossibl/postgres/utils/BlockingReadTimeoutException.html" title="class in com.impossibl.postgres.utils">com.impossibl.postgres.utils.BlockingReadTimeoutException</a> extends java.io.InterruptedIOException implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>6684451706667809583L</dd>
@@ -437,14 +438,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList"><a id="com.impossibl.postgres.utils.CacheMap">
 <!--   -->
 </a>
-<h3>Class <a href="com/impossibl/postgres/utils/CacheMap.html" title="class in com.impossibl.postgres.utils">com.impossibl.postgres.utils.CacheMap</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html?is-external=true" title="class or interface in java.util" class="externalLink">LinkedHashMap</a>&lt;<a href="com/impossibl/postgres/utils/CacheMap.html" title="type parameter in CacheMap">K</a>,&#8203;<a href="com/impossibl/postgres/utils/CacheMap.html" title="type parameter in CacheMap">V</a>&gt; implements Serializable</h3>
+<h3>Class <a href="com/impossibl/postgres/utils/CacheMap.html" title="class in com.impossibl.postgres.utils">com.impossibl.postgres.utils.CacheMap</a> extends java.util.LinkedHashMap&lt;<a href="com/impossibl/postgres/utils/CacheMap.html" title="type parameter in CacheMap">K</a>,&#8203;<a href="com/impossibl/postgres/utils/CacheMap.html" title="type parameter in CacheMap">V</a>&gt; implements Serializable</h3>
 <ul class="blockList">
 <li class="blockList">
 <h3>Serialized Fields</h3>
 <ul class="blockList">
 <li class="blockList">
 <h4>evictionHandler</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util" class="externalLink">Map.Entry</a>&lt;<a href="com/impossibl/postgres/utils/CacheMap.html" title="type parameter in CacheMap">K</a>,&#8203;<a href="com/impossibl/postgres/utils/CacheMap.html" title="type parameter in CacheMap">V</a>&gt;&gt; evictionHandler</pre>
+<pre>java.util.function.Consumer&lt;java.util.Map.Entry&lt;<a href="com/impossibl/postgres/utils/CacheMap.html" title="type parameter in CacheMap">K</a>,&#8203;<a href="com/impossibl/postgres/utils/CacheMap.html" title="type parameter in CacheMap">V</a>&gt;&gt; evictionHandler</pre>
 </li>
 <li class="blockListLast">
 <h4>maxSize</h4>
@@ -457,7 +458,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList"><a id="com.impossibl.postgres.utils.TypeLiteral">
 <!--   -->
 </a>
-<h3>Class <a href="com/impossibl/postgres/utils/TypeLiteral.html" title="class in com.impossibl.postgres.utils">com.impossibl.postgres.utils.TypeLiteral</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a> implements Serializable</h3>
+<h3>Class <a href="com/impossibl/postgres/utils/TypeLiteral.html" title="class in com.impossibl.postgres.utils">com.impossibl.postgres.utils.TypeLiteral</a> extends java.lang.Object implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
